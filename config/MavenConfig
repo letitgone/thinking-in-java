@@ -1,0 +1,15 @@
+Install jar to maven project command:
+
+mvn install:install-file -DgroupId=com.tij -DartifactId=TinkingInJava -Dversion=1.0.0 -Dpackaging=jar -Dfile=/Users/zhanggj/Downloads/idea_projects/thinking_in_java/jar/TinkingInJava.jar
+
+mvn install:install-file -DgroupId=com.tij -DartifactId=typeinfo-pets -Dversion=1.0.0 -Dpackaging=jar -Dfile=/Users/zhanggj/Downloads/idea_projects/thinking_in_java/jar/typeinfo-pets.jar
+
+mvn install:install-file -DgroupId=com.tij -DartifactId=javassist -Dversion=3.9.0 -Dpackaging=jar -Dfile=/Users/zhanggj/Downloads/idea_projects/thinking_in_java/jar/javassist-3.9.0.jar
+
+mvn install:install-file -DgroupId=com.tij -DartifactId=orggreggordontools -Dversion=1.0.0 -Dpackaging=jar -Dfile=/Users/zhanggj/Downloads/idea_projects/thinking_in_java/jar/orggreggordontools.jar
+
+mvn install:install-file -DgroupId=com.tij -DartifactId=swt -Dversion=1.0.0 -Dpackaging=jar -Dfile=/Users/zhanggj/Downloads/idea_projects/thinking_in_java/jar/swt.jar
+
+mvn install:install-file -DgroupId=com.tij -DartifactId=xom -Dversion=1.2.11 -Dpackaging=jar -Dfile=/Users/zhanggj/Downloads/idea_projects/thinking_in_java/jar/xom-1.2.11.jar
+
+mvn install:install-file -DgroupId=com.tij -DartifactId=apt-mirror-api -Dversion=0.1 -Dpackaging=jar -Dfile=/Users/zhanggj/Downloads/idea_projects/thinking_in_java/jar/apt-mirror-api-0.1.jar
