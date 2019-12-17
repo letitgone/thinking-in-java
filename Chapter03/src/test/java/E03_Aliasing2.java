@@ -7,7 +7,7 @@ class Product1 {
  * @Author ZhangGJ
  * @Date 2019/03/18
  */
-public class ExerciseThree {
+public class E03_Aliasing2 {
     static void m(Product1 x) {
         x.price = 23.4f;
     }

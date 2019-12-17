@@ -8,7 +8,7 @@ class Dog {
  * @Author ZhangGJ
  * @Date 2019/03/19
  */
-public class ExerciseFive {
+public class E05_Dogs {
     public static void main(String[] args) {
         Dog d1 = new Dog();
         Dog d2 = new Dog();

@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/03/18
  */
-public class ExerciseFour {
+public class E04_Velocity {
     public static void main(String[] args) {
         String distance = args[0];
         String time = args[1];

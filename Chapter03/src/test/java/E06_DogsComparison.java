@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/03/19
  */
-public class ExerciseSix {
+public class E06_DogsComparison {
     public static void main(String[] args) {
         Dog d1 = new Dog();
         Dog d2 = new Dog();
