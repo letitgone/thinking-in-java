@@ -27,7 +27,7 @@ class Tree {
 		}
 }
 /** Simple test code for Tree class */
-public class ExerciseSixteen {
+public class E16_OverloadingDoc {
 		/** Creates <b>Tree</b> objects and exercises the two
 		 different <code>info()</code> methods. */
 		public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class ExerciseSixteen {
 						t.info("overloaded method");
 				}
 				// Overloaded constructor:
-				new ExerciseSixteen();
+				new E16_OverloadingDoc();
 		}
 }
 /* Output:

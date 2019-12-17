@@ -4,7 +4,7 @@ package exercise;
  * @Author ZhangGJ
  * @Date 2019/03/17
  */
-public class ExerciseNine {
+public class E09_AutoboxingTest {
 		public static void main(String[] args) {
 				Byte by = 1;
 				byte bt = by;

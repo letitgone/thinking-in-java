@@ -9,7 +9,7 @@ package exercise;
  * structure and the creation of a
  * <code>main()</code> method.
  */
-public class ExerciseFifteen {
+public class E15_HelloWorldDoc {
 		/** The <code>main()</code> method which is
 		 called when the program is executed by saying
 		 <code>java E15_HelloWorldDoc</code>.

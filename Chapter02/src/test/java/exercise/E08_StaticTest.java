@@ -4,11 +4,11 @@ package exercise;
  * @Author ZhangGJ
  * @Date 2019/03/17
  */
-public class ExerciseEight {
+public class E08_StaticTest {
 		static int i = 47;
 		public static void main(String[] args) {
-				ExerciseEight st1 = new ExerciseEight();
-				ExerciseEight st2 = new ExerciseEight();
+				E08_StaticTest st1 = new E08_StaticTest();
+				E08_StaticTest st2 = new E08_StaticTest();
 				System.out.println(st1.i + " == " + st2.i);
 				st1.i++;
 				System.out.println(st1.i + " == " + st2.i);

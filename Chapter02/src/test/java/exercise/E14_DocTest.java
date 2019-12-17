@@ -9,7 +9,7 @@ package exercise;
  * System.out.println(new Date());
  * </pre>
  */
-public class ExerciseFourteen {
+public class E14_DocTest {
 		/** A variable comment */
 		public int i;
 		/** A method comment

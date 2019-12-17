@@ -5,7 +5,7 @@ package exercise;
  * @Author ZhangGJ
  * @Date 2019/03/17
  */
-public class ExerciseSeven {
+public class E07_Incrementable {
 
 		static class StaticTest {
 				static int i = 47;
@@ -16,6 +16,6 @@ public class ExerciseSeven {
 		}
 
 		public static void main(String[] args) {
-				ExerciseSeven.increment();
+				E07_Incrementable.increment();
 		}
 }
