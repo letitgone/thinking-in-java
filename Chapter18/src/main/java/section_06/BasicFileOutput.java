@@ -10,8 +10,8 @@ public class BasicFileOutput {
     static String file = "BasicFileOutput.out";
 
     public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new StringReader(BufferedInputFile.read(
-            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/main/java/section_06/BasicFileOutput.java")));
+        BufferedReader in = new BufferedReader(new StringReader(BufferedInputFile
+                .read("/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/main/java/section_06/BasicFileOutput.java")));
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(file)));
         int lineCount = 1;
         String s;

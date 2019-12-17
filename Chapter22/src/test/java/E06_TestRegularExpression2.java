@@ -16,7 +16,7 @@ public class E06_TestRegularExpression2 extends JFrame {
     private JTextField expression = new JTextField(40);
     private JButton match = new JButton("Match");
     private JLabel inputL = new JLabel("Input"), outputL = new JLabel("Output"), expressionL =
-        new JLabel("Expression");
+            new JLabel("Expression");
     private JPanel panel1 = new JPanel(), panel2 = new JPanel(), panel3 = new JPanel();
 
     public E06_TestRegularExpression2() {
@@ -40,8 +40,8 @@ public class E06_TestRegularExpression2 extends JFrame {
                 String outputS = "";
                 while (m.find()) {
                     outputS +=
-                        "Match \"" + m.group() + "\" at positions " + m.start() + "-" + (m.end()
-                            - 1) + '\n';
+                            "Match \"" + m.group() + "\" at positions " + m.start() + "-" + (m.end()
+                                    - 1) + '\n';
                 }
                 output.setText(outputS);
             }

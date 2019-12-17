@@ -202,7 +202,8 @@ public class E33_ListPerformance3 {
         }
 
         // Fill to the appropriate size before each test:
-        @Override protected List<Integer> initialize(int size) {
+        @Override
+        protected List<Integer> initialize(int size) {
             container.clear();
             container.addAll(new CountingIntegerList(size));
             return container;

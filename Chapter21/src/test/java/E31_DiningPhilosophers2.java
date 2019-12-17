@@ -102,10 +102,12 @@ public class E31_DiningPhilosophers2 {
     public static void main(String[] args) throws Exception {
         if (args.length < 3) {
             System.err.println("usage:\n" + "java E31_DiningPhilosophers2 "
-                + "numberOfPhilosophers ponderFactor deadlock " + "timeout\n"
-                + "A nonzero ponderFactor will " + "generate a random sleep time during think().\n"
-                + "If deadlock is not the string " + "'deadlock', the program will not deadlock.\n"
-                + "A nonzero timeout will stop the program after " + "that number of seconds.");
+                    + "numberOfPhilosophers ponderFactor deadlock " + "timeout\n"
+                    + "A nonzero ponderFactor will "
+                    + "generate a random sleep time during think().\n"
+                    + "If deadlock is not the string "
+                    + "'deadlock', the program will not deadlock.\n"
+                    + "A nonzero timeout will stop the program after " + "that number of seconds.");
             System.exit(1);
         }
         ChopstickBin bin = new ChopstickBin();

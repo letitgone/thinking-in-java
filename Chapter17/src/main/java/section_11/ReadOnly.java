@@ -26,10 +26,12 @@ public class ReadOnly {
         //! s.add("one"); // Can’t change it
         // For a SortedSet:
         Set<String> ss = Collections.unmodifiableSortedSet(new TreeSet<String>(data));
-        Map<String, String> m = Collections.unmodifiableMap(new HashMap<String, String>(Countries.capitals(6)));
+        Map<String, String> m =
+                Collections.unmodifiableMap(new HashMap<String, String>(Countries.capitals(6)));
         print(m); // Reading is OK
         //! m.put("Ralph", "Howdy!");
         // For a SortedMap:
-        Map<String, String> sm = Collections.unmodifiableSortedMap(new TreeMap<String, String>(Countries.capitals(6)));
+        Map<String, String> sm = Collections
+                .unmodifiableSortedMap(new TreeMap<String, String>(Countries.capitals(6)));
     }
 }

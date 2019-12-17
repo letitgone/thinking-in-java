@@ -8,7 +8,7 @@ import static net.mindview.util.Print.print;
  */
 public class E04_ThreeDDoubleArray {
     public static double[][][] threeDDoubleArray(int xLen, int yLen, int zLen, double valStart,
-        double valEnd) {
+            double valEnd) {
         double[][][] array = new double[xLen][yLen][zLen];
         double increment = (valEnd - valStart) / (xLen * yLen * zLen);
         double val = valStart;

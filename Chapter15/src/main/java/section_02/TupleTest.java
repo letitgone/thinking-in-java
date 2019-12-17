@@ -24,12 +24,12 @@ public class TupleTest {
 
     static FourTuple<Vehicle, Amphibian, String, Integer> h() {
         return new FourTuple<Vehicle, Amphibian, String, Integer>(new Vehicle(), new Amphibian(),
-            "hi", 47);
+                "hi", 47);
     }
 
     static FiveTuple<Vehicle, Amphibian, String, Integer, Double> k() {
         return new FiveTuple<Vehicle, Amphibian, String, Integer, Double>(new Vehicle(),
-            new Amphibian(), "hi", 47, 11.1);
+                new Amphibian(), "hi", 47, 11.1);
     }
 
     public static void main(String[] args) {

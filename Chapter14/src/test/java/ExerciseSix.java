@@ -83,9 +83,9 @@ class HTriangle extends HShape {
 
 public class ExerciseSix {
     public static void main(String[] args) {
-        List<HShape> shapes = Arrays.asList(
-            new HCircle(), new HSquare(), new HTriangle(), new HSquare(),
-            new HTriangle(), new HCircle(), new HCircle(), new HSquare());
+        List<HShape> shapes =
+                Arrays.asList(new HCircle(), new HSquare(), new HTriangle(), new HSquare(),
+                        new HTriangle(), new HCircle(), new HCircle(), new HSquare());
         HShape.highlight1(HCircle.class);
         HShape.highlight2(HCircle.class);
         for (HShape shape : shapes)

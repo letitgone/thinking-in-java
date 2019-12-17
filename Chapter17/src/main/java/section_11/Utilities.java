@@ -13,7 +13,8 @@ public class Utilities {
 
     public static void main(String[] args) {
         print(list);
-        print("‘list’ disjoint (Four)?: " + Collections.disjoint(list, Collections.singletonList("Four")));
+        print("‘list’ disjoint (Four)?: " + Collections
+                .disjoint(list, Collections.singletonList("Four")));
         print("max: " + Collections.max(list));
         print("min: " + Collections.min(list));
         print("max w/ comparator: " + Collections.max(list, String.CASE_INSENSITIVE_ORDER));

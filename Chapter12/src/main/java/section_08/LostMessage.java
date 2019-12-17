@@ -10,11 +10,13 @@ class VeryImportantException extends Exception {
     }
 }
 
+
 class HoHumException extends Exception {
     public String toString() {
         return "A trivial exception";
     }
 }
+
 
 public class LostMessage {
     public void f() throws VeryImportantException {

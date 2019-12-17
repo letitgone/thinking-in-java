@@ -111,7 +111,7 @@ class SimulationManager implements Runnable {
     private int prevSize;
 
     public SimulationManager(ExecutorService e, WebClientGenerator gen, WebClientLine clients,
-        int adjustmentPeriod, int n) {
+            int adjustmentPeriod, int n) {
         exec = e;
         this.gen = gen;
         this.clients = clients;

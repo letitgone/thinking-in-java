@@ -63,8 +63,8 @@ class GreenhouseControls2 extends GreenhouseControls {
                     // describe inner classes:
                     String className = s.substring(0, colon).trim();
                     Class<?> outer = className.equals("Restart") ?
-                        GreenhouseControls2.class :
-                        GreenhouseControls.class;
+                            GreenhouseControls2.class :
+                            GreenhouseControls.class;
                     String type = outer.getSimpleName() + "$" + className;
                     long offset = Long.parseLong(s.substring(colon + 1).trim());
                     // Use Reflection to find and call
@@ -74,7 +74,7 @@ class GreenhouseControls2 extends GreenhouseControls {
                     // take the outer-class object as a
                     // first argument:
                     Constructor<Event> ctor =
-                        eventClass.getConstructor(new Class<?>[] {outer, long.class});
+                            eventClass.getConstructor(new Class<?>[] {outer, long.class});
                     events.add(new EventCreator(ctor, offset));
                 }
             } catch (Exception e) {
@@ -94,8 +94,8 @@ class GreenhouseControls2 extends GreenhouseControls {
                     EventCreator ec = it.next();
                     Event returnVal = null;
                     try {
-                        returnVal =
-                            ec.ctor.newInstance(new Object[] {GreenhouseControls2.this, ec.offset});
+                        returnVal = ec.ctor.newInstance(
+                                new Object[] {GreenhouseControls2.this, ec.offset});
                     } catch (Exception e) {
                         throw new RuntimeException(e);
                     }
@@ -144,9 +144,9 @@ class GreenhouseControls2 extends GreenhouseControls {
  * Bell: 1000000
  * ThermostatDay: 1400000
  * Restart: 2000000
- *
+ * <p>
  * GreenhouseConfig.dat
- *
+ * <p>
  * args : 5000000
  */
 

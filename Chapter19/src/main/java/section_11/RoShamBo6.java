@@ -9,8 +9,8 @@ import static section_11.Outcome.*;
 enum RoShamBo6 implements Competitor<RoShamBo6> {
     PAPER, SCISSORS, ROCK;
     private static Outcome[][] table = {{DRAW, LOSE, WIN}, // PAPER
-        {WIN, DRAW, LOSE}, // SCISSORS
-        {LOSE, WIN, DRAW}, // ROCK
+            {WIN, DRAW, LOSE}, // SCISSORS
+            {LOSE, WIN, DRAW}, // ROCK
     };
 
     public Outcome compete(RoShamBo6 other) {

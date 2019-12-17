@@ -8,11 +8,13 @@ class Except1 extends Exception {
     }
 }
 
+
 class BaseWithException {
     public BaseWithException() throws Except1 {
         throw new Except1("thrown by BaseWithException");
     }
 }
+
 
 class DerivedWE extends BaseWithException {
     // Produces compile-time error:
@@ -29,6 +31,7 @@ class DerivedWE extends BaseWithException {
     public DerivedWE() throws Except1 {
     }
 }
+
 
 public class ExerciseTwentyOne {
     public static void main(String args[]) {

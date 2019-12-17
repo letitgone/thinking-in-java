@@ -9,13 +9,16 @@ import java.util.concurrent.Executors;
  * @Date 2019/10/06
  */
 class Tank {
-    enum State {EMPTY, LOADED};
+    enum State {EMPTY, LOADED}
+
+
+    ;
     private State state = State.EMPTY;
     private int current_load = 0;
 
     public void validate() {
         if ((state == State.EMPTY && current_load != 0) || (state == State.LOADED
-            && current_load == 0))
+                && current_load == 0))
             throw new IllegalStateException();
     }
 

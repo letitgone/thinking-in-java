@@ -5,6 +5,7 @@
 class ConstructionException extends Exception {
 }
 
+
 class FailingConstructor {
     FailingConstructor(boolean fail) throws ConstructionException {
         if (fail) {
@@ -12,6 +13,7 @@ class FailingConstructor {
         }
     }
 }
+
 
 public class ExerciseTwentyTwo {
     public static void main(String args[]) {

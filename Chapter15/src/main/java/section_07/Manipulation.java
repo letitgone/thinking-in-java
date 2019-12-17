@@ -5,7 +5,7 @@ package section_07;
  * @Date 2019/07/29
  */
 class Manipulator<T> {
-//class Manipulator<T extends HasF> {  // Solution
+    //class Manipulator<T extends HasF> {  // Solution
     private T obj;
 
     public Manipulator(T x) {
@@ -14,7 +14,7 @@ class Manipulator<T> {
 
     // Error: cannot find symbol: method f():
     public void manipulate() {
-//        obj.f();  // error！
+        //        obj.f();  // error！
     }
 }
 

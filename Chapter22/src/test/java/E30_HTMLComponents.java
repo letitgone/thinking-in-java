@@ -10,7 +10,7 @@ import static section_02.SwingConsole.run;
 class HTMLComponents extends JFrame {
     JMenu[] menus = {new JMenu("Text"), new JMenu("<html><i>HTML")};
     JMenuItem[] items =
-        {new JMenuItem("Text Item"), new JMenuItem("<html><b><font size=+1>HTML Item")};
+            {new JMenuItem("Text Item"), new JMenuItem("<html><b><font size=+1>HTML Item")};
 
     public HTMLComponents() {
         setLayout(new FlowLayout());

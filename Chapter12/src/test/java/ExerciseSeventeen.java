@@ -10,6 +10,7 @@ class Frog2 extends Frog {
     }
 }
 
+
 public class ExerciseSeventeen {
     public static void main(String[] args) {
         Frog2 frog = new Frog2();

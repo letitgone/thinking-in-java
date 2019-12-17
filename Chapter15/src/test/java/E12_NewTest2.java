@@ -9,7 +9,7 @@ import java.util.*;
 public class E12_NewTest2 {
     static void f(List<SixTuple<Byte, Short, String, Float, Double, Integer>> l) {
         l.add(new SixTuple<Byte, Short, String, Float, Double, Integer>((byte) 1, (short) 1, "A",
-            1.0F, 1.0, 1));
+                1.0F, 1.0, 1));
         System.out.println(l);
     }
 

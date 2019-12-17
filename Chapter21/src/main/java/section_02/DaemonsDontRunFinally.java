@@ -27,6 +27,6 @@ public class DaemonsDontRunFinally {
         Thread t = new Thread(new ADaemon());
         t.setDaemon(true);
         t.start();
-//        TimeUnit.SECONDS.sleep(2);
+        //        TimeUnit.SECONDS.sleep(2);
     }
 }

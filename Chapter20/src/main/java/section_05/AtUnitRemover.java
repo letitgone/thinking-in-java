@@ -43,7 +43,7 @@ public class AtUnitRemover implements ProcessFiles.Strategy {
             for (CtMethod method : ctClass.getDeclaredMethods()) {
                 MethodInfo mi = method.getMethodInfo();
                 AnnotationsAttribute attr =
-                    (AnnotationsAttribute) mi.getAttribute(AnnotationsAttribute.visibleTag);
+                        (AnnotationsAttribute) mi.getAttribute(AnnotationsAttribute.visibleTag);
                 if (attr == null)
                     continue;
                 for (Annotation ann : attr.getAnnotations()) {

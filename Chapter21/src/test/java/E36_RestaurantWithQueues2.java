@@ -251,7 +251,7 @@ class WaitPerson1 implements Runnable {
                 // Blocks until a course is ready
                 Plate plate = filledOrders.take();
                 print(this + "received " + plate + " delivering to " + plate.getOrder()
-                    .getCustomer());
+                        .getCustomer());
                 plate.getOrder().getCustomer().deliver(plate);
             }
         } catch (InterruptedException e) {
@@ -289,7 +289,7 @@ class Chef1 implements Runnable {
                         TimeUnit.MILLISECONDS.sleep(rand.nextInt(500));
                         Plate plate = new Plate(order, requestedItem);
                         order.getOrderTicket().getWaitPerson().
-                            filledOrders.put(plate);
+                                filledOrders.put(plate);
                     }
                 }
             }

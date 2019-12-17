@@ -15,16 +15,16 @@ class DynamicMenus extends JFrame {
     // You may want to change the code to use a command-line
     // parameter instead of a hard-coded value:
     private Set<String> words = new TreeSet<String>(new TextFile(
-        "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter22/src/test/java/E20_DynamicMenus.java",
-        "\\W+"));
+            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter22/src/test/java/E20_DynamicMenus.java",
+            "\\W+"));
     private JMenuBar mb = new JMenuBar();
     // The top level menu is fixed:
     private JMenu
-        // Words starting with an upper case letter:
-        tm1 = new JMenu("Words Starting With UCC"), // Words starting with a lower case letter:
-        tm2 = new JMenu(
-            "Words Starting With LCC"), // All other words not belonging to the above groups:
-        tm3 = new JMenu("Other Words");
+            // Words starting with an upper case letter:
+            tm1 = new JMenu("Words Starting With UCC"), // Words starting with a lower case letter:
+            tm2 = new JMenu(
+                    "Words Starting With LCC"), // All other words not belonging to the above groups:
+            tm3 = new JMenu("Other Words");
 
     DynamicMenus() {
         distributeWordsOnMenus();

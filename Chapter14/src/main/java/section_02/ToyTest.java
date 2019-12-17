@@ -9,11 +9,14 @@ import static net.mindview.util.Print.print;
 interface HasBatteries {
 }
 
+
 interface Waterproof {
 }
 
+
 interface Shoots {
 }
+
 
 class Toy {
     // Comment out the following default constructor
@@ -24,6 +27,7 @@ class Toy {
     Toy(int i) {
     }
 }
+
 
 class FancyToy extends Toy implements HasBatteries, Waterproof, Shoots {
     FancyToy() {

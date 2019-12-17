@@ -12,8 +12,9 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class ConcurrentHashMapTest extends MapTest {
     Map<Integer, Integer> containerInitializer() {
-        return new ConcurrentHashMap<Integer, Integer>(MapData
-            .map(new CountingGenerator.Integer(), new CountingGenerator.Integer(), containerSize));
+        return new ConcurrentHashMap<Integer, Integer>(
+                MapData.map(new CountingGenerator.Integer(), new CountingGenerator.Integer(),
+                        containerSize));
     }
 
     ConcurrentHashMapTest(int nReaders, int nWriters) {

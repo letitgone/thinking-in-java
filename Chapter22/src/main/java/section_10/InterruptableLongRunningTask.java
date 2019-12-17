@@ -41,7 +41,7 @@ class Task implements Runnable {
 
 public class InterruptableLongRunningTask extends JFrame {
     private JButton b1 = new JButton("Start Long Running Task"), b2 =
-        new JButton("End Long Running Task");
+            new JButton("End Long Running Task");
     ExecutorService executor = Executors.newSingleThreadExecutor();
 
     public InterruptableLongRunningTask() {

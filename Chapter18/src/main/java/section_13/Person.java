@@ -54,7 +54,8 @@ public class Person {
     }
 
     public static void main(String[] args) throws Exception {
-        List<Person> people = Arrays.asList(new Person("Dr. Bunsen", "Honeydew"), new Person("Gonzo", "The Great"), new Person("Phillip J.", "Fry"));
+        List<Person> people = Arrays.asList(new Person("Dr. Bunsen", "Honeydew"),
+                new Person("Gonzo", "The Great"), new Person("Phillip J.", "Fry"));
         System.out.println(people);
         Element root = new Element("people");
         for (Person p : people)

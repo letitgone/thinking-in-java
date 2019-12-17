@@ -103,10 +103,10 @@ public class E37_Mixins2 {
         mixin1.set("test string 1");
         mixin2.set("test string 2");
         System.out.println(
-            mixin1.get() + " " + mixin1.getStamp() + " " + mixin1.getSerialNumber() + " " + mixin1
-                .getColor());
+                mixin1.get() + " " + mixin1.getStamp() + " " + mixin1.getSerialNumber() + " "
+                        + mixin1.getColor());
         System.out.println(
-            mixin2.get() + " " + mixin2.getStamp() + " " + mixin2.getSerialNumber() + " " + mixin2
-                .getColor());
+                mixin2.get() + " " + mixin2.getStamp() + " " + mixin2.getSerialNumber() + " "
+                        + mixin2.getColor());
     }
 }

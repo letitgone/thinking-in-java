@@ -25,7 +25,8 @@ class AssociativeArray<K, V> {
         pairs[index++] = new Object[] {key, value};
     }
 
-    @SuppressWarnings("unchecked") public V get(K key) {
+    @SuppressWarnings("unchecked")
+    public V get(K key) {
         for (int i = 0; i < index; i++)
             if (key.equals(pairs[i][0]))
                 return (V) pairs[i][1];

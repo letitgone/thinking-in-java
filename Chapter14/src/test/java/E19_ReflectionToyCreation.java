@@ -26,11 +26,7 @@ public class E19_ReflectionToyCreation {
                 Class<?>[] params = ctor.getParameterTypes();
                 if (params.length == 1) {
                     if (params[0] == int.class) {
-                        return (Toy) ctor.newInstance(
-                            new Object[] {
-                                Integer.valueOf(IQ)
-                            }
-                        );
+                        return (Toy) ctor.newInstance(new Object[] {Integer.valueOf(IQ)});
                     }
                 }
             }

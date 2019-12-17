@@ -25,7 +25,7 @@ public class E15_BSContainerComparison {
         print(Arrays.toString(spheres));
         print(spheres[4]);
         List<BerylliumSphere> sphereList =
-            Arrays.asList(Generated.array(BerylliumSphere.class, gen, 5));
+                Arrays.asList(Generated.array(BerylliumSphere.class, gen, 5));
         print(sphereList);
         print(sphereList.get(4));
         int[] integers = {0, 1, 2, 3, 4, 5};

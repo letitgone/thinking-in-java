@@ -11,7 +11,7 @@ import static section_02.SwingConsole.run;
  */
 public class E05_Button3 extends JFrame {
     private JButton b1 = new JButton("Button 1"), b2 = new JButton("Button 2"), b3 =
-        new JButton("Button 3");
+            new JButton("Button 3");
     private JTextField txt = new JTextField(10);
     private ActionListener bl = new ActionListener() {
         public void actionPerformed(ActionEvent e) {

@@ -88,7 +88,7 @@ class UpperCaseDocument extends PlainDocument {
     }
 
     public void insertString(int offset, String str, AttributeSet attSet)
-        throws BadLocationException {
+            throws BadLocationException {
         if (upperCase)
             str = str.toUpperCase();
         super.insertString(offset, str, attSet);

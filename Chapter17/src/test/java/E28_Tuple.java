@@ -31,7 +31,7 @@ class Tuple {
             if (obj instanceof T2) {
                 @SuppressWarnings("unchecked") T2<A, B> o = (T2<A, B>) obj;
                 return (first == null ? o.first == null : first.equals(o.first)) && (
-                    second == null ? o.second == null : second.equals(o.second));
+                        second == null ? o.second == null : second.equals(o.second));
             }
             return false;
         }
@@ -76,10 +76,9 @@ class Tuple {
 
         public boolean equals(Object obj) {
             if (obj instanceof T3) {
-                @SuppressWarnings("unchecked")
-                T3<A, B, C> o = (T3<A, B, C>) obj;
+                @SuppressWarnings("unchecked") T3<A, B, C> o = (T3<A, B, C>) obj;
                 return (third == null ? o.third == null : third.equals(o.third)) && tuple
-                    .equals(o.tuple);
+                        .equals(o.tuple);
             }
             return false;
         }
@@ -117,7 +116,7 @@ class Tuple {
 
         public String toString() {
             return "(" + tuple.getFirst() + ", " + tuple.getSecond() + ", " + tuple.getThird()
-                + ", " + fourth + ")";
+                    + ", " + fourth + ")";
         }
 
         public int hashCode() {
@@ -129,10 +128,9 @@ class Tuple {
 
         public boolean equals(Object obj) {
             if (obj instanceof T4) {
-                @SuppressWarnings("unchecked")
-                T4<A, B, C, D> o = (T4<A, B, C, D>) obj;
+                @SuppressWarnings("unchecked") T4<A, B, C, D> o = (T4<A, B, C, D>) obj;
                 return (fourth == null ? o.fourth == null : fourth.equals(o.fourth)) && tuple
-                    .equals(o.tuple);
+                        .equals(o.tuple);
             }
             return false;
         }
@@ -174,7 +172,7 @@ class Tuple {
 
         public String toString() {
             return "(" + tuple.getFirst() + ", " + tuple.getSecond() + ", " + tuple.getThird()
-                + ", " + tuple.getFourth() + ", " + fifth + ")";
+                    + ", " + tuple.getFourth() + ", " + fifth + ")";
         }
 
         public int hashCode() {
@@ -186,10 +184,9 @@ class Tuple {
 
         public boolean equals(Object obj) {
             if (obj instanceof T5) {
-                @SuppressWarnings("unchecked")
-                T5<A, B, C, D, E> o = (T5<A, B, C, D, E>) obj;
+                @SuppressWarnings("unchecked") T5<A, B, C, D, E> o = (T5<A, B, C, D, E>) obj;
                 return (fifth == null ? o.fifth == null : fifth.equals(o.fifth)) && tuple
-                    .equals(o.tuple);
+                        .equals(o.tuple);
             }
             return false;
         }
@@ -244,8 +241,8 @@ class Tuple {
 public class E28_Tuple {
     public static void main(String[] args) {
         Tuple.T5<String, Integer, Boolean, Short, Long> t5_1 =
-            Tuple.tuple("a", 1, false, (short) 2, 3L), t5_2 =
-            Tuple.tuple("b", 2, true, (short) 3, 4L);
+                Tuple.tuple("a", 1, false, (short) 2, 3L), t5_2 =
+                Tuple.tuple("b", 2, true, (short) 3, 4L);
         print("t5_1 = " + t5_1);
         print("t5_2 = " + t5_2);
         print("t5_1.equals(t5_1) = " + t5_1.equals(t5_1));

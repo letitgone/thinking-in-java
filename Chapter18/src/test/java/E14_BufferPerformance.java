@@ -12,8 +12,8 @@ public class E14_BufferPerformance {
     static String file = "E14_BufferPerformance.out";
 
     public static void main(String[] args) throws IOException {
-        List<String> list = E07_FileIntoList.read(
-            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E14_BufferPerformance.java");
+        List<String> list = E07_FileIntoList
+                .read("/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E14_BufferPerformance.java");
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(file)));
         int lineCount = 1;
         long t1 = System.currentTimeMillis();

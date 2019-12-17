@@ -124,7 +124,7 @@ public class GreenhouseScheduler {
 
         public String toString() {
             return time.getTime() + String
-                .format(" temperature: %1$.1f humidity: %2$.2f", temperature, humidity);
+                    .format(" temperature: %1$.1f humidity: %2$.2f", temperature, humidity);
         }
     }
 

@@ -15,7 +15,7 @@ public class ExerciseFifteen {
             print("Usage: java E15_JGrep2 file regex pattern");
             print("pattern can take one of the following values");
             print("CANON_EQ, CASE_INSENSITIVE, COMMENTS, "
-                + "DOTALL, MULTILINE, UNICODE_CASE, UNIX_LINES");
+                    + "DOTALL, MULTILINE, UNICODE_CASE, UNIX_LINES");
             System.exit(0);
         }
         int flag = 0;

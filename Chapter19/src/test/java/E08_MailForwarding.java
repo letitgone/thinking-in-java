@@ -45,9 +45,9 @@ class FMail {
 
     public String details() {
         return toString() + ", General Delivery: " + generalDelivery + ", Address Scanability: "
-            + scannability + ", Address Readability: " + readability + ", Address Address: "
-            + address + ", Return address: " + returnAddress + ", Forward address: "
-            + forwardAddress;
+                + scannability + ", Address Readability: " + readability + ", Address Address: "
+                + address + ", Return address: " + returnAddress + ", Forward address: "
+                + forwardAddress;
     }
 
     // Generate test FMail:

@@ -15,13 +15,13 @@ import static com.sun.mirror.util.DeclarationVisitors.*;
  */
 public class TableCreationProcessorFactory implements AnnotationProcessorFactory {
     public AnnotationProcessor getProcessorFor(Set<AnnotationTypeDeclaration> atds,
-        AnnotationProcessorEnvironment env) {
+            AnnotationProcessorEnvironment env) {
         return new TableCreationProcessor(env);
     }
 
     public Collection<String> supportedAnnotationTypes() {
         return Arrays.asList("annotations.database.DBTable", "annotations.database.Constraints",
-            "annotations.database.SQLString", "annotations.database.SQLInteger");
+                "annotations.database.SQLString", "annotations.database.SQLInteger");
     }
 
     public Collection<String> supportedOptions() {
@@ -51,8 +51,8 @@ public class TableCreationProcessorFactory implements AnnotationProcessorFactory
                 if (dbTable != null) {
                     sql += "CREATE TABLE ";
                     sql += (dbTable.name().length() < 1) ?
-                        d.getSimpleName().toUpperCase() :
-                        dbTable.name();
+                            d.getSimpleName().toUpperCase() :
+                            dbTable.name();
                     sql += " (";
                 }
             }
@@ -66,8 +66,8 @@ public class TableCreationProcessorFactory implements AnnotationProcessorFactory
                         columnName = d.getSimpleName().toUpperCase();
                     else
                         columnName = sInt.name();
-                    sql +=
-                        "\n    " + columnName + " INT" + getConstraints(sInt.constraints()) + ",";
+                    sql += "\n    " + columnName + " INT" + getConstraints(sInt.constraints())
+                            + ",";
                 }
                 if (d.getAnnotation(SQLString.class) != null) {
                     SQLString sString = d.getAnnotation(SQLString.class);
@@ -77,7 +77,7 @@ public class TableCreationProcessorFactory implements AnnotationProcessorFactory
                     else
                         columnName = sString.name();
                     sql += "\n    " + columnName + " VARCHAR(" + sString.value() + ")"
-                        + getConstraints(sString.constraints()) + ",";
+                            + getConstraints(sString.constraints()) + ",";
                 }
             }
 

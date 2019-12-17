@@ -11,7 +11,7 @@ import static net.mindview.util.Print.print;
 class House {
     private final int id;
     private boolean steel = false, concreteForms = false, concreteFoundation = false, plumbing =
-        false, concreteSlab = false, framing = false;
+            false, concreteSlab = false, framing = false;
 
     public House(int idn) {
         id = idn;
@@ -51,8 +51,8 @@ class House {
 
     public synchronized String toString() {
         return "House " + id + " [" + " steel: " + steel + " concreteForms: " + concreteForms
-            + " concreteFoundation: " + concreteFoundation + " plumbing: " + plumbing
-            + " concreteSlab: " + concreteSlab + " framing: " + framing + "]";
+                + " concreteFoundation: " + concreteFoundation + " plumbing: " + plumbing
+                + " concreteSlab: " + concreteSlab + " framing: " + framing + "]";
     }
 }
 
@@ -293,7 +293,7 @@ class TeamPool {
     }
 
     public synchronized void hire(Class<? extends Team> teamType, HouseBuilder hb)
-        throws InterruptedException {
+            throws InterruptedException {
         for (Team t : pool)
             if (t.getClass().equals(teamType)) {
                 pool.remove(t);

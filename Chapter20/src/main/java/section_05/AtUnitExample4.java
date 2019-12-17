@@ -15,7 +15,7 @@ import static net.mindview.util.Print.print;
  */
 public class AtUnitExample4 {
     static String theory = "All brontosauruses " + "are thin at one end, much MUCH thicker in the "
-        + "middle, and then thin again at the far end.";
+            + "middle, and then thin again at the far end.";
     private String word;
     private Random rand = new Random(); // Time-based seed
 
@@ -38,8 +38,10 @@ public class AtUnitExample4 {
         return result.toString();
     }
 
-    @TestProperty static List<String> input = Arrays.asList(theory.split(" "));
-    @TestProperty static Iterator<String> words = input.iterator();
+    @TestProperty
+    static List<String> input = Arrays.asList(theory.split(" "));
+    @TestProperty
+    static Iterator<String> words = input.iterator();
 
     @TestObjectCreate
     static AtUnitExample4 create() {

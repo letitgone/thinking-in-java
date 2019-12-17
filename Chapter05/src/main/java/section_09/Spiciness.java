@@ -5,5 +5,5 @@ package section_09;
  * @Date 2019/04/04
  */
 public enum Spiciness {
-		NOT, MILD, MEDIUM, HOT, FLAMING
+    NOT, MILD, MEDIUM, HOT, FLAMING
 }

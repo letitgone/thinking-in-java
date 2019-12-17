@@ -11,7 +11,7 @@ import static net.mindview.util.Print.print;
 class Car2 {
     private final int id;
     private boolean engine = false, driveTrain = false, wheels = false, exhaustSystem = false,
-        body = false, fender = false;
+            body = false, fender = false;
 
     public Car2(int idn) {
         id = idn;
@@ -51,8 +51,8 @@ class Car2 {
 
     public synchronized String toString() {
         return "Car " + id + " [" + " engine: " + engine + " driveTrain: " + driveTrain
-            + " wheels: " + wheels + " exhaust system: " + exhaustSystem + " body: " + body
-            + " fender: " + fender + "]";
+                + " wheels: " + wheels + " exhaust system: " + exhaustSystem + " body: " + body
+                + " fender: " + fender + "]";
     }
 }
 
@@ -295,7 +295,7 @@ class RobotPool {
     }
 
     public synchronized void hire(Class<? extends Robot> robotType, Assembler d)
-        throws InterruptedException {
+            throws InterruptedException {
         for (Robot r : pool)
             if (r.getClass().equals(robotType)) {
                 pool.remove(r);

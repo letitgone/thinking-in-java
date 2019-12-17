@@ -16,7 +16,8 @@ class DynamicProxyHandler implements InvocationHandler {
     }
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("**** proxy: " + proxy.getClass() + ", method: " + method + ", args: " + args);
+        System.out.println(
+                "**** proxy: " + proxy.getClass() + ", method: " + method + ", args: " + args);
         if (args != null) {
             for (Object arg : args) {
                 System.out.println("  " + arg);
@@ -37,9 +38,9 @@ public class SimpleDynamicProxy {
         RealObject real = new RealObject();
         consumer(real);
         // Insert a proxy and call again:
-        Interface proxy = (Interface) Proxy.newProxyInstance(
-            Interface.class.getClassLoader(), new Class[] {Interface.class}, new DynamicProxyHandler(real)
-        );
+        Interface proxy = (Interface) Proxy
+                .newProxyInstance(Interface.class.getClassLoader(), new Class[] {Interface.class},
+                        new DynamicProxyHandler(real));
         consumer(proxy);
     }
 }

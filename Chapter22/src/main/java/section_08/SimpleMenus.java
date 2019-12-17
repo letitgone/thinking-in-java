@@ -20,9 +20,9 @@ public class SimpleMenus extends JFrame {
     };
     private JMenu[] menus = {new JMenu("Winken"), new JMenu("Blinken"), new JMenu("Nod")};
     private JMenuItem[] items =
-        {new JMenuItem("Fee"), new JMenuItem("Fi"), new JMenuItem("Fo"), new JMenuItem("Zip"),
-            new JMenuItem("Zap"), new JMenuItem("Zot"), new JMenuItem("Olly"),
-            new JMenuItem("Oxen"), new JMenuItem("Free")};
+            {new JMenuItem("Fee"), new JMenuItem("Fi"), new JMenuItem("Fo"), new JMenuItem("Zip"),
+                    new JMenuItem("Zap"), new JMenuItem("Zot"), new JMenuItem("Olly"),
+                    new JMenuItem("Oxen"), new JMenuItem("Free")};
 
     public SimpleMenus() {
         for (int i = 0; i < items.length; i++) {

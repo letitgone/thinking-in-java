@@ -5,9 +5,9 @@ package section_04;
  * @Date 2019/03/23
  */
 public class ForEachString {
-		public static void main(String[] args) {
-				for(char c : "An African Swallow".toCharArray()){
-						System.out.print(c + " ");
-				}
-		}
+    public static void main(String[] args) {
+        for (char c : "An African Swallow".toCharArray()) {
+            System.out.print(c + " ");
+        }
+    }
 }

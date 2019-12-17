@@ -4,14 +4,16 @@ import java.util.*;
  * @Author ZhangGJ
  * @Date 2019/07/16
  */
-@SuppressWarnings("unchecked") class Part2 {
+@SuppressWarnings("unchecked")
+class Part2 {
     public String toString() {
         return getClass().getSimpleName();
     }
 
-    static List<Class<? extends Part2>> partClasses = Arrays
-        .asList(FuelFilter2.class, AirFilter2.class, CabinAirFilter2.class, OilFilter2.class,
-            FanBelt2.class, PowerSteeringBelt2.class, GeneratorBelt2.class);
+    static List<Class<? extends Part2>> partClasses =
+            Arrays.asList(FuelFilter2.class, AirFilter2.class, CabinAirFilter2.class,
+                    OilFilter2.class, FanBelt2.class, PowerSteeringBelt2.class,
+                    GeneratorBelt2.class);
     private static Random rand = new Random(47);
 
     public static Part2 createRandom() {

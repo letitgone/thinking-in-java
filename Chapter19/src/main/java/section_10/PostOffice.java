@@ -43,8 +43,8 @@ class Mail {
 
     public String details() {
         return toString() + ", General Delivery: " + generalDelivery + ", Address Scanability: "
-            + scannability + ", Address Readability: " + readability + ", Address Address: "
-            + address + ", Return address: " + returnAddress;
+                + scannability + ", Address Readability: " + readability + ", Address Address: "
+                + address + ", Return address: " + returnAddress;
     }
 
     // Generate test Mail:

@@ -5,29 +5,57 @@ package section_03;
  * @Date 2019/04/11
  */
 class Meal {
-		Meal() { System.out.println("Meal()"); }
+    Meal() {
+        System.out.println("Meal()");
+    }
 }
+
+
 class Bread {
-		Bread() { System.out.println("Bread()"); }
+    Bread() {
+        System.out.println("Bread()");
+    }
 }
+
+
 class Cheese {
-		Cheese() { System.out.println("Cheese()"); }
+    Cheese() {
+        System.out.println("Cheese()");
+    }
 }
+
+
 class Lettuce {
-		Lettuce() { System.out.println("Lettuce()"); }
+    Lettuce() {
+        System.out.println("Lettuce()");
+    }
 }
+
+
 class Lunch extends Meal {
-		Lunch() { System.out.println("Lunch()"); }
+    Lunch() {
+        System.out.println("Lunch()");
+    }
 }
+
+
 class PortableLunch extends Lunch {
-		PortableLunch() { System.out.println("PortableLunch()");}
+    PortableLunch() {
+        System.out.println("PortableLunch()");
+    }
 }
+
+
 public class Sandwich extends PortableLunch {
-		private Bread b = new Bread();
-		private Cheese c = new Cheese();
-		private Lettuce l = new Lettuce();
-		public Sandwich() { System.out.println("Sandwich()"); }
-		public static void main(String[] args) {
-				new Sandwich();
-		}
+    private Bread b = new Bread();
+    private Cheese c = new Cheese();
+    private Lettuce l = new Lettuce();
+
+    public Sandwich() {
+        System.out.println("Sandwich()");
+    }
+
+    public static void main(String[] args) {
+        new Sandwich();
+    }
 }

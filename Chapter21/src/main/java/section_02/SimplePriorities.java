@@ -29,11 +29,11 @@ public class SimplePriorities implements Runnable {
                 if (i % 1000 == 0)
                     Thread.yield();
             }
-//            try {
-//                TimeUnit.MILLISECONDS.sleep(1000);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
+            //            try {
+            //                TimeUnit.MILLISECONDS.sleep(1000);
+            //            } catch (InterruptedException e) {
+            //                e.printStackTrace();
+            //            }
             System.out.println(this);
             if (--countDown == 0)
                 return;

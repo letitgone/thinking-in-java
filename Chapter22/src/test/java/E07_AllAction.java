@@ -33,8 +33,8 @@ class AllAction extends JFrame {
         txt.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane
-                    .showMessageDialog(null, "JTexfField ActionListener fired", "information",
-                        JOptionPane.INFORMATION_MESSAGE);
+                        .showMessageDialog(null, "JTexfField ActionListener fired", "information",
+                                JOptionPane.INFORMATION_MESSAGE);
             }
         });
         jcb.addActionListener(new ActionListener() {

@@ -46,7 +46,7 @@ class SimpleHashMap4<K, V> extends SimpleHashMap3<K, V> {
 public class E23_FullSimpleHashMap {
     public static void main(String args[]) {
         SimpleHashMap4<String, String> m = new SimpleHashMap4<String, String>(), m2 =
-            new SimpleHashMap4<String, String>();
+                new SimpleHashMap4<String, String>();
         m.putAll(Countries.capitals(10));
         m2.putAll(Countries.capitals(10));
         print("m.size() = " + m.size());

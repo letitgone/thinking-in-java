@@ -10,8 +10,8 @@ import java.util.Random;
 public class IceCream {
     private static Random rand = new Random(47);
     static final String[] FLAVORS =
-        {"Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
-            "Rum Raisin", "Praline Cream", "Mud Pie"};
+            {"Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
+                    "Rum Raisin", "Praline Cream", "Mud Pie"};
 
     public static String[] flavorSet(int n) {
         if (n > FLAVORS.length) {
@@ -23,7 +23,7 @@ public class IceCream {
             int t;
             do {
                 t = rand.nextInt(FLAVORS.length);
-            }while (picked[t]);
+            } while (picked[t]);
             results[i] = FLAVORS[t];
             picked[t] = true;
         }

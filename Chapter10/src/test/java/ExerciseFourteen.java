@@ -3,60 +3,101 @@
  * @Date 2019/05/09
  */
 interface Monster {
-		void menace();
+    void menace();
 }
+
+
 interface DangerousMonster extends Monster {
-		void destroy();
+    void destroy();
 }
+
+
 interface Lethal {
-		void kill();
+    void kill();
 }
+
+
 class DragonZilla implements DangerousMonster {
-		public void menace() {}
-		public void destroy() {}
+    public void menace() {
+    }
+
+    public void destroy() {
+    }
 }
+
+
 interface Vampire extends DangerousMonster, Lethal {
-		void drinkBlood();
+    void drinkBlood();
 }
+
+
 class VeryBadVampire implements Vampire {
-		public void menace() {}
-		public void destroy() {}
-		public void kill() {}
-		public void drinkBlood() {}
+    public void menace() {
+    }
+
+    public void destroy() {
+    }
+
+    public void kill() {
+    }
+
+    public void drinkBlood() {
+    }
 }
+
+
 class HorrorShow {
-		static void u(Monster b) { b.menace(); }
-		static void v(DangerousMonster d) {
-				d.menace();
-				d.destroy();
-		}
-		static void w(Lethal l) { l.kill(); }
-		public static void main(String[] args) {
-				DangerousMonster barney = new DragonZilla();
-				u(barney);
-				v(barney);
-				Vampire vlad = new VeryBadVampire();
-				u(vlad);
-				v(vlad);
-				w(vlad);
-		}
+    static void u(Monster b) {
+        b.menace();
+    }
+
+    static void v(DangerousMonster d) {
+        d.menace();
+        d.destroy();
+    }
+
+    static void w(Lethal l) {
+        l.kill();
+    }
+
+    public static void main(String[] args) {
+        DangerousMonster barney = new DragonZilla();
+        u(barney);
+        v(barney);
+        Vampire vlad = new VeryBadVampire();
+        u(vlad);
+        v(vlad);
+        w(vlad);
+    }
 }
+
+
 public class ExerciseFourteen {
-		public static void main(String[] args) {
-				DangerousMonster barney = new DangerousMonster() {
-						public void menace() {}
-						public void destroy() {}
-				};
-				HorrorShow.u(barney);
-				HorrorShow.v(barney);
-				Vampire vlad = new Vampire() {
-						public void menace() {}
-						public void destroy() {}
-						public void kill() {}
-						public void drinkBlood() {}
-				};
-				HorrorShow.u(vlad);
-				HorrorShow.v(vlad);
-				HorrorShow.w(vlad);
-		}
+    public static void main(String[] args) {
+        DangerousMonster barney = new DangerousMonster() {
+            public void menace() {
+            }
+
+            public void destroy() {
+            }
+        };
+        HorrorShow.u(barney);
+        HorrorShow.v(barney);
+        Vampire vlad = new Vampire() {
+            public void menace() {
+            }
+
+            public void destroy() {
+            }
+
+            public void kill() {
+            }
+
+            public void drinkBlood() {
+            }
+        };
+        HorrorShow.u(vlad);
+        HorrorShow.v(vlad);
+        HorrorShow.w(vlad);
+    }
 }

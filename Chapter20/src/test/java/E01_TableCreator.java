@@ -34,12 +34,17 @@ import java.util.List;
 
 @DBTable(name = "MEMBER")
 class Member {
-    @SQLString(30) String firstName;
-    @SQLString(50) String lastName;
-    @SQLInteger Integer age;
-    @SQLCharacter(value = 15, constraints = @Constraints(primaryKey = true)) String handle;
+    @SQLString(30)
+    String firstName;
+    @SQLString(50)
+    String lastName;
+    @SQLInteger
+    Integer age;
+    @SQLCharacter(value = 15, constraints = @Constraints(primaryKey = true))
+    String handle;
     static int memberCount;
-    @SQLBoolean Boolean isVIP;
+    @SQLBoolean
+    Boolean isVIP;
 
     public String getHandle() {
         return handle;
@@ -105,9 +110,9 @@ public class E01_TableCreator {
                         columnName = field.getName().toUpperCase();
                     else
                         columnName = sString.name();
-                    columnDefs.add(
-                        columnName + " VARCHAR(" + sString.value() + ")" + getConstraints(
-                            sString.constraints()));
+                    columnDefs
+                            .add(columnName + " VARCHAR(" + sString.value() + ")" + getConstraints(
+                                    sString.constraints()));
                 } else if (anns[0] instanceof SQLBoolean) {
                     SQLBoolean sBol = (SQLBoolean) anns[0];
                     // Use field name if name not specified
@@ -123,9 +128,9 @@ public class E01_TableCreator {
                         columnName = field.getName().toUpperCase();
                     else
                         columnName = sChar.name();
-                    columnDefs.add(
-                        columnName + " CHARACTER(" + sChar.value() + ")" + getConstraints(
-                            sChar.constraints()));
+                    columnDefs
+                            .add(columnName + " CHARACTER(" + sChar.value() + ")" + getConstraints(
+                                    sChar.constraints()));
                 }
                 StringBuilder createCommand = new StringBuilder("CREATE TABLE " + tableName + "(");
                 for (String columnDef : columnDefs)

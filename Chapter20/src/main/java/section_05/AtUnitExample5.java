@@ -24,8 +24,10 @@ public class AtUnitExample5 {
         return text;
     }
 
-    @TestProperty static PrintWriter output;
-    @TestProperty static int counter;
+    @TestProperty
+    static PrintWriter output;
+    @TestProperty
+    static int counter;
 
     @TestObjectCreate
     static AtUnitExample5 create() {

@@ -5,7 +5,7 @@ package section_01;
  * @Date 2019/04/10
  */
 public class Instrument {
-		public void play(Note n){
-				System.out.println("Instrument.play()");
-		}
+    public void play(Note n) {
+        System.out.println("Instrument.play()");
+    }
 }

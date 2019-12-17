@@ -10,8 +10,8 @@ import static net.mindview.util.Print.print;
  */
 public class E17_ShowMethods2 {
     private static String usage = "usage:\n" + "E17_ShowMethods2 qualified.class.name\n"
-        + "To show all methods in class or:\n" + "E17_ShowMethods2 qualified.class.name word\n"
-        + "To search for methods involving 'word'";
+            + "To show all methods in class or:\n" + "E17_ShowMethods2 qualified.class.name word\n"
+            + "To search for methods involving 'word'";
     private static Pattern p = Pattern.compile("\\w+\\.|native\\s|final\\s");
 
     public static void main(String[] args) {

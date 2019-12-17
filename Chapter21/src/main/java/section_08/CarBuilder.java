@@ -41,7 +41,7 @@ class Car {
 
     public synchronized String toString() {
         return "Car " + id + " [" + " engine: " + engine + " driveTrain: " + driveTrain
-            + " wheels: " + wheels + " ]";
+                + " wheels: " + wheels + " ]";
     }
 }
 
@@ -243,7 +243,7 @@ class RobotPool {
     }
 
     public synchronized void hire(Class<? extends Robot> robotType, Assembler d)
-        throws InterruptedException {
+            throws InterruptedException {
         for (Robot r : pool)
             if (r.getClass().equals(robotType)) {
                 pool.remove(r);

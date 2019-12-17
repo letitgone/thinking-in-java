@@ -19,7 +19,8 @@ public class People extends ArrayList<Person> {
     }
 
     public static void main(String[] args) throws Exception {
-        People p = new People("/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/People.xml");
+        People p = new People(
+                "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/People.xml");
         System.out.println(p);
     }
 }

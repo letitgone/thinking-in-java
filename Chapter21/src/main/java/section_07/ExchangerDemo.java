@@ -74,8 +74,10 @@ public class ExchangerDemo {
             delay = new Integer(args[1]);
         ExecutorService exec = Executors.newCachedThreadPool();
         Exchanger<List<Fat>> xc = new Exchanger<List<Fat>>();
-        List<Fat> producerList = new CopyOnWriteArrayList<Fat>(), consumerList = new CopyOnWriteArrayList<Fat>();
-        exec.execute(new ExchangerProducer<Fat>(xc, BasicGenerator.create(Fat.class), producerList));
+        List<Fat> producerList = new CopyOnWriteArrayList<Fat>(), consumerList =
+                new CopyOnWriteArrayList<Fat>();
+        exec.execute(
+                new ExchangerProducer<Fat>(xc, BasicGenerator.create(Fat.class), producerList));
         exec.execute(new ExchangerConsumer<Fat>(xc, consumerList));
         TimeUnit.SECONDS.sleep(delay);
         exec.shutdownNow();

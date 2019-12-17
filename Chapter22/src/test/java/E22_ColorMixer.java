@@ -33,12 +33,12 @@ class ColorMixer extends JFrame {
 
 
     ColorSlider red = new ColorSlider("red"), green = new ColorSlider("green"), blue =
-        new ColorSlider("blue");
+            new ColorSlider("blue");
     JPanel color = new JPanel();
 
     void reColor() {
         color.setBackground(
-            new Color(red.slider.getValue(), green.slider.getValue(), blue.slider.getValue()));
+                new Color(red.slider.getValue(), green.slider.getValue(), blue.slider.getValue()));
     }
 
     public ColorMixer() {

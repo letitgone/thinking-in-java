@@ -5,17 +5,19 @@ package section_04;
  * @Date 2019/03/27
  */
 public class Leaf {
-		int i = 0;
-		Leaf increment(){
-				i++;
-				return this;
-		}
-		void print(){
-				System.out.println("i = " + i);
-		}
+    int i = 0;
 
-		public static void main(String[] args) {
-				Leaf x = new Leaf();
-				x.increment().increment().increment().print();
-		}
+    Leaf increment() {
+        i++;
+        return this;
+    }
+
+    void print() {
+        System.out.println("i = " + i);
+    }
+
+    public static void main(String[] args) {
+        Leaf x = new Leaf();
+        x.increment().increment().increment().print();
+    }
 }

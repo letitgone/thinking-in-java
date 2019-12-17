@@ -6,10 +6,11 @@ package section_08;
  */
 public class Erased<T> {
     private final int SIZE = 100;
+
     public static void f(Object arg) {
-//        if(arg instanceof T) {}
-//        T var = new T();
-//        T[] array = new T[SIZE];
-//        T[] array1 = (T)new Object[SIZE]; // Unchecked warning
+        //        if(arg instanceof T) {}
+        //        T var = new T();
+        //        T[] array = new T[SIZE];
+        //        T[] array1 = (T)new Object[SIZE]; // Unchecked warning
     }
 }

@@ -5,7 +5,7 @@ package exercisenine.local;
  * @Date 2019/04/06
  */
 public class PackagedClass {
-		public PackagedClass(){
-				System.out.println("Creating a packaged class");
-		}
+    public PackagedClass() {
+        System.out.println("Creating a packaged class");
+    }
 }

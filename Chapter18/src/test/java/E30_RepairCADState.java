@@ -25,7 +25,7 @@ abstract class Shape implements Serializable {
 
     public String toString() {
         return getClass() + "color[" + getColor() + "] xPos[" + xPos + "] yPos[" + yPos + "] dim["
-            + dimension + "]\n";
+                + dimension + "]\n";
     }
 
     public static Shape randomFactory() {

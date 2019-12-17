@@ -15,18 +15,22 @@ class Amphibian {
 class Vehicle {
 }
 
-class TupleTest2{
+
+class TupleTest2 {
     static FourTuple<Vehicle, Amphibian, String, Integer> h() {
-        return new FourTuple<Vehicle, Amphibian, String, Integer>(new Vehicle(), new Amphibian(), "hi", 47);
+        return new FourTuple<Vehicle, Amphibian, String, Integer>(new Vehicle(), new Amphibian(),
+                "hi", 47);
     }
 }
-public class TupleList<A,B,C,D>
-    extends ArrayList<FourTuple<A,B,C,D>> {
+
+
+public class TupleList<A, B, C, D> extends ArrayList<FourTuple<A, B, C, D>> {
     public static void main(String[] args) {
-        TupleList<Vehicle, Amphibian, String, Integer> tl = new TupleList<Vehicle, Amphibian, String, Integer>();
+        TupleList<Vehicle, Amphibian, String, Integer> tl =
+                new TupleList<Vehicle, Amphibian, String, Integer>();
         tl.add(TupleTest2.h());
         tl.add(TupleTest2.h());
-        for(FourTuple<Vehicle,Amphibian,String,Integer> i: tl)
+        for (FourTuple<Vehicle, Amphibian, String, Integer> i : tl)
             System.out.println(i);
     }
 }

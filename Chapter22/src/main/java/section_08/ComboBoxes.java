@@ -13,8 +13,8 @@ import static section_02.SwingConsole.run;
  */
 public class ComboBoxes extends JFrame {
     private String[] description =
-        {"Ebullient", "Obtuse", "Recalcitrant", "Brilliant", "Somnescent", "Timorous", "Florid",
-            "Putrescent"};
+            {"Ebullient", "Obtuse", "Recalcitrant", "Brilliant", "Somnescent", "Timorous", "Florid",
+                    "Putrescent"};
     private JTextField t = new JTextField(15);
     private JComboBox c = new JComboBox();
     private JButton b = new JButton("Add items");
@@ -33,7 +33,7 @@ public class ComboBoxes extends JFrame {
         c.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 t.setText("index: " + c.getSelectedIndex() + " " + ((JComboBox) e.getSource())
-                    .getSelectedItem());
+                        .getSelectedItem());
             }
         });
         setLayout(new FlowLayout());

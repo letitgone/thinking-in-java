@@ -35,7 +35,8 @@ class MixinProxy implements InvocationHandler {
         return method.invoke(delegate, args);
     }
 
-    @SuppressWarnings("unchecked") public static Object newInstance(TwoTuple... pairs) {
+    @SuppressWarnings("unchecked")
+    public static Object newInstance(TwoTuple... pairs) {
         Class[] interfaces = new Class[pairs.length];
         for (int i = 0; i < pairs.length; i++) {
             interfaces[i] = (Class) pairs[i].second;
@@ -49,8 +50,8 @@ class MixinProxy implements InvocationHandler {
 public class DynamicProxyMixin {
     public static void main(String[] args) {
         Object mixin = MixinProxy.newInstance(tuple(new BasicImp(), Basic.class),
-            tuple(new TimeStampedImp(), TimeStamped.class),
-            tuple(new SerialNumberedImp(), SerialNumbered.class));
+                tuple(new TimeStampedImp(), TimeStamped.class),
+                tuple(new SerialNumberedImp(), SerialNumbered.class));
         Basic b = (Basic) mixin;
         TimeStamped t = (TimeStamped) mixin;
         SerialNumbered s = (SerialNumbered) mixin;

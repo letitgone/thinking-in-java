@@ -84,7 +84,7 @@ abstract class Accumulator {
 
     public static void report(Accumulator acc1, Accumulator acc2) {
         printf("%-22s: %.2f\n", acc1.id + "/" + acc2.id,
-            (double) acc1.duration / (double) acc2.duration);
+                (double) acc1.duration / (double) acc2.duration);
     }
 }
 

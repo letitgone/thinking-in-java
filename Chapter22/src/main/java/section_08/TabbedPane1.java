@@ -13,8 +13,8 @@ import static section_02.SwingConsole.run;
  */
 public class TabbedPane1 extends JFrame {
     private String[] flavors =
-        {"Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
-            "Rum Raisin", "Praline Cream", "Mud Pie"};
+            {"Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
+                    "Rum Raisin", "Praline Cream", "Mud Pie"};
     private JTabbedPane tabs = new JTabbedPane();
     private JTextField txt = new JTextField(20);
 

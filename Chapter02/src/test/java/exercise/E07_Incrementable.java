@@ -7,15 +7,15 @@ package exercise;
  */
 public class E07_Incrementable {
 
-		static class StaticTest {
-				static int i = 47;
-		}
+    static class StaticTest {
+        static int i = 47;
+    }
 
-		static void increment(){
-				StaticTest.i++;
-		}
+    static void increment() {
+        StaticTest.i++;
+    }
 
-		public static void main(String[] args) {
-				E07_Incrementable.increment();
-		}
+    public static void main(String[] args) {
+        E07_Incrementable.increment();
+    }
 }

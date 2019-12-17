@@ -33,7 +33,8 @@ public class E30_SortPerformance {
         }
 
         // Fill to the appropriate size before each test:
-        @Override protected List<Integer> initialize(int size) {
+        @Override
+        protected List<Integer> initialize(int size) {
             container.clear();
             container.addAll(CollectionData.list(new RandomGenerator.Integer(), size));
             return container;

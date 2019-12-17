@@ -84,7 +84,7 @@ public class BangBean extends JPanel implements Serializable {
             // Call the listener’s method:
             if (actionListener != null)
                 actionListener.actionPerformed(
-                    new ActionEvent(BangBean.this, ActionEvent.ACTION_PERFORMED, null));
+                        new ActionEvent(BangBean.this, ActionEvent.ACTION_PERFORMED, null));
         }
     }
 

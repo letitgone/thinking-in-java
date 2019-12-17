@@ -11,6 +11,7 @@ class OnOffException1 extends Exception {
 class OnOffException2 extends Exception {
 }
 
+
 public class ExerciseFourteen {
     static Switch sw = new Switch();
 
@@ -34,7 +35,8 @@ public class ExerciseFourteen {
             }
         } catch (RuntimeException e) {
             System.out.println(sw);
-            System.out.println("Oops! the exception '" + e + "' slipped through without turning the switch off!");
+            System.out.println("Oops! the exception '" + e
+                    + "' slipped through without turning the switch off!");
         }
     }
 }

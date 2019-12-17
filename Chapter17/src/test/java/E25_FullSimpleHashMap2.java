@@ -42,8 +42,7 @@ class SimpleHashMap5<K, V> extends AbstractMap<K, V> {
 
         public boolean equals(Object o) {
             if (o instanceof Entry) {
-                @SuppressWarnings("unchecked")
-                Entry<K, V> e = (Entry<K, V>) o;
+                @SuppressWarnings("unchecked") Entry<K, V> e = (Entry<K, V>) o;
                 Object key1 = getKey();
                 Object key2 = e.getKey();
                 if (key1.equals(key2)) {
@@ -169,7 +168,7 @@ class SimpleHashMap5<K, V> extends AbstractMap<K, V> {
 public class E25_FullSimpleHashMap2 {
     public static void main(String args[]) {
         SimpleHashMap5<String, String> m = new SimpleHashMap5<String, String>(), m2 =
-            new SimpleHashMap5<String, String>();
+                new SimpleHashMap5<String, String>();
         m.putAll(Countries.capitals(10));
         m2.putAll(Countries.capitals(10));
         print("m.size() = " + m.size());

@@ -138,7 +138,8 @@ public class ListPerformance {
         }
 
         // Fill to the appropriate size before each test:
-        @Override protected List<Integer> initialize(int size) {
+        @Override
+        protected List<Integer> initialize(int size) {
             container.clear();
             container.addAll(new CountingIntegerList(size));
             return container;
@@ -157,9 +158,10 @@ public class ListPerformance {
         Tester<List<Integer>> arrayTest = new Tester<List<Integer>>(null, tests.subList(1, 3)) {
             // This will be called before each test. It
             // produces a non-resizeable array-backed list:
-            @Override protected List<Integer> initialize(int size) {
+            @Override
+            protected List<Integer> initialize(int size) {
                 Integer[] ia =
-                    Generated.array(Integer.class, new CountingGenerator.Integer(), size);
+                        Generated.array(Integer.class, new CountingGenerator.Integer(), size);
                 return Arrays.asList(ia);
             }
         };
@@ -173,7 +175,7 @@ public class ListPerformance {
         ListTester.run(new Vector<Integer>(), tests);
         Tester.fieldWidth = 12;
         Tester<LinkedList<Integer>> qTest =
-            new Tester<LinkedList<Integer>>(new LinkedList<Integer>(), qTests);
+                new Tester<LinkedList<Integer>>(new LinkedList<Integer>(), qTests);
         qTest.setHeadline("Queue tests");
         qTest.timedTest();
     }

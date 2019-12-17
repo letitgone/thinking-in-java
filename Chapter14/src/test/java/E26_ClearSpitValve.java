@@ -123,7 +123,8 @@ class Music5 {
 
 public class E26_ClearSpitValve {
     public static void main(String[] args) {
-        Instrument[] orchestra = {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind(),};
+        Instrument[] orchestra =
+                {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind(),};
         Music5.prepareAll(orchestra);
         Music5.tuneAll(orchestra);
     }

@@ -12,7 +12,7 @@ public class E13_CountLines {
         // BufferedReader so we don't need to
         // explicitly buffer it:
         LineNumberReader in = new LineNumberReader(new FileReader(
-            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E13_CountLines.java"));
+                "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E13_CountLines.java"));
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(file)));
         String s;
         while ((s = in.readLine()) != null)

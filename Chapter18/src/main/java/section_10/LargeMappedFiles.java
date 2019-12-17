@@ -16,7 +16,7 @@ public class LargeMappedFiles {
 
     public static void main(String[] args) throws Exception {
         MappedByteBuffer out = new RandomAccessFile("test.dat", "rw").getChannel()
-            .map(FileChannel.MapMode.READ_WRITE, 0, length);
+                .map(FileChannel.MapMode.READ_WRITE, 0, length);
         for (int i = 0; i < length; i++)
             out.put((byte) 'x');
         print("Finished writing");

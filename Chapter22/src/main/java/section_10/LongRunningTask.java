@@ -14,7 +14,7 @@ import static section_02.SwingConsole.run;
  */
 public class LongRunningTask extends JFrame {
     private JButton b1 = new JButton("Start Long Running Task"), b2 =
-        new JButton("End Long Running Task");
+            new JButton("End Long Running Task");
 
     public LongRunningTask() {
         b1.addActionListener(new ActionListener() {

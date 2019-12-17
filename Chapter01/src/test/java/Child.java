@@ -13,7 +13,7 @@ public class Child extends Base {
 
     @Override
     public void addAll(int[] numbers) {
-//        super.addAll(numbers);
+        //        super.addAll(numbers);
         for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];
         }
@@ -25,7 +25,7 @@ public class Child extends Base {
 
     public static void main(String[] args) {
         Child c = new Child();
-        c.addAll(new int[] { 1, 2, 3 });
+        c.addAll(new int[] {1, 2, 3});
         System.out.println(c.getSum());
     }
 }

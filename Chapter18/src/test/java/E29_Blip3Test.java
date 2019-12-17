@@ -28,8 +28,8 @@ class Blip3B extends Blip3 {
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         print("Blip3B.readExternal");
         // You must do this:
-//        s = (String) in.readObject();
-//        i = in.readInt();
+        //        s = (String) in.readObject();
+        //        i = in.readInt();
     }
 }
 

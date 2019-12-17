@@ -5,17 +5,21 @@ package section_07;
  * @Date 2019/04/08
  */
 class Instrument {
-		public void play() {}
-		static void tune(Instrument i) {
-				// ...
-				i.play();
-		}
+    public void play() {
+    }
+
+    static void tune(Instrument i) {
+        // ...
+        i.play();
+    }
 }
+
+
 // Wind objects are instruments
 // because they have the same interface:
 public class Wind extends Instrument {
-		public static void main(String[] args) {
-				Wind flute = new Wind();
-				Instrument.tune(flute); // Upcasting
-		}
+    public static void main(String[] args) {
+        Wind flute = new Wind();
+        Instrument.tune(flute); // Upcasting
+    }
 }

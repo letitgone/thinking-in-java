@@ -48,9 +48,9 @@ public class TableCreator {
                         columnName = field.getName().toUpperCase();
                     else
                         columnName = sString.name();
-                    columnDefs.add(
-                        columnName + " VARCHAR(" + sString.value() + ")" + getConstraints(
-                            sString.constraints()));
+                    columnDefs
+                            .add(columnName + " VARCHAR(" + sString.value() + ")" + getConstraints(
+                                    sString.constraints()));
                 }
                 StringBuilder createCommand = new StringBuilder("CREATE TABLE " + tableName + "(");
                 for (String columnDef : columnDefs)

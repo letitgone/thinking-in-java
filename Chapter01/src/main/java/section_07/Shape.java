@@ -5,10 +5,11 @@ package section_07;
  * @Date 2019/03/11
  */
 public class Shape {
-		void erase(){
-				System.out.println("erase");
-		}
-		void draw(){
-				System.out.println("draw");
-		}
+    void erase() {
+        System.out.println("erase");
+    }
+
+    void draw() {
+        System.out.println("draw");
+    }
 }

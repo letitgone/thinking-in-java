@@ -16,8 +16,8 @@ import static section_02.SwingConsole.run;
  */
 public class List extends JFrame {
     private String[] flavors =
-        {"Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
-            "Rum Raisin", "Praline Cream", "Mud Pie"};
+            {"Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
+                    "Rum Raisin", "Praline Cream", "Mud Pie"};
     private DefaultListModel lItems = new DefaultListModel();
     private JList lst = new JList(lItems);
     private JTextArea t = new JTextArea(flavors.length, 20);

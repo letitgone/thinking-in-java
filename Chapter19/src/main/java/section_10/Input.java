@@ -7,7 +7,8 @@ import java.util.Random;
  * @Date 2019/10/04
  */
 public enum Input {
-    NICKEL(5), DIME(10), QUARTER(25), DOLLAR(100), TOOTHPASTE(200), CHIPS(75), SODA(100), SOAP(50), ABORT_TRANSACTION {
+    NICKEL(5), DIME(10), QUARTER(25), DOLLAR(100), TOOTHPASTE(200), CHIPS(75), SODA(100), SOAP(
+            50), ABORT_TRANSACTION {
         public int amount() { // Disallow
             throw new RuntimeException("ABORT.amount()");
         }

@@ -73,9 +73,9 @@ public class E34_ExchangerDemo2 {
         ExecutorService exec = Executors.newCachedThreadPool();
         Exchanger<List<Integer>> xc = new Exchanger<List<Integer>>();
         List<Integer> producerList = new CopyOnWriteArrayList<Integer>(), consumerList =
-            new CopyOnWriteArrayList<Integer>();
+                new CopyOnWriteArrayList<Integer>();
         exec.execute(
-            new ExchangerProducer<Integer>(xc, new CountingGenerator.Integer(), producerList));
+                new ExchangerProducer<Integer>(xc, new CountingGenerator.Integer(), producerList));
         exec.execute(new ExchangerConsumer<Integer>(xc, consumerList));
         TimeUnit.SECONDS.sleep(delay);
         exec.shutdownNow();

@@ -12,7 +12,8 @@ import static net.mindview.util.Print.print;
  */
 public class LinkedHashMapDemo {
     public static void main(String[] args) {
-        LinkedHashMap<Integer, String> linkedMap = new LinkedHashMap<Integer, String>(new CountingMapData(9));
+        LinkedHashMap<Integer, String> linkedMap =
+                new LinkedHashMap<Integer, String>(new CountingMapData(9));
         print(linkedMap);
         // Least-recently-used order:
         linkedMap = new LinkedHashMap<Integer, String>(16, 0.75f, true);

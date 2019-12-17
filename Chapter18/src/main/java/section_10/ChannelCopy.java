@@ -18,7 +18,7 @@ public class ChannelCopy {
             System.exit(1);
         }
         FileChannel in = new FileInputStream(args[0]).getChannel(), out =
-            new FileOutputStream(args[1]).getChannel();
+                new FileOutputStream(args[1]).getChannel();
         ByteBuffer buffer = ByteBuffer.allocate(BSIZE);
         while (in.read(buffer) != -1) {
             buffer.flip(); // Prepare for writing

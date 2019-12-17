@@ -196,7 +196,7 @@ class Merger implements Runnable {
     private ToastQueue in1Queue, in2Queue, toBeButteredQueue, toBeJammedQueue, finishedQueue;
 
     public Merger(ToastQueue in1, ToastQueue in2, ToastQueue toBeButtered, ToastQueue toBeJammed,
-        ToastQueue finished) {
+            ToastQueue finished) {
         in1Queue = in1;
         in2Queue = in2;
         toBeButteredQueue = toBeButtered;
@@ -238,15 +238,15 @@ class Merger implements Runnable {
 public class E29_ToastOMatic2 {
     public static void main(String[] args) throws Exception {
         ToastQueue dryQueue = new ToastQueue(), butteredQueue = new ToastQueue(),
-            toBeButteredQueue = new ToastQueue(), jammedQueue = new ToastQueue(), toBeJammedQueue =
-            new ToastQueue(), finishedQueue = new ToastQueue();
+                toBeButteredQueue = new ToastQueue(), jammedQueue = new ToastQueue(),
+                toBeJammedQueue = new ToastQueue(), finishedQueue = new ToastQueue();
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new Toaster(dryQueue));
         exec.execute(new Alternator(dryQueue, toBeButteredQueue, toBeJammedQueue));
         exec.execute(new Butterer(toBeButteredQueue, butteredQueue));
         exec.execute(new Jammer(toBeJammedQueue, jammedQueue));
         exec.execute(new Merger(butteredQueue, jammedQueue, toBeButteredQueue, toBeJammedQueue,
-            finishedQueue));
+                finishedQueue));
         exec.execute(new Eater(finishedQueue));
         TimeUnit.SECONDS.sleep(5);
         exec.shutdownNow();

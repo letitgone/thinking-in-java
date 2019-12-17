@@ -139,7 +139,8 @@ public class E29_ListPerformance2 {
         }
 
         // Fill to the appropriate size before each test:
-        @Override protected List<String> initialize(int size) {
+        @Override
+        protected List<String> initialize(int size) {
             container.clear();
             container.addAll(CollectionData.list(new CountingGenerator.String(), size));
             return container;
@@ -158,7 +159,8 @@ public class E29_ListPerformance2 {
         Tester<List<String>> arrayTest = new Tester<List<String>>(null, tests.subList(1, 3)) {
             // This will be called before each test. It
             // produces a non-resizeable array-backed list:
-            @Override protected List<String> initialize(int size) {
+            @Override
+            protected List<String> initialize(int size) {
                 String[] sa = Generated.array(String.class, new CountingGenerator.String(), size);
                 return Arrays.asList(sa);
             }
@@ -173,7 +175,7 @@ public class E29_ListPerformance2 {
         ListTester.run(new Vector<String>(), tests);
         Tester.fieldWidth = 12;
         Tester<LinkedList<String>> qTest =
-            new Tester<LinkedList<String>>(new LinkedList<String>(), qTests);
+                new Tester<LinkedList<String>>(new LinkedList<String>(), qTests);
         qTest.setHeadline("Queue tests");
         qTest.timedTest();
     }

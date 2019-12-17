@@ -19,29 +19,30 @@ import static net.mindview.util.SwingConsole.run;
  * @Author ZhangGJ
  * @Date 2019/10/07
  */
-class CallableTask extends Task
-    implements Callable<String> {
+class CallableTask extends Task implements Callable<String> {
     public String call() {
         run();
         return "Return value of " + this;
     }
 }
-class TaskManager<R,C extends Callable<R>>
-    extends ArrayList<TwoTuple<Future<R>,C>> {
-    private ExecutorService exec =
-        Executors.newCachedThreadPool();
+
+
+class TaskManager<R, C extends Callable<R>> extends ArrayList<TwoTuple<Future<R>, C>> {
+    private ExecutorService exec = Executors.newCachedThreadPool();
+
     public void add(C task) {
-        add(new TwoTuple<Future<R>,C>(exec.submit(task),task));
+        add(new TwoTuple<Future<R>, C>(exec.submit(task), task));
     }
+
     public List<R> getResults() {
-        Iterator<TwoTuple<Future<R>,C>> items = iterator();
+        Iterator<TwoTuple<Future<R>, C>> items = iterator();
         List<R> results = new ArrayList<R>();
-        while(items.hasNext()) {
-            TwoTuple<Future<R>,C> item = items.next();
-            if(item.first.isDone()) {
+        while (items.hasNext()) {
+            TwoTuple<Future<R>, C> item = items.next();
+            if (item.first.isDone()) {
                 try {
                     results.add(item.first.get());
-                } catch(Exception e) {
+                } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
                 items.remove();
@@ -49,12 +50,13 @@ class TaskManager<R,C extends Callable<R>>
         }
         return results;
     }
+
     public List<String> purge() {
-        Iterator<TwoTuple<Future<R>,C>> items = iterator();
+        Iterator<TwoTuple<Future<R>, C>> items = iterator();
         List<String> results = new ArrayList<String>();
-        while(items.hasNext()) {
-            TwoTuple<Future<R>,C> item = items.next();
-            if(!item.first.isDone()) {
+        while (items.hasNext()) {
+            TwoTuple<Future<R>, C> item = items.next();
+            if (!item.first.isDone()) {
                 results.add("Cancelling " + item.second);
                 item.first.cancel(true); // May interrupt
                 items.remove();
@@ -63,32 +65,33 @@ class TaskManager<R,C extends Callable<R>>
         return results;
     }
 }
+
+
 public class E33_ParallelCallables extends JFrame {
-    private JButton
-        b1 = new JButton("Start Long Running Task"),
-        b2 = new JButton("End Long Running Task"),
-        b3 = new JButton("Get results");
-    private TaskManager<String,CallableTask> manager =
-        new TaskManager<String,CallableTask>();
+    private JButton b1 = new JButton("Start Long Running Task"), b2 =
+            new JButton("End Long Running Task"), b3 = new JButton("Get results");
+    private TaskManager<String, CallableTask> manager = new TaskManager<String, CallableTask>();
+
     public E33_ParallelCallables() {
         b1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 CallableTask task = new CallableTask();
                 manager.add(task);
                 System.out.println(task + " added to the queue");
-            } });
+            }
+        });
         b2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                for(String result : manager.purge())
+                for (String result : manager.purge())
                     System.out.println(result);
-            } });
+            }
+        });
         b3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                for(TwoTuple<Future<String>,CallableTask> tt :
-                    manager)
-//                    tt.second.id(); // No cast required
-                for(String result : manager.getResults())
-                    System.out.println(result);
+                for (TwoTuple<Future<String>, CallableTask> tt : manager)
+                    //                    tt.second.id(); // No cast required
+                    for (String result : manager.getResults())
+                        System.out.println(result);
             }
         });
         setLayout(new FlowLayout());
@@ -96,6 +99,7 @@ public class E33_ParallelCallables extends JFrame {
         add(b2);
         add(b3);
     }
+
     public static void main(String[] args) {
         run(new E33_ParallelCallables(), 200, 150);
     }

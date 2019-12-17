@@ -10,8 +10,8 @@ public class E17_CharactersInfo {
     public static void main(String[] args) {
         Map<Character, Integer> charsStat = new HashMap<Character, Integer>();
         for (String word : new TextFile(
-            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E17_CharactersInfo.java",
-            "\\W+"))
+                "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E17_CharactersInfo.java",
+                "\\W+"))
             for (int i = 0; i < word.length(); i++) {
                 Character ch = word.charAt(i);
                 Integer freq = charsStat.get(ch);

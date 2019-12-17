@@ -14,7 +14,7 @@ import static section_02.SwingConsole.run;
 public class CheckBoxes extends JFrame {
     private JTextArea t = new JTextArea(6, 15);
     private JCheckBox cb1 = new JCheckBox("Check Box 1"), cb2 = new JCheckBox("Check Box 2"), cb3 =
-        new JCheckBox("Check Box 3");
+            new JCheckBox("Check Box 3");
 
     public CheckBoxes() {
         cb1.addActionListener(new ActionListener() {

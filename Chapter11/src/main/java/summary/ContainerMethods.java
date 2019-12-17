@@ -7,7 +7,7 @@ import net.mindview.util.ContainerMethodDifferences;
  * @Date 2019/05/30
  */
 public class ContainerMethods {
-		public static void main(String[] args) {
-				ContainerMethodDifferences.main(args);
-		}
+    public static void main(String[] args) {
+        ContainerMethodDifferences.main(args);
+    }
 }

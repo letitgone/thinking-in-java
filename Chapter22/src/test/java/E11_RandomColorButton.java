@@ -12,9 +12,9 @@ import static section_02.SwingConsole.run;
  */
 class RandomColorButton extends JButton {
     private static final Color[] colors =
-        {Color.black, Color.blue, Color.cyan, Color.darkGray, Color.gray, Color.green,
-            Color.lightGray, Color.magenta, Color.orange, Color.pink, Color.red, Color.white,
-            Color.yellow};
+            {Color.black, Color.blue, Color.cyan, Color.darkGray, Color.gray, Color.green,
+                    Color.lightGray, Color.magenta, Color.orange, Color.pink, Color.red,
+                    Color.white, Color.yellow};
     private static Random rnd = new Random(47);
 
     private static final Color newColor() {
