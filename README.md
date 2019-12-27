@@ -234,7 +234,7 @@ d.通过继承来进行复用的优缺点
 ###### 4)依赖倒转原则
 所谓依赖倒转（Dependency Inversion Principle）有两条：A.高层次的模块不应该依赖于低层次的模块，他们都应该依赖于抽
 象。B.抽象不应该依赖于具体实现，具体实现应该依赖于抽象。
-![Image text](src/main/resources/image/DIP.jpg)
+![Image text](Chapter01/src/main/resources/image/DIP.jpg)
 ###### 5)接口隔离原则
 客户端不应该依赖它不需要的接口；一个类对另一个类的依赖应该建立在最小的接口上。
 ###### 6)合成复用原则
@@ -297,12 +297,12 @@ default:默认的访问权限，这种权限通常被称为包访问权限，因
 重载（Overload）是让类以统一的方式处理不同类型数据的一种手段，实质表现就是多个具有不同的参数个数或者类型的同名函数
 （返回值类型可随意，不能以返回类型作为重载函数的区分标准）同时存在于同一个类中，是一个类中多态性的一种表现（调用方法
 时通过传递不同参数个数和参数类型来决定具体使用哪个方法的多态性）。
-![Image text](src/main/resources/image/Overload.jpg)
+![Image text](Chapter01/src/main/resources/image/Overload.jpg)
 1.Override:   
 重写（Override）是父类与子类之间的多态性，实质是对父类的函数进行重新定义，如果在子类中定义某方法与其父类有相同的名称
 和参数则该方法被重写，不过子类函数的访问修饰权限不能小于父类的；若子类中的方法与父类中的某一方法具有相同的方法名、返
 回类型和参数表，则新方法将覆盖原有的方法，如需父类中原有的方法则可使用 super 关键字。
-![Image text](src/main/resources/image/Override.jpg)
+![Image text](Chapter01/src/main/resources/image/Override.jpg)
 重载规则：必须具有不同的参数列表；可以有不同的返回类型；可以有不同的访问修饰符；可以抛出不同的异常。
 重写规则：参数列表必须完全与被重写的方法相同，否则不能称其为重写；返回类型必须一直与被重写的方法相同，否则不能称其为
 重写；访问修饰符的限制一定要大于等于被重写方法的访问修饰符；重写方法一定不能抛出新的检查异常或者比被重写方法申明更加
@@ -379,10 +379,10 @@ doSomething(line);
 5.把将导出类看做是它的基类的过程称为向上转型（upcasting）。转型（cast）这个名称的灵感来自于模型铸造的塑膜动作；
 而向上（up）这个词来源于继承图的经典布局方式，通常基类在顶部，而导出类在其下部散开，因此，转型为一个基类就是在继承图
 中向上移动，即向上转型。 
-![Image text](src/main/resources/image/Polymorphism1.jpg)
-![Image text](src/main/resources/image/Polymorphism2.jpg)
-![Image text](src/main/resources/image/Polymorphism3.jpg)
-![Image text](src/main/resources/image/Polymorphism4.jpg)
+![Image text](Chapter01/src/main/resources/image/Polymorphism1.jpg)
+![Image text](Chapter01/src/main/resources/image/Polymorphism2.jpg)
+![Image text](Chapter01/src/main/resources/image/Polymorphism3.jpg)
+![Image text](Chapter01/src/main/resources/image/Polymorphism4.jpg)
 ### 1.8 单根继承结构
 1.java中所有的类最终都继承自单一的基类Object。   
 2.单根继承结构保证所有对象都具备某些功能。   
@@ -404,6 +404,8 @@ Object的容器可以存储任何东西。当对象置入Object容器，会丢�
 向下转型是不安全的。
 ### 1.10 对象的创建和生命周期
 1.所有对象都是继承子单根基类Object，只能以一种方式创建对象（在堆上创建）。   
+2.C++对象的创建是在堆栈上，速度极快，只需要一条汇编指令，Java是在堆的内存池中动态创建对象的，速度比堆栈慢（在堆上创
+建对象，编译器无法知道它的生命周期，只能运行时确定）。   
 ### 1.11 异常处理：处理错误
 1.异常是一种对象，它从出错地点被"抛出"，并被专门设计用来处理特定类型错误的相应的异常处理器"捕获"。
 ### 1.12 并发编程
