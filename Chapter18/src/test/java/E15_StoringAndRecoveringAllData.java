@@ -9,7 +9,7 @@ import static net.mindview.util.Print.print;
 public class E15_StoringAndRecoveringAllData {
     public static void main(String[] args) throws IOException {
         DataOutputStream out =
-                new DataOutputStream(new BufferedOutputStream(new FileOutputStream("Data.txt")));
+            new DataOutputStream(new BufferedOutputStream(new FileOutputStream("Data.txt")));
         out.writeBoolean(true);
         out.writeByte(100);
         out.writeByte(255);
@@ -23,7 +23,7 @@ public class E15_StoringAndRecoveringAllData {
         out.writeUTF("That was pi");
         out.close();
         DataInputStream in =
-                new DataInputStream(new BufferedInputStream(new FileInputStream("Data.txt")));
+            new DataInputStream(new BufferedInputStream(new FileInputStream("Data.txt")));
         print(in.readBoolean());
         print(in.readByte());
         print(in.readUnsignedByte());

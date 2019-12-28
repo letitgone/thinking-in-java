@@ -103,7 +103,7 @@ enum Input2 {
 
 enum Category2 {
     MONEY(Input2.NICKEL, Input2.DIME, Input2.QUARTER, Input2.DOLLAR), ITEM_SELECTION(
-            Input2.VENDED_ITEM), QUIT_TRANSACTION(Input2.ABORT_TRANSACTION), SHUT_DOWN(Input2.STOP);
+        Input2.VENDED_ITEM), QUIT_TRANSACTION(Input2.ABORT_TRANSACTION), SHUT_DOWN(Input2.STOP);
     private Input2[] values;
 
     Category2(Input2... types) {
@@ -111,7 +111,7 @@ enum Category2 {
     }
 
     private static EnumMap<Input2, Category2> categories =
-            new EnumMap<Input2, Category2>(Input2.class);
+        new EnumMap<Input2, Category2>(Input2.class);
 
     static {
         for (Category2 c : Category2.class.getEnumConstants())
@@ -198,7 +198,7 @@ public class E11_VendingMachine3 {
 
         void next(ExtInput input) {
             throw new RuntimeException(
-                    "Only call " + "next(ExtInput input) for non-transient states");
+                "Only call " + "next(ExtInput input) for non-transient states");
         }
 
         void next() {

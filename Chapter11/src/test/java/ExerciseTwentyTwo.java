@@ -8,11 +8,11 @@ import java.util.*;
  */
 class WordCounter {
     public static final Comparator<WordCounter> CASE_INSENSITIVE_ORDER =
-            new Comparator<WordCounter>() {
-                public int compare(WordCounter o1, WordCounter o2) {
-                    return o1.word.compareToIgnoreCase(o2.word);
-                }
-            };
+        new Comparator<WordCounter>() {
+            public int compare(WordCounter o1, WordCounter o2) {
+                return o1.word.compareToIgnoreCase(o2.word);
+            }
+        };
     private final String word;
     private int frequency;
 

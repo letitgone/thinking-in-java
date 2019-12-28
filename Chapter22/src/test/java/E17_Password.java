@@ -23,7 +23,7 @@ class Password extends JFrame {
                 if ("Blarth".equals(new String(pass.getPassword())))
                     message = "Correct Password";
                 JOptionPane.showMessageDialog(null, message, "information",
-                        JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.INFORMATION_MESSAGE);
             }
         });
     }

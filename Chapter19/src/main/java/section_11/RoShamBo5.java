@@ -11,7 +11,7 @@ import static section_11.Outcome.*;
 enum RoShamBo5 implements Competitor<RoShamBo5> {
     PAPER, SCISSORS, ROCK;
     static EnumMap<RoShamBo5, EnumMap<RoShamBo5, Outcome>> table =
-            new EnumMap<RoShamBo5, EnumMap<RoShamBo5, Outcome>>(RoShamBo5.class);
+        new EnumMap<RoShamBo5, EnumMap<RoShamBo5, Outcome>>(RoShamBo5.class);
 
     static {
         for (RoShamBo5 it : RoShamBo5.values())

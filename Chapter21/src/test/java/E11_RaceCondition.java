@@ -18,7 +18,7 @@ class Tank {
 
     public void validate() {
         if ((state == State.EMPTY && current_load != 0) || (state == State.LOADED
-                && current_load == 0))
+            && current_load == 0))
             throw new IllegalStateException();
     }
 

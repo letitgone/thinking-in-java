@@ -10,7 +10,7 @@ import static net.mindview.util.Print.print;
  */
 public class ExerciseTwenty {
     private final static Set<Character> vowels =
-            new HashSet<Character>(Arrays.asList('a', 'e', 'o', 'u', 'i', 'A', 'E', 'O', 'U', 'I'));
+        new HashSet<Character>(Arrays.asList('a', 'e', 'o', 'u', 'i', 'A', 'E', 'O', 'U', 'I'));
 
     static void updateStat(Map<Character, Integer> stat, char letter) {
         Character ch = Character.toLowerCase(letter);

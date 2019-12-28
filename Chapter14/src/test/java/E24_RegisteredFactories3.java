@@ -43,7 +43,7 @@ class Part3 implements IPart {
 
     public static IPart newNull(Class<? extends IPart> type) {
         return (IPart) Proxy.newProxyInstance(IPart.class.getClassLoader(),
-                new Class<?>[] {Null.class, IPart.class}, new NullPartProxyHandler(type));
+            new Class<?>[] {Null.class, IPart.class}, new NullPartProxyHandler(type));
     }
 
     static List<Factory<IPart>> partFactories = new ArrayList<Factory<IPart>>();

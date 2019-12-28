@@ -10,9 +10,9 @@ public class E04_DataOnly {
     boolean b;
 
     public static void main(String[] args) {
-        E04_DataOnly e04DataOnly = new E04_DataOnly();
-        System.out.println(e04DataOnly.i);
-        System.out.println(e04DataOnly.d);
-        System.out.println(e04DataOnly.b);
+        E04_DataOnly d = new E04_DataOnly();
+        System.out.println(d.i);
+        System.out.println(d.d);
+        System.out.println(d.b);
     }
 }

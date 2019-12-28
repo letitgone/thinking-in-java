@@ -49,7 +49,7 @@ public class MyWorld {
         ObjectInputStream in1 = new ObjectInputStream(new ByteArrayInputStream(buf1.toByteArray()));
         ObjectInputStream in2 = new ObjectInputStream(new ByteArrayInputStream(buf2.toByteArray()));
         List animals1 = (List) in1.readObject(), animals2 = (List) in1.readObject(), animals3 =
-                (List) in2.readObject();
+            (List) in2.readObject();
         print("animals1: " + animals1);
         print("animals2: " + animals2);
         print("animals3: " + animals3);

@@ -33,7 +33,7 @@ interface Food {
 
 enum Course {
     APPETIZER(Food.Appetizer.class), MAINCOURSE(Food.MainCourse.class), BEVERAGE(
-            Food.Beverage.class), DESSERT(Food.Dessert.class), COFFEE(Food.Coffee.class);
+        Food.Beverage.class), DESSERT(Food.Dessert.class), COFFEE(Food.Coffee.class);
     private Food[] values;
 
     private Course(Class<? extends Food> kind) {

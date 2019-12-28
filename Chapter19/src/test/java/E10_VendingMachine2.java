@@ -41,7 +41,7 @@ class FileInputGenerator implements Generator<Input> {
 
 enum Category {
     MONEY(NICKEL, DIME, QUARTER, DOLLAR), ITEM_SELECTION(TOOTHPASTE, CHIPS, SODA,
-            SOAP), QUIT_TRANSACTION(ABORT_TRANSACTION), SHUT_DOWN(STOP);
+        SOAP), QUIT_TRANSACTION(ABORT_TRANSACTION), SHUT_DOWN(STOP);
     private Input[] values;
 
     Category(Input... types) {
@@ -74,7 +74,7 @@ class VendingMachine2 {
 
 
     private static Map<Machine, Context> em =
-            Collections.synchronizedMap(new EnumMap<Machine, Context>(Machine.class));
+        Collections.synchronizedMap(new EnumMap<Machine, Context>(Machine.class));
 
     static {
         for (Machine m : Machine.values())

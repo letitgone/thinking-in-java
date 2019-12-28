@@ -25,14 +25,14 @@ import static com.sun.mirror.util.DeclarationVisitors.getDeclarationScanner;
  */
 public class E03_TableCreationProcessorFactory implements AnnotationProcessorFactory {
     public AnnotationProcessor getProcessorFor(Set<AnnotationTypeDeclaration> atds,
-            AnnotationProcessorEnvironment env) {
+        AnnotationProcessorEnvironment env) {
         return new TableCreationProcessor(env);
     }
 
     public Collection<String> supportedAnnotationTypes() {
         return Arrays.asList("annotations.database.DBTable", "annotations.database.Constraints",
-                "annotations.database.SQLString", "annotations.database.SQLInteger",
-                "annotations.SQLBoolean", "annotations.SQLCharacter");
+            "annotations.database.SQLString", "annotations.database.SQLInteger",
+            "annotations.SQLBoolean", "annotations.SQLCharacter");
     }
 
     public Collection<String> supportedOptions() {
@@ -62,8 +62,8 @@ public class E03_TableCreationProcessorFactory implements AnnotationProcessorFac
                 if (dbTable != null) {
                     sql += "CREATE TABLE ";
                     sql += (dbTable.name().length() < 1) ?
-                            d.getSimpleName().toUpperCase() :
-                            dbTable.name();
+                        d.getSimpleName().toUpperCase() :
+                        dbTable.name();
                     sql += " (";
                 }
             }
@@ -77,8 +77,8 @@ public class E03_TableCreationProcessorFactory implements AnnotationProcessorFac
                         columnName = d.getSimpleName().toUpperCase();
                     else
                         columnName = sInt.name();
-                    sql += "\n    " + columnName + " INT" + getConstraints(sInt.constraints())
-                            + ",";
+                    sql +=
+                        "\n    " + columnName + " INT" + getConstraints(sInt.constraints()) + ",";
                 }
                 if (d.getAnnotation(SQLString.class) != null) {
                     SQLString sString = d.getAnnotation(SQLString.class);
@@ -88,7 +88,7 @@ public class E03_TableCreationProcessorFactory implements AnnotationProcessorFac
                     else
                         columnName = sString.name();
                     sql += "\n    " + columnName + " VARCHAR(" + sString.value() + ")"
-                            + getConstraints(sString.constraints()) + ",";
+                        + getConstraints(sString.constraints()) + ",";
                 }
                 if (d.getAnnotation(SQLBoolean.class) != null) {
                     SQLBoolean sBol = d.getAnnotation(SQLBoolean.class);
@@ -98,7 +98,7 @@ public class E03_TableCreationProcessorFactory implements AnnotationProcessorFac
                     else
                         columnName = sBol.name();
                     sql += "\n    " + columnName + " BOOLEAN" + getConstraints(sBol.constraints())
-                            + ",";
+                        + ",";
                 }
                 if (d.getAnnotation(SQLCharacter.class) != null) {
                     SQLCharacter sChar = d.getAnnotation(SQLCharacter.class);
@@ -108,7 +108,7 @@ public class E03_TableCreationProcessorFactory implements AnnotationProcessorFac
                     else
                         columnName = sChar.name();
                     sql += "\n    " + columnName + " CHARACTER(" + sChar.value() + ")"
-                            + getConstraints(sChar.constraints()) + ",";
+                        + getConstraints(sChar.constraints()) + ",";
                 }
             }
 

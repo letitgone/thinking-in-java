@@ -22,7 +22,7 @@ class SixTuple<A, B, C, D, E, F> extends FiveTuple<A, B, C, D, E> {
 
     public String toString() {
         return "(" + first + ", " + second + ", " + third + ", " + fourth + ", " + fifth + ", "
-                + sixth + ")";
+            + sixth + ")";
     }
 }
 
@@ -30,7 +30,7 @@ class SixTuple<A, B, C, D, E, F> extends FiveTuple<A, B, C, D, E> {
 public class E03_SixTuple {
     static SixTuple<Vehicle, Amphibian, String, Float, Double, Byte> a() {
         return new SixTuple<Vehicle, Amphibian, String, Float, Double, Byte>(new Vehicle(),
-                new Amphibian(), "hi", (float) 4.7, 1.1, (byte) 1);
+            new Amphibian(), "hi", (float) 4.7, 1.1, (byte) 1);
     }
 
     public static void main(String[] args) {

@@ -39,7 +39,7 @@ public class MappedIO {
     private static Tester[] tests = {new Tester("Stream Write") {
         public void test() throws IOException {
             DataOutputStream dos = new DataOutputStream(
-                    new BufferedOutputStream(new FileOutputStream(new File("temp.tmp"))));
+                new BufferedOutputStream(new FileOutputStream(new File("temp.tmp"))));
             for (int i = 0; i < numOfInts; i++)
                 dos.writeInt(i);
             dos.close();
@@ -55,7 +55,7 @@ public class MappedIO {
     }, new Tester("Stream Read") {
         public void test() throws IOException {
             DataInputStream dis =
-                    new DataInputStream(new BufferedInputStream(new FileInputStream("temp.tmp")));
+                new DataInputStream(new BufferedInputStream(new FileInputStream("temp.tmp")));
             for (int i = 0; i < numOfInts; i++)
                 dis.readInt();
             dis.close();

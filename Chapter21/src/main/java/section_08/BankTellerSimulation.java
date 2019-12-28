@@ -122,8 +122,8 @@ class Teller implements Runnable, Comparable<Teller> {
     // Used by priority queue:
     public synchronized int compareTo(Teller other) {
         return customersServed < other.customersServed ?
-                -1 :
-                (customersServed == other.customersServed ? 0 : 1);
+            -1 :
+            (customersServed == other.customersServed ? 0 : 1);
     }
 }
 

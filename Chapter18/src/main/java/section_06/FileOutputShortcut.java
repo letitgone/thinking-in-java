@@ -13,8 +13,8 @@ public class FileOutputShortcut {
     static String file = "FileOutputShortcut.out";
 
     public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new StringReader(BufferedInputFile
-                .read("/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/main/java/section_06/FileOutputShortcut.java")));
+        BufferedReader in = new BufferedReader(new StringReader(BufferedInputFile.read(
+            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/main/java/section_06/FileOutputShortcut.java")));
         // Here’s the shortcut:
         PrintWriter out = new PrintWriter(file);
         int lineCount = 1;

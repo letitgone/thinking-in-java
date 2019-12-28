@@ -8,7 +8,7 @@ import section_06.Enums;
  */
 public enum Course {
     APPETIZER(Food.Appetizer.class), MAINCOURSE(Food.MainCourse.class), DESSERT(
-            Food.Dessert.class), COFFEE(Food.Coffee.class);
+        Food.Dessert.class), COFFEE(Food.Coffee.class);
     private Food[] values;
 
     private Course(Class<? extends Food> kind) {

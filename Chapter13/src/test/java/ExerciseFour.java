@@ -10,12 +10,11 @@ class Receipt {
     public static final int QTY_WIDTH = 5;
     public static final int PRICE_WIDTH = 10;
     private static final String TITLE_FRMT =
-            "%-" + ITEM_WIDTH + "s %" + QTY_WIDTH + "s %" + PRICE_WIDTH + "s\n";
+        "%-" + ITEM_WIDTH + "s %" + QTY_WIDTH + "s %" + PRICE_WIDTH + "s\n";
     private static final String ITEM_FRMT =
-            "%-" + ITEM_WIDTH + "." + ITEM_WIDTH + "s %" + QTY_WIDTH + "d %" + PRICE_WIDTH
-                    + ".2f\n";
+        "%-" + ITEM_WIDTH + "." + ITEM_WIDTH + "s %" + QTY_WIDTH + "d %" + PRICE_WIDTH + ".2f\n";
     private static final String TOTAL_FRMT =
-            "%-" + ITEM_WIDTH + "s %" + QTY_WIDTH + "s %" + PRICE_WIDTH + ".2f\n";
+        "%-" + ITEM_WIDTH + "s %" + QTY_WIDTH + "s %" + PRICE_WIDTH + ".2f\n";
     private double total = 0;
     Formatter f = new Formatter(System.out, Locale.US);
 

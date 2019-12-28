@@ -110,9 +110,9 @@ public class E01_TableCreator {
                         columnName = field.getName().toUpperCase();
                     else
                         columnName = sString.name();
-                    columnDefs
-                            .add(columnName + " VARCHAR(" + sString.value() + ")" + getConstraints(
-                                    sString.constraints()));
+                    columnDefs.add(
+                        columnName + " VARCHAR(" + sString.value() + ")" + getConstraints(
+                            sString.constraints()));
                 } else if (anns[0] instanceof SQLBoolean) {
                     SQLBoolean sBol = (SQLBoolean) anns[0];
                     // Use field name if name not specified
@@ -128,9 +128,9 @@ public class E01_TableCreator {
                         columnName = field.getName().toUpperCase();
                     else
                         columnName = sChar.name();
-                    columnDefs
-                            .add(columnName + " CHARACTER(" + sChar.value() + ")" + getConstraints(
-                                    sChar.constraints()));
+                    columnDefs.add(
+                        columnName + " CHARACTER(" + sChar.value() + ")" + getConstraints(
+                            sChar.constraints()));
                 }
                 StringBuilder createCommand = new StringBuilder("CREATE TABLE " + tableName + "(");
                 for (String columnDef : columnDefs)

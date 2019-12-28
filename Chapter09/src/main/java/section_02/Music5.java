@@ -92,7 +92,7 @@ public class Music5 {
     public static void main(String[] args) {
         // Upcasting during addition to the array:
         Instrument[] orchestra =
-                {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind()};
+            {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind()};
         tuneAll(orchestra);
     }
 }

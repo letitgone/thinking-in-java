@@ -17,8 +17,8 @@ class Electronic extends Instrument {
 
 public class ExerciseSeven {
     static Instrument[] orchestra =
-            {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind(),
-                    new Electronic()};
+        {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind(),
+            new Electronic()};
 
     public static void main(String args[]) {
         for (Instrument i : orchestra) {

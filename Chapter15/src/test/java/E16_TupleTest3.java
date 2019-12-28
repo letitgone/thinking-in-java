@@ -10,7 +10,7 @@ import static net.mindview.util.Tuple.tuple;
  */
 class Tuple2 extends Tuple {
     public static <A, B, C, D, E, F> SixTuple<A, B, C, D, E, F> tuple(A a, B b, C c, D d, E e,
-            F f) {
+        F f) {
         return new SixTuple<A, B, C, D, E, F>(a, b, c, d, e, f);
     }
 }

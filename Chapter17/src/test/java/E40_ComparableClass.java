@@ -60,7 +60,7 @@ public class E40_ComparableClass {
         Arrays.sort(array, new CompareSecond());
         print("\nafter sorting with CompareSecond, array = " + Arrays.asList(array));
         ArrayList<TwoString> list =
-                new ArrayList<TwoString>(CollectionData.list(TwoString.generator(), 10));
+            new ArrayList<TwoString>(CollectionData.list(TwoString.generator(), 10));
         TwoString zeroth = list.get(0);
         print("\nbefore sorting, list = " + list);
         Collections.sort(list);

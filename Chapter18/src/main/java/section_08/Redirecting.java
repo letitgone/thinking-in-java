@@ -10,9 +10,9 @@ public class Redirecting {
     public static void main(String[] args) throws IOException {
         PrintStream console = System.out;
         BufferedInputStream in = new BufferedInputStream(new FileInputStream(
-                "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/main/java/section_08/Redirecting.java"));
+            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/main/java/section_08/Redirecting.java"));
         PrintStream out =
-                new PrintStream(new BufferedOutputStream(new FileOutputStream("test.out")));
+            new PrintStream(new BufferedOutputStream(new FileOutputStream("test.out")));
         System.setIn(in);
         System.setOut(out);
         System.setErr(out);

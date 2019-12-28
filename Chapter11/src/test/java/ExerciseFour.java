@@ -6,8 +6,8 @@ import java.util.*;
  */
 class MovieNameGenerator /*implements Generator<String>*/ {
     String[] characters =
-            {"Grumpy", "Happy", "Sleepy", "Dopey", "Doc", "Sneezy", "Bashful", "Snow White",
-                    "Witch Queen", "Prince"};
+        {"Grumpy", "Happy", "Sleepy", "Dopey", "Doc", "Sneezy", "Bashful", "Snow White",
+            "Witch Queen", "Prince"};
     int next;
 
     public String next() {

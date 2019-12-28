@@ -94,8 +94,8 @@ class Consumer implements Runnable {
 public class E24_ProducerConsumer {
     public static void main(String[] args) throws Exception {
         if (args.length < 2) {
-            System.err.println("Usage java E24_ProducerConsumer"
-                    + " <producer sleep time> <consumer sleep time>");
+            System.err.println(
+                "Usage java E24_ProducerConsumer" + " <producer sleep time> <consumer sleep time>");
             System.exit(1);
         }
         int producerSleep = Integer.parseInt(args[0]);

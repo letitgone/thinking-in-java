@@ -12,8 +12,8 @@ import static section_02.SwingConsole.run;
  */
 public class E16_SimplifyList extends JFrame {
     private String[] flavors =
-            {"Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
-                    "Rum Raisin", "Praline Cream", "Mud Pie"};
+        {"Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
+            "Rum Raisin", "Praline Cream", "Mud Pie"};
     private JList lst = new JList(flavors);
     private JTextArea t = new JTextArea(flavors.length, 20);
     private ListSelectionListener ll = new ListSelectionListener() {

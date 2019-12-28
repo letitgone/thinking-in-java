@@ -43,7 +43,7 @@ class CountedString2 {
 
     public boolean equals(Object o) {
         return o instanceof CountedString2 && s.equals(((CountedString2) o).s)
-                && id == ((CountedString2) o).id && c == ((CountedString2) o).c;
+            && id == ((CountedString2) o).id && c == ((CountedString2) o).c;
     }
 }
 

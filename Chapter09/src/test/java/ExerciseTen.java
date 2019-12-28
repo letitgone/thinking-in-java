@@ -85,7 +85,7 @@ public class ExerciseTen {
 
     public static void main(String[] args) {
         Playable[] orchestra =
-                {new Wind2(), new Percussion2(), new Stringed2(), new Brass2(), new Woodwind2()};
+            {new Wind2(), new Percussion2(), new Stringed2(), new Brass2(), new Woodwind2()};
         tuneAll(orchestra);
     }
 }

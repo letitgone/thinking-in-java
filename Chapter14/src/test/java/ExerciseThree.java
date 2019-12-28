@@ -46,7 +46,7 @@ class Rhomboid extends Shape {
 public class ExerciseThree {
     public static void main(String[] args) {
         List<Shape> shapes =
-                Arrays.asList(new Circle(), new Square(), new Triangle(), new Rhomboid());
+            Arrays.asList(new Circle(), new Square(), new Triangle(), new Rhomboid());
         for (Shape shape : shapes)
             shape.draw();
         // Upcast to shape:

@@ -13,7 +13,7 @@ import static section_02.SwingConsole.run;
  */
 public class HTMLButton extends JFrame {
     private JButton b =
-            new JButton("<html><b><font size=+2>" + "<center>Hello!<br><i>Press me now!");
+        new JButton("<html><b><font size=+2>" + "<center>Hello!<br><i>Press me now!");
 
     public HTMLButton() {
         b.addActionListener(new ActionListener() {

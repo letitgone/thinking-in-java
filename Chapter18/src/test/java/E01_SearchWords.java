@@ -29,7 +29,7 @@ public class E01_SearchWords {
                         if (args.length == 1)
                             return true;
                         Set<String> words = new HashSet<String>(
-                                new TextFile(new File(dir, name).getAbsolutePath(), "\\W+"));
+                            new TextFile(new File(dir, name).getAbsolutePath(), "\\W+"));
                         for (int i = 1; i < args.length; i++)
                             if (words.contains(args[i]))
                                 return true;

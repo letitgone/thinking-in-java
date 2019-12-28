@@ -11,9 +11,9 @@ import static net.mindview.util.Print.print;
  */
 public class StartEnd {
     public static String input = "As long as there is injustice, whenever a\n"
-            + "Targathian baby cries out, wherever a distress\n"
-            + "signal sounds among the stars ... We’ll be there.\n"
-            + "This fine ship, and this fine crew ...\n" + "Never give up! Never surrender!";
+        + "Targathian baby cries out, wherever a distress\n"
+        + "signal sounds among the stars ... We’ll be there.\n"
+        + "This fine ship, and this fine crew ...\n" + "Never give up! Never surrender!";
 
 
     private static class Display {

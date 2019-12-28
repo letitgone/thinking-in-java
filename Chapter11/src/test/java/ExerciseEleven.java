@@ -13,8 +13,8 @@ public class ExerciseEleven {
     @SuppressWarnings("unchecked")
     public static void main(String args[]) {
         List<Collection<String>> ca =
-                Arrays.<Collection<String>>asList(new ArrayList<String>(), new LinkedList<String>(),
-                        new HashSet<String>(), new TreeSet<String>());
+            Arrays.<Collection<String>>asList(new ArrayList<String>(), new LinkedList<String>(),
+                new HashSet<String>(), new TreeSet<String>());
         for (Collection<String> c : ca)
             ExerciseFour.fill(c);
         for (Collection<String> c : ca)

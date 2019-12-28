@@ -175,7 +175,7 @@ public class E29_ListPerformance2 {
         ListTester.run(new Vector<String>(), tests);
         Tester.fieldWidth = 12;
         Tester<LinkedList<String>> qTest =
-                new Tester<LinkedList<String>>(new LinkedList<String>(), qTests);
+            new Tester<LinkedList<String>>(new LinkedList<String>(), qTests);
         qTest.setHeadline("Queue tests");
         qTest.timedTest();
     }

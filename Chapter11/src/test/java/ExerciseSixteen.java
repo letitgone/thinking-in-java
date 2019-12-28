@@ -10,7 +10,7 @@ import static net.mindview.util.Print.print;
  */
 public class ExerciseSixteen {
     private final static Set<Character> vowels =
-            new HashSet<Character>(Arrays.asList('a', 'e', 'o', 'u', 'i', 'A', 'E', 'O', 'U', 'I'));
+        new HashSet<Character>(Arrays.asList('a', 'e', 'o', 'u', 'i', 'A', 'E', 'O', 'U', 'I'));
 
     public static void main(String[] args) {
         HashSet<String> processedWords = new HashSet<String>();

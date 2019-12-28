@@ -28,24 +28,24 @@ abstract class CompareAllocations {
             directAllocate();
             long endTime = System.nanoTime();
             System.out.println(
-                    "Direct Allocation Cost for buffer of size: <" + size + "> is <" + (endTime
-                            - startTime) + ">");
+                "Direct Allocation Cost for buffer of size: <" + size + "> is <" + (endTime
+                    - startTime) + ">");
             startTime = System.nanoTime();
             execute();
             endTime = System.nanoTime();
             System.out
-                    .println("Execution cost using direct buffer: <" + (endTime - startTime) + ">");
+                .println("Execution cost using direct buffer: <" + (endTime - startTime) + ">");
             startTime = System.nanoTime();
             indirectAllocate();
             endTime = System.nanoTime();
             System.out.println(
-                    "Indirect Allocation Cost for buffer of size: <" + size + "> is <" + (endTime
-                            - startTime) + ">");
+                "Indirect Allocation Cost for buffer of size: <" + size + "> is <" + (endTime
+                    - startTime) + ">");
             startTime = System.nanoTime();
             execute();
             endTime = System.nanoTime();
-            System.out.println(
-                    "Execution cost using indirect buffer: <" + (endTime - startTime) + ">");
+            System.out
+                .println("Execution cost using indirect buffer: <" + (endTime - startTime) + ">");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -68,8 +68,8 @@ public class E25_AllocateDirect {
         CompareAllocations[] comparisons = {new CompareAllocations("GetChannel", 8192) {
             public void execute() throws IOException {
                 FileChannel fc = new FileInputStream(
-                        "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E25_AllocateDirect.java")
-                        .getChannel();
+                    "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E25_AllocateDirect.java")
+                    .getChannel();
                 fc.read(buffer);
                 buffer.flip();
                 while (buffer.hasRemaining())
@@ -78,8 +78,8 @@ public class E25_AllocateDirect {
         }, new CompareAllocations("ChannelCopy", 16384) {
             public void execute() throws IOException {
                 FileChannel in = new FileInputStream(
-                        "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E25_AllocateDirect.java")
-                        .getChannel(), out = new FileOutputStream("temp.txt").getChannel();
+                    "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E25_AllocateDirect.java")
+                    .getChannel(), out = new FileOutputStream("temp.txt").getChannel();
                 while (in.read(buffer) != -1) {
                     buffer.flip(); // Prepare for writing
                     out.write(buffer);

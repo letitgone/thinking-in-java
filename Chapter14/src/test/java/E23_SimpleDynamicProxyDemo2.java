@@ -29,8 +29,9 @@ public class E23_SimpleDynamicProxyDemo2 {
     public static void main(String[] args) {
         RealObject real = new RealObject();
         consumer(real);
-        Interface proxy = (Interface) Proxy.newProxyInstance(Interface.class.getClassLoader(),
-                new Class<?>[] {Interface.class}, new DynamicProxyHandler2(real));
+        Interface proxy = (Interface) Proxy
+            .newProxyInstance(Interface.class.getClassLoader(), new Class<?>[] {Interface.class},
+                new DynamicProxyHandler2(real));
         consumer(proxy);
     }
 }

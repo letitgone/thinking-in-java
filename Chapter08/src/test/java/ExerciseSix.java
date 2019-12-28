@@ -75,7 +75,7 @@ class Woodwind extends Wind {
 
 public class ExerciseSix {
     static Instrument[] orchestra =
-            {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind()};
+        {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind()};
 
     public static void printAll(Instrument[] orch) {
         for (Instrument i : orch)

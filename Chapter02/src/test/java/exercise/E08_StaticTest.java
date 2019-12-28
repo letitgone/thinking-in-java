@@ -1,6 +1,8 @@
 package exercise;
 
 /**
+ * important
+ * 无论创建了某个特定类的多少个对象，这个类中的某个特定的static域只有一个实例
  * @Author ZhangGJ
  * @Date 2019/03/17
  */

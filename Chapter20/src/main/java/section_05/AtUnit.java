@@ -115,7 +115,7 @@ public class AtUnit implements ProcessFiles.Strategy {
             return null;
         if (!m.getReturnType().equals(testClass))
             throw new RuntimeException(
-                    "@TestObjectCreate " + "must return instance of Class to be tested");
+                "@TestObjectCreate " + "must return instance of Class to be tested");
         if ((m.getModifiers() & java.lang.reflect.Modifier.STATIC) < 1)
             throw new RuntimeException("@TestObjectCreate " + "must be static.");
         m.setAccessible(true);
@@ -131,7 +131,7 @@ public class AtUnit implements ProcessFiles.Strategy {
             throw new RuntimeException("@TestObjectCleanup " + "must be static.");
         if (m.getParameterTypes().length == 0 || m.getParameterTypes()[0] != testClass)
             throw new RuntimeException(
-                    "@TestObjectCleanup " + "must take an argument of the tested type.");
+                "@TestObjectCleanup " + "must take an argument of the tested type.");
         m.setAccessible(true);
         return m;
     }
@@ -148,7 +148,7 @@ public class AtUnit implements ProcessFiles.Strategy {
                 return testClass.newInstance();
             } catch (Exception e) {
                 throw new RuntimeException(
-                        "Couldn’t create a " + "test object. Try using a @TestObject method.");
+                    "Couldn’t create a " + "test object. Try using a @TestObject method.");
             }
         }
     }

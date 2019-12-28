@@ -161,7 +161,7 @@ class Eater implements Runnable {
 public class ToastOMatic {
     public static void main(String[] args) throws Exception {
         ToastQueue dryQueue = new ToastQueue(), butteredQueue = new ToastQueue(), finishedQueue =
-                new ToastQueue();
+            new ToastQueue();
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new Toaster(dryQueue));
         exec.execute(new Butterer(dryQueue, butteredQueue));

@@ -163,10 +163,11 @@ public class Functional {
         print(filter(li, new GreaterThan<Integer>(4)));
         print(forEach(li, new MultiplyingIntegerCollector()).result());
         print(forEach(filter(li, new GreaterThan<Integer>(4)), new MultiplyingIntegerCollector())
-                .result());
+            .result());
         MathContext mc = new MathContext(7);
-        List<BigDecimal> lbd = Arrays.asList(new BigDecimal(1.1, mc), new BigDecimal(2.2, mc),
-                new BigDecimal(3.3, mc), new BigDecimal(4.4, mc));
+        List<BigDecimal> lbd = Arrays
+            .asList(new BigDecimal(1.1, mc), new BigDecimal(2.2, mc), new BigDecimal(3.3, mc),
+                new BigDecimal(4.4, mc));
         BigDecimal rbd = reduce(lbd, new BigDecimalAdder());
         print(rbd);
         print(filter(lbd, new GreaterThan<BigDecimal>(new BigDecimal(3))));
@@ -182,9 +183,9 @@ public class Functional {
         print(rbi);
         // The sum of this list of primes is also prime:
         print(rbi.isProbablePrime(5));
-        List<AtomicLong> lal =
-                Arrays.asList(new AtomicLong(11), new AtomicLong(47), new AtomicLong(74),
-                        new AtomicLong(133));
+        List<AtomicLong> lal = Arrays
+            .asList(new AtomicLong(11), new AtomicLong(47), new AtomicLong(74),
+                new AtomicLong(133));
         AtomicLong ral = reduce(lal, new AtomicLongAdder());
         print(ral);
         print(transform(lbd, new BigDecimalUlp()));

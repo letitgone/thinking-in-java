@@ -15,7 +15,7 @@ import java.util.Set;
  */
 public class InterfaceExtractorProcessorFactory implements AnnotationProcessorFactory {
     public AnnotationProcessor getProcessorFor(Set<AnnotationTypeDeclaration> atds,
-            AnnotationProcessorEnvironment env) {
+        AnnotationProcessorEnvironment env) {
         return new InterfaceExtractorProcessor(env);
     }
 

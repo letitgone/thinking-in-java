@@ -11,7 +11,7 @@ public class ExerciseEleven {
         Matcher m = p.matcher("Arline ate eight apples and one orange while Anita hadn't any");
         while (m.find()) {
             System.out.println(
-                    "Match \"" + m.group() + "\" at positions " + m.start() + "-" + (m.end() - 1));
+                "Match \"" + m.group() + "\" at positions " + m.start() + "-" + (m.end() - 1));
         }
     }
 }

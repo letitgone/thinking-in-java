@@ -42,7 +42,7 @@ class Order { // (A data-transfer object)
 
     public String toString() {
         return "Order: " + id + " item: " + food + " for: " + customer + " served by: "
-                + waitPerson;
+            + waitPerson;
     }
 }
 
@@ -135,7 +135,7 @@ class WaitPerson implements Runnable {
                 // Blocks until a course is ready
                 Plate plate = filledOrders.take();
                 print(this + "received " + plate + " delivering to " + plate.getOrder()
-                        .getCustomer());
+                    .getCustomer());
                 plate.getOrder().getCustomer().deliver(plate);
             }
         } catch (InterruptedException e) {

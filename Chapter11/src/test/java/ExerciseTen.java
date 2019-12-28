@@ -64,7 +64,7 @@ class Hamster extends Rodent {
 public class ExerciseTen {
     public static void main(String args[]) {
         ArrayList<Rodent> rodents =
-                new ArrayList<Rodent>(Arrays.asList(new Rodent(), new Mouse(), new Hamster()));
+            new ArrayList<Rodent>(Arrays.asList(new Rodent(), new Mouse(), new Hamster()));
         Rodent r;
         for (Iterator<Rodent> it = rodents.iterator(); it.hasNext(); ) {
             r = it.next();

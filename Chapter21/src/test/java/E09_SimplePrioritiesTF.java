@@ -48,7 +48,7 @@ class PriorityThreadFactory implements ThreadFactory {
 public class E09_SimplePrioritiesTF {
     public static void main(String[] args) {
         ExecutorService exec =
-                Executors.newCachedThreadPool(new PriorityThreadFactory(Thread.MIN_PRIORITY));
+            Executors.newCachedThreadPool(new PriorityThreadFactory(Thread.MIN_PRIORITY));
         for (int i = 0; i < 5; i++)
             exec.execute(new SimplePriorities2());
         Thread.yield();

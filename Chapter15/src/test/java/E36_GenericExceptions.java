@@ -10,7 +10,7 @@ interface Processor<T, E extends Exception, F extends Exception> {
 
 
 class ProcessRunner<T, E extends Exception, F extends Exception>
-        extends ArrayList<Processor<T, E, F>> {
+    extends ArrayList<Processor<T, E, F>> {
     List<T> processAll() throws E, F {
         List<T> resultCollector = new ArrayList<T>();
         for (Processor<T, E, F> processor : this)
@@ -74,7 +74,7 @@ class Processor2 implements Processor<Integer, Failure2_1, Failure2_2> {
 public class E36_GenericExceptions {
     public static void main(String[] args) {
         ProcessRunner<String, Failure1_1, Failure1_2> runner =
-                new ProcessRunner<String, Failure1_1, Failure1_2>();
+            new ProcessRunner<String, Failure1_1, Failure1_2>();
         for (int i = 0; i < 3; i++)
             runner.add(new Processor1());
         try {
@@ -85,7 +85,7 @@ public class E36_GenericExceptions {
             System.out.println(e);
         }
         ProcessRunner<Integer, Failure2_1, Failure2_2> runner2 =
-                new ProcessRunner<Integer, Failure2_1, Failure2_2>();
+            new ProcessRunner<Integer, Failure2_1, Failure2_2>();
         for (int i = 0; i < 3; i++)
             runner2.add(new Processor2());
         try {

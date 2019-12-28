@@ -60,7 +60,7 @@ public class E42_AlphaComparable {
         Arrays.sort(array, new CompareSecondAlphabetic());
         print("\nafter sorting with CompareSecondAlphabetic," + " array = " + Arrays.asList(array));
         ArrayList<TwoStringAlphabetic> list = new ArrayList<TwoStringAlphabetic>(
-                CollectionData.list(TwoStringAlphabetic.generator(), 10));
+            CollectionData.list(TwoStringAlphabetic.generator(), 10));
         TwoStringAlphabetic zeroth = list.get(0);
         print("\nbefore sorting, list = " + list);
         Collections.sort(list);

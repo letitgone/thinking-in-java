@@ -69,7 +69,7 @@ class TaskManager<R, C extends Callable<R>> extends ArrayList<TwoTuple<Future<R>
 
 public class E33_ParallelCallables extends JFrame {
     private JButton b1 = new JButton("Start Long Running Task"), b2 =
-            new JButton("End Long Running Task"), b3 = new JButton("Get results");
+        new JButton("End Long Running Task"), b3 = new JButton("Get results");
     private TaskManager<String, CallableTask> manager = new TaskManager<String, CallableTask>();
 
     public E33_ParallelCallables() {

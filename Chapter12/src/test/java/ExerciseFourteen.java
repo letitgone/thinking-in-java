@@ -35,8 +35,8 @@ public class ExerciseFourteen {
             }
         } catch (RuntimeException e) {
             System.out.println(sw);
-            System.out.println("Oops! the exception '" + e
-                    + "' slipped through without turning the switch off!");
+            System.out.println(
+                "Oops! the exception '" + e + "' slipped through without turning the switch off!");
         }
     }
 }

@@ -6,11 +6,11 @@ package upcasting;
  */
 public class Shape {
 
-    public void draw(){
+    public void draw() {
         System.out.println("Shape draw");
     }
 
-    public void erase(){
+    public void erase() {
         System.out.println("Shape erase");
     }
 }

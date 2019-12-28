@@ -22,7 +22,7 @@ public class Logon implements Serializable {
 
     public String toString() {
         return "logon info: \n   username: " + username + "\n   date: " + date + "\n   password: "
-                + password;
+            + password;
     }
 
     public static void main(String[] args) throws Exception {

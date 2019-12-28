@@ -12,9 +12,9 @@ import static section_02.SwingConsole.run;
 public class LookAndFeel extends JFrame {
     private String[] choices = "Eeny Meeny Minnie Mickey Moe Larry Curly".split(" ");
     private Component[] samples =
-            {new JButton("JButton"), new JTextField("JTextField"), new JLabel("JLabel"),
-                    new JCheckBox("JCheckBox"), new JRadioButton("Radio"), new JComboBox(choices),
-                    new JList(choices),};
+        {new JButton("JButton"), new JTextField("JTextField"), new JLabel("JLabel"),
+            new JCheckBox("JCheckBox"), new JRadioButton("Radio"), new JComboBox(choices),
+            new JList(choices),};
 
     public LookAndFeel() {
         super("Look And Feel");
@@ -34,14 +34,14 @@ public class LookAndFeel extends JFrame {
         if (args[0].equals("cross")) {
             try {
                 UIManager.setLookAndFeel(UIManager.
-                        getCrossPlatformLookAndFeelClassName());
+                    getCrossPlatformLookAndFeelClassName());
             } catch (Exception e) {
                 e.printStackTrace();
             }
         } else if (args[0].equals("system")) {
             try {
                 UIManager.setLookAndFeel(UIManager.
-                        getSystemLookAndFeelClassName());
+                    getSystemLookAndFeelClassName());
             } catch (Exception e) {
                 e.printStackTrace();
             }

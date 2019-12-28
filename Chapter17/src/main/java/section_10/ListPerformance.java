@@ -161,7 +161,7 @@ public class ListPerformance {
             @Override
             protected List<Integer> initialize(int size) {
                 Integer[] ia =
-                        Generated.array(Integer.class, new CountingGenerator.Integer(), size);
+                    Generated.array(Integer.class, new CountingGenerator.Integer(), size);
                 return Arrays.asList(ia);
             }
         };
@@ -175,7 +175,7 @@ public class ListPerformance {
         ListTester.run(new Vector<Integer>(), tests);
         Tester.fieldWidth = 12;
         Tester<LinkedList<Integer>> qTest =
-                new Tester<LinkedList<Integer>>(new LinkedList<Integer>(), qTests);
+            new Tester<LinkedList<Integer>>(new LinkedList<Integer>(), qTests);
         qTest.setHeadline("Queue tests");
         qTest.timedTest();
     }

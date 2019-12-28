@@ -12,7 +12,7 @@ class TextFile2 extends ArrayList<String> {
     public static String read(String fileName) throws IOException {
         StringBuilder sb = new StringBuilder();
         BufferedReader in =
-                new BufferedReader(new FileReader(new File(fileName).getAbsoluteFile()));
+            new BufferedReader(new FileReader(new File(fileName).getAbsoluteFile()));
         try {
             String s;
             while ((s = in.readLine()) != null) {
@@ -28,7 +28,7 @@ class TextFile2 extends ArrayList<String> {
     // Write a single file in one method call:
     public static void write(String fileName, String text) throws IOException {
         PrintWriter out = new PrintWriter(
-                new BufferedWriter(new FileWriter(new File(fileName).getAbsoluteFile())));
+            new BufferedWriter(new FileWriter(new File(fileName).getAbsoluteFile())));
         try {
             out.print(text);
         } finally {
@@ -52,7 +52,7 @@ class TextFile2 extends ArrayList<String> {
 
     public void write(String fileName) throws IOException {
         PrintWriter out = new PrintWriter(
-                new BufferedWriter(new FileWriter(new File(fileName).getAbsoluteFile())));
+            new BufferedWriter(new FileWriter(new File(fileName).getAbsoluteFile())));
         try {
             for (String item : this)
                 out.println(item);
@@ -65,15 +65,15 @@ class TextFile2 extends ArrayList<String> {
 
 public class E18_TextFile2 {
     public static void main(String[] args) throws IOException {
-        String file = TextFile2
-                .read("/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E18_TextFile2.java");
+        String file = TextFile2.read(
+            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E18_TextFile2.java");
         TextFile2.write("test.txt", file);
         TextFile2 text = new TextFile2("test.txt");
         text.write("test2.txt");
         // Break into unique sorted list of words:
         TreeSet<String> words = new TreeSet<String>(new TextFile2(
-                "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E18_TextFile2.java",
-                "\\W+"));
+            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E18_TextFile2.java",
+            "\\W+"));
         // Display the capitalized words:
         System.out.println(words.headSet("a"));
     }

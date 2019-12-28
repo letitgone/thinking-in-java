@@ -40,12 +40,12 @@ public class E13_OverloadedFill {
         for (Coffee c : coffeeList)
             System.out.println(c);
         Queue<Integer> iQueue =
-                fill((Queue<Integer>) new LinkedList<Integer>(), new Fibonacci(), 12);
+            fill((Queue<Integer>) new LinkedList<Integer>(), new Fibonacci(), 12);
         for (int i : iQueue)
             System.out.print(i + " ");
         System.out.println();
         LinkedList<Character> cLList =
-                fill(new LinkedList<Character>(), new CountingGenerator.Character(), 12);
+            fill(new LinkedList<Character>(), new CountingGenerator.Character(), 12);
         for (char ch : cLList)
             System.out.print(ch);
         System.out.println();

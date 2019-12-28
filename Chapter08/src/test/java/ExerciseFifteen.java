@@ -37,7 +37,7 @@ class RectangularGlyph extends Glyph {
         this.width = width;
         this.height = height;
         System.out.println(
-                "RectangularGlyph.RectangularGlyph(), width = " + width + ", height = " + height);
+            "RectangularGlyph.RectangularGlyph(), width = " + width + ", height = " + height);
     }
 
     void draw() {

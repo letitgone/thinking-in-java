@@ -31,7 +31,7 @@ public class InterfaceExtractorProcessor implements AnnotationProcessor {
                 break;
             for (MethodDeclaration m : typeDecl.getMethods())
                 if (m.getModifiers().contains(Modifier.PUBLIC) && !(m.getModifiers()
-                        .contains(Modifier.STATIC)))
+                    .contains(Modifier.STATIC)))
                     interfaceMethods.add(m);
             if (interfaceMethods.size() > 0) {
                 try {

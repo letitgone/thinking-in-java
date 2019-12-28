@@ -6,12 +6,12 @@ package exercise;
  */
 public class E05_DataOnly2 {
     public static void main(String[] args) {
-        E04_DataOnly e04DataOnly = new E04_DataOnly();
-        e04DataOnly.i = 47;
-        e04DataOnly.d = 1.1;
-        e04DataOnly.b = false;
-        System.out.println(e04DataOnly.i);
-        System.out.println(e04DataOnly.d);
-        System.out.println(e04DataOnly.b);
+        E04_DataOnly d = new E04_DataOnly();
+        d.i = 47;
+        System.out.println("d.i = " + d.i);
+        d.d = 1.1;
+        System.out.println("d.d = " + d.d);
+        d.b = false;
+        System.out.println("d.b = " + d.b);
     }
 }

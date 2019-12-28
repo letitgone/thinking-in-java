@@ -104,7 +104,7 @@ class CollectionSequence2 extends PetSequence implements Collection<Pet> {
     public <T> T[] toArray(T[] a) {
         if (a.length < pets.length)
             a = (T[]) java.lang.reflect.Array
-                    .newInstance(a.getClass().getComponentType(), pets.length);
+                .newInstance(a.getClass().getComponentType(), pets.length);
         T[] result = a;
         System.arraycopy(pets, 0, result, 0, pets.length);
         if (result.length > pets.length)
