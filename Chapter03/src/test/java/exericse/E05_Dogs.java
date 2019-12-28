@@ -1,3 +1,5 @@
+package exericse;
+
 class Dog {
     String name;
     String says;

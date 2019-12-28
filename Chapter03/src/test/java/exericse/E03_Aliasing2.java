@@ -1,3 +1,5 @@
+package exericse;
+
 class Product1 {
     float price;
 }

@@ -1,3 +1,5 @@
+package exericse;
+
 import java.util.Random;
 
 /**
