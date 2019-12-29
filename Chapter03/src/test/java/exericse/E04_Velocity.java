@@ -6,13 +6,15 @@ package exericse;
  */
 public class E04_Velocity {
     public static void main(String[] args) {
-        String distance = args[0];
-        String time = args[1];
-        if ("".equals(distance) || distance == null || "".equals(distance) || distance == null) {
+        if (args.length < 2) {
+            System.err.println("Usage: java E04_Velocity distance time");
             System.exit(1);
-        } else {
-            double speed = Double.parseDouble(distance) / Double.parseDouble(time);
-            System.out.println("speed is: " + speed);
         }
+        float distance = Float.parseFloat(args[0]);
+        float time = Float.parseFloat(args[1]);
+        System.out.print("Velocity = ");
+        System.out.print(distance / time);
+        // Change the next line if you want to use a different // unit for 'distance'
+        System.out.println(" m/s");
     }
 }
