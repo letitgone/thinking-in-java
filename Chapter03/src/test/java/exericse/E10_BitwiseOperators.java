@@ -4,7 +4,7 @@ package exericse;
  * @Author ZhangGJ
  * @Date 2019/03/20
  */
-public class ExerciseTen {
+public class E10_BitwiseOperators {
     public static void main(String[] args) {
         int i1 = 0xaaaaaaaa;
         int i2 = 0x55555555;

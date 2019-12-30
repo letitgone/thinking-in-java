@@ -4,7 +4,7 @@ package exericse;
  * @Author ZhangGJ
  * @Date 2019/03/20
  */
-public class ExerciseEight {
+public class E08_LongLiterals {
     public static void main(String[] args) {
         long l1 = 0x2f; // Hexadecimal (lowercase)
         System.out.println("l1: " + Long.toBinaryString(l1));
