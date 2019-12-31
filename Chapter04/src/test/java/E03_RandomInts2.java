@@ -2,10 +2,10 @@
  * @Author ZhangGJ
  * @Date 2019/03/22
  */
-public class ExerciseOne {
+public class E03_RandomInts2 {
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {
-            System.out.println(i);
+        while (true) {
+            E02_RandomInts.compareRand();
         }
     }
 }

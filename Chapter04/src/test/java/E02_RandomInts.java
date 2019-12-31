@@ -4,7 +4,7 @@ import java.util.Random;
  * @Author ZhangGJ
  * @Date 2019/03/22
  */
-public class ExerciseTwo {
+public class E02_RandomInts {
     static Random r = new Random(47);
 
     public static void compareRand() {

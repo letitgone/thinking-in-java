@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/03/22
  */
-public class ExerciseFive {
+public class E05_BitwiseOperators2 {
     private static void toBinaryString(int i) {
         char[] buffer = new char[32];
         int bufferPosition = 32;
