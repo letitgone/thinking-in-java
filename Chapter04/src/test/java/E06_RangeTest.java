@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/03/23
  */
-public class ExerciseSix {
+public class E06_RangeTest {
     static boolean test(int testval, int begin, int end) {
         boolean result = false;
         if (testval >= begin && testval <= end)

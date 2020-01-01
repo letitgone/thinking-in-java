@@ -1,8 +1,9 @@
 /**
+ * 吸血鬼数字
  * @Author ZhangGJ
  * @Date 2019/03/26
  */
-public class ExerciseTen {
+public class E10_Vampire {
     public static void main(String[] args) {
         int[] startDigit = new int[4];
         int[] productDigit = new int[4];

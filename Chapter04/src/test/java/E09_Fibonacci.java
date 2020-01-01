@@ -1,8 +1,9 @@
 /**
+ * 斐波那契数列
  * @Author ZhangGJ
  * @Date 2019/03/26
  */
-public class ExerciseNine {
+public class E09_Fibonacci {
     static int fib(int n) {
         if (n <= 2)
             return 1;
