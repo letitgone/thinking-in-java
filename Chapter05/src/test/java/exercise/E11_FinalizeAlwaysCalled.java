@@ -1,13 +1,17 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/01
  */
-public class E10_FinalizeCall {
+public class E11_FinalizeAlwaysCalled {
     protected void finalize() {
         System.out.println("finalize() called");
     }
 
     public static void main(String args[]) {
-        new E10_FinalizeCall();
+        new E11_FinalizeAlwaysCalled();
+        System.gc();
+        System.runFinalization();
     }
 }

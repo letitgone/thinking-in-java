@@ -1,3 +1,5 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/01
@@ -8,7 +10,7 @@ class Tank {
     boolean full;
 
     public Tank() {
-        System.out.println("Tank " + id + " created");
+        System.out.println("exercise.Tank " + id + " created");
         full = true;
     }
 
@@ -20,12 +22,12 @@ class Tank {
         if (full) {
             System.out.println("Error: tank " + id + " must be empty at cleanup");
         } else {
-            System.out.println("Tank " + id + " cleaned up OK");
+            System.out.println("exercise.Tank " + id + " cleaned up OK");
         }
     }
 
     public String toString() {
-        return "Tank " + id;
+        return "exercise.Tank " + id;
     }
 }
 

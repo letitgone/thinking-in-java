@@ -1,3 +1,5 @@
+package exercise;
+
 class Dog2 {
     public void bark(int i, double d) {
         System.out.println("int, double bark");
