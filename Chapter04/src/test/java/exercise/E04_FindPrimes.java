@@ -1,3 +1,5 @@
+package exercise;
+
 import static java.lang.Math.floor;
 import static java.lang.Math.sqrt;
 

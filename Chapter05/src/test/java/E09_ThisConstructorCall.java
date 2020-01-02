@@ -2,18 +2,18 @@
  * @Author ZhangGJ
  * @Date 2019/04/01
  */
-public class ExerciseNine {
-    ExerciseNine() {
+public class E09_ThisConstructorCall {
+    E09_ThisConstructorCall() {
         this("hi");
         System.out.println("No-arg constructor");
     }
 
-    ExerciseNine(String s) {
+    E09_ThisConstructorCall(String s) {
         System.out.println("One-arg constructor: " + s);
     }
 
     public static void main(String[] args) {
-        ExerciseNine e = new ExerciseNine();
+        E09_ThisConstructorCall e = new E09_ThisConstructorCall();
         System.out.println("end");
     }
 }

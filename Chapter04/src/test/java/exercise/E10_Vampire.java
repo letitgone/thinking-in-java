@@ -1,3 +1,5 @@
+package exercise;
+
 /**
  * 吸血鬼数字
  * @Author ZhangGJ

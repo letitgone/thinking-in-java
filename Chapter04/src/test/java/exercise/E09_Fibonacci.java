@@ -1,3 +1,5 @@
+package exercise;
+
 /**
  * 斐波那契数列
  * @Author ZhangGJ

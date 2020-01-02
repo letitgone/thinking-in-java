@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/03/28
  */
-public class ExerciseEight {
+public class E08_ThisMethodCall {
     public void a() {
         b();
         this.b();
@@ -13,6 +13,6 @@ public class ExerciseEight {
     }
 
     public static void main(String args[]) {
-        new ExerciseEight().a();
+        new E08_ThisMethodCall().a();
     }
 }

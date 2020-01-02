@@ -30,7 +30,7 @@ class Tank {
 }
 
 
-public class ExerciseTwelve {
+public class E12_TankWithTerminationCondition {
     public static void main(String args[]) {
         new Tank().empty();
         new Tank();

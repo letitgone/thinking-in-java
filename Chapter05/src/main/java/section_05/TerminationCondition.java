@@ -1,9 +1,5 @@
 package section_05;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/01
- */
 class Book {
     boolean checkedOut = false;
 
@@ -15,15 +11,21 @@ class Book {
         checkedOut = false;
     }
 
+    @Override
     protected void finalize() {
-        if (checkedOut)
+        if (checkedOut) {
             System.out.println("Error: checked out");
+        }
         // Normally, you’ll also do this:
         // super.finalize(); // Call the base-class version
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/01
+ */
 public class TerminationCondition {
     public static void main(String[] args) {
         Book novel = new Book(true);
