@@ -1,9 +1,5 @@
 package section_07;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/02
- */
 class Bowl {
     Bowl(int marker) {
         System.out.println("Bowl(" + marker + ")");
@@ -48,6 +44,12 @@ class Cupboard {
 }
 
 
+/**
+ * important
+ *
+ * @Author ZhangGJ
+ * @Date 2019/04/02
+ */
 public class StaticInitialization {
     public static void main(String[] args) {
         System.out.println("Creating new Cupboard() in main");

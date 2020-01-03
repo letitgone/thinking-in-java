@@ -13,6 +13,9 @@ public class ArrayOfPrimitives {
             a2[i] = a2[i] + 1;
         }
         for (int i = 0; i < a1.length; i++) {
+            a1[i] = a1[i] + 1;
+        }
+        for (int i = 0; i < a1.length; i++) {
             System.out.println("a1[" + i + "] = " + a1[i]);
         }
     }

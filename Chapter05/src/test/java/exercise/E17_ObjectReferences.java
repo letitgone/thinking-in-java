@@ -1,3 +1,5 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/03
@@ -9,7 +11,7 @@ class Test {
 }
 
 
-public class ExerciseSeventeen {
+public class E17_ObjectReferences {
     // You can define the array as a field in the class:
     Test[] array1 = new Test[5];
 

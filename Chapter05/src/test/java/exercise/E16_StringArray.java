@@ -1,8 +1,10 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/03
  */
-public class ExerciseSixteen {
+public class E16_StringArray {
     public static void main(String[] args) {
         // Doing it the hard way:
         String sa1[] = new String[4];

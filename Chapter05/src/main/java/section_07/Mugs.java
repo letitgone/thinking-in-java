@@ -1,9 +1,6 @@
 package section_07;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/03
- */
+
 class Mug {
     Mug(int marker) {
         System.out.println("Mug(" + marker + ")");
@@ -15,6 +12,11 @@ class Mug {
 }
 
 
+/**
+ * important
+ * @Author ZhangGJ
+ * @Date 2019/04/03
+ */
 public class Mugs {
     Mug mug1;
     Mug mug2;

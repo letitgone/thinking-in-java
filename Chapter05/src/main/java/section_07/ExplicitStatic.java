@@ -1,9 +1,8 @@
 package section_07;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/03
- */
+import static net.mindview.util.Print.print;
+
+
 class Cup {
     Cup(int marker) {
         System.out.println("Cup(" + marker + ")");
@@ -26,12 +25,16 @@ class Cups {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/03
+ */
 public class ExplicitStatic {
     public static void main(String[] args) {
-        System.out.println("Inside main()");
-        Cups.cup1.f(99);
+        print("Inside main()");
+        Cups.cup1.f(99); // (1)
     }
 
-    static Cups cup1 = new Cups();
-    static Cups cup2 = new Cups();
+//    static Cups cups1 = new Cups(); // (2)
+//    static Cups cups2 = new Cups(); // (2)
 }

@@ -1,8 +1,10 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/03
  */
-public class ExerciseFourteen {
+public class E14_StaticStringInitialization {
     static String s1 = "Initialized at definition";
     static String s2;
 
