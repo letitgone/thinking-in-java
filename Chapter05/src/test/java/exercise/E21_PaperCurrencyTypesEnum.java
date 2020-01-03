@@ -1,13 +1,14 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/04
- */
+package exercise;
+
 enum PaperCurrencyTypes {
     ONE, TWO, FIVE, TEN, TWENTY, FIFTY
 }
 
-
-public class ExerciseTwentyOne {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/04
+ */
+public class E21_PaperCurrencyTypesEnum {
     public static void main(String args[]) {
         PaperCurrencyTypes[] s1 = PaperCurrencyTypes.values();
         for (PaperCurrencyTypes s : PaperCurrencyTypes.values())

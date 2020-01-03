@@ -1,8 +1,10 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/04
  */
-public class ExerciseTwentyTwo {
+public class E22_PaperCurrencyTypesEnum2 {
     static void describe(PaperCurrencyTypes pct) {
         System.out.print(pct + " has a portrait of ");
         switch (pct) {
