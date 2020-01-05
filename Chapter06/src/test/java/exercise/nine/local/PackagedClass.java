@@ -1,4 +1,4 @@
-package exercisenine.local;
+package exercise.nine.local;
 
 /**
  * @Author ZhangGJ

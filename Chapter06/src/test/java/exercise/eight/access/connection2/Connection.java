@@ -1,4 +1,4 @@
-package exerciseeight.access.connection;
+package exercise.eight.access.connection2;
 
 /**
  * @Author ZhangGJ
@@ -16,5 +16,9 @@ public class Connection {
     }
 
     public void doSomething() {
+    }
+
+    public void checkIn() {
+        ConnectionManager.checkIn(this);
     }
 }

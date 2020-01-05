@@ -1,6 +1,6 @@
-package exercisenine.foreign;
+package exercise.nine.foreign;
 
-import exercisenine.local.PackagedClass;
+import exercise.nine.local.PackagedClass;
 
 /**
  * @Author ZhangGJ

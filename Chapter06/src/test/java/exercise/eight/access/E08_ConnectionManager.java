@@ -1,13 +1,13 @@
-package exerciseeight.access;
+package exercise.eight.access;
 
-import exerciseeight.access.connection.Connection;
-import exerciseeight.access.connection.ConnectionManager;
+import exercise.eight.access.connection.Connection;
+import exercise.eight.access.connection.ConnectionManager;
 
 /**
  * @Author ZhangGJ
  * @Date 2019/04/06
  */
-public class ConnectionManagers {
+public class E08_ConnectionManager {
     public static void main(String args[]) {
         Connection c = ConnectionManager.getConnection();
         while (c != null) {

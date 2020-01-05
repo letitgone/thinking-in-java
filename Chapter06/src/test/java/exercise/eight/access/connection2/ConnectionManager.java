@@ -1,4 +1,4 @@
-package exerciseeight.access.connection2;
+package exercise.eight.access.connection2;
 
 /**
  * @Author ZhangGJ
