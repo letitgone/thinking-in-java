@@ -1,9 +1,5 @@
 package section_04;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/08
- */
 class Shape {
     Shape(int i) {
         System.out.println("Shape constructor");
@@ -21,6 +17,7 @@ class Circle extends Shape {
         System.out.println("Drawing Circle");
     }
 
+    @Override
     void dispose() {
         System.out.println("Erasing Circle");
         super.dispose();
@@ -34,6 +31,7 @@ class Triangle extends Shape {
         System.out.println("Drawing Triangle");
     }
 
+    @Override
     void dispose() {
         System.out.println("Erasing Triangle");
         super.dispose();
@@ -51,6 +49,7 @@ class Line extends Shape {
         System.out.println("Drawing Line: " + start + ", " + end);
     }
 
+    @Override
     void dispose() {
         System.out.println("Erasing Line: " + start + ", " + end);
         super.dispose();
@@ -58,6 +57,10 @@ class Line extends Shape {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/08
+ */
 public class CADSystem extends Shape {
     private Circle c;
     private Triangle t;
@@ -73,6 +76,7 @@ public class CADSystem extends Shape {
         System.out.println("Combined constructor");
     }
 
+    @Override
     public void dispose() {
         System.out.println("CADSystem.dispose()");
         // The order of cleanup is the reverse

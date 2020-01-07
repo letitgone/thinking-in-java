@@ -1,24 +1,22 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
+package exercise;
+
 class Component1b {
     public Component1b(int i) {
-        System.out.println("Component1b " + i);
+        System.out.println("exercise.Component1b " + i);
     }
 }
 
 
 class Component2b {
     public Component2b(int i) {
-        System.out.println("Component2b " + i);
+        System.out.println("exercise.Component2b " + i);
     }
 }
 
 
 class Component3b {
     public Component3b(int i) {
-        System.out.println("Component3b " + i);
+        System.out.println("exercise.Component3b " + i);
     }
 }
 
@@ -29,7 +27,7 @@ class Rootb {
     Component3b c3 = new Component3b(3);
 
     public Rootb(int i) {
-        System.out.println("Rootb");
+        System.out.println("exercise.Rootb");
     }
 }
 
@@ -41,12 +39,16 @@ class Stemb extends Rootb {
 
     public Stemb(int i) {
         super(i);
-        System.out.println("Stemb");
+        System.out.println("exercise.Stemb");
     }
 }
 
 
-public class ExerciseTen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
+public class E10_ConstructorOrder3 {
     public static void main(String args[]) {
         new Stemb(47);
     }

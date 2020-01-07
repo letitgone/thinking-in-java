@@ -1,9 +1,5 @@
 package section_02;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
 class Game {
     Game(int i) {
         System.out.println("Game constructor");
@@ -11,14 +7,10 @@ class Game {
 }
 
 
-class BoardGame extends Game {
-    BoardGame(int i) {
-        super(i);
-        System.out.println("BoardGame constructor");
-    }
-}
-
-
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
 public class Chess extends BoardGame {
     Chess() {
         super(11);

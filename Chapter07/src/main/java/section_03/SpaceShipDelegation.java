@@ -1,9 +1,5 @@
 package section_03;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
 class SpaceShipControls {
     void up(int velocity) {
     }
@@ -35,6 +31,7 @@ class SpaceShip extends SpaceShipControls {
         this.name = name;
     }
 
+    @Override
     public String toString() {
         return name;
     }
@@ -45,7 +42,10 @@ class SpaceShip extends SpaceShipControls {
     }
 }
 
-
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
 public class SpaceShipDelegation {
     private String name;
     private SpaceShipControls controls = new SpaceShipControls();
@@ -54,7 +54,10 @@ public class SpaceShipDelegation {
         this.name = name;
     }
 
-    // Delegated methods:
+    /**
+     * Delegated methods:
+     * @param velocity
+     */
     public void back(int velocity) {
         controls.back(velocity);
     }

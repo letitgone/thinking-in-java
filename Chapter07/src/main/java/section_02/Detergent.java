@@ -5,18 +5,27 @@ package section_02;
  * @Date 2019/04/07
  */
 public class Detergent extends Cleanser {
-    // Change a method:
+    /**
+     * Change a method:
+     */
+    @Override
     public void scrub() {
         append(" Detergent.scrub()");
         super.scrub(); // Call base-class version
     }
 
-    // Add methods to the interface:
+    /**
+     * Add methods to the interface:
+     */
     public void foam() {
         append(" foam()");
     }
 
-    // Test the new class:
+    /**
+     * Test the new class:
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Detergent x = new Detergent();
         x.dilute();

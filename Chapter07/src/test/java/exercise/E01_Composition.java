@@ -1,9 +1,5 @@
-/**
- * ???
- *
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
+package exercise;
+
 class Simple {
     String s;
 
@@ -30,15 +26,16 @@ class Second {
     }
 
     public void check() {
-        if (simple == null)
+        if (simple == null) {
             System.out.println("not initialized");
-        else
+        } else {
             System.out.println("initialized");
+        }
     }
 
     private Simple lazy() {
         if (simple == null) {
-            System.out.println("Creating Simple");
+            System.out.println("Creating exercise.Simple");
             simple = new Simple(s);
         }
         return simple;
@@ -58,7 +55,13 @@ class Second {
 }
 
 
-public class ExerciseOne {
+/**
+ * ???
+ *
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
+public class E01_Composition {
     public static void main(String args[]) {
         Second second = new Second("Init String");
         second.check();

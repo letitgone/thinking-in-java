@@ -1,9 +1,7 @@
+package exercise;
+
 import section_02.Cleanser;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
 class DetergentDelegation {
     private Cleanser cleanser = new Cleanser();
 
@@ -25,7 +23,7 @@ class DetergentDelegation {
     }
 
     public void scrub() {
-        append(" DetergentDelegation.scrub()");
+        append(" exercise.DetergentDelegation.scrub()");
         cleanser.scrub();
     }
 
@@ -46,7 +44,11 @@ class DetergentDelegation {
 }
 
 
-public class ExerciseEleven {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
+public class E11_Delegation {
     public static void main(String[] args) {
         DetergentDelegation.main(args);
     }

@@ -1,9 +1,5 @@
 package section_04;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
 class Plate {
     Plate(int i) {
         System.out.println("Plate constructor");
@@ -50,7 +46,9 @@ class Knife extends Utensil {
 }
 
 
-// A cultural way of doing something:
+/**
+ * A cultural way of doing something:
+ */
 class Custom {
     Custom(int i) {
         System.out.println("Custom constructor");
@@ -58,6 +56,10 @@ class Custom {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
 public class PlaceSetting extends Custom {
     private Spoon sp;
     private Fork frk;

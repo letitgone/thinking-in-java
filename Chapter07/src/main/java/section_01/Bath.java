@@ -1,9 +1,5 @@
 package section_01;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
 class Soap {
     private String s;
 
@@ -12,15 +8,19 @@ class Soap {
         s = "Constructed";
     }
 
+    @Override
     public String toString() {
         return s;
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
 public class Bath {
-    private String // Initializing at point of definition: (1)
-        s1 = "Happy", s2 = "Happy", s3, s4;
+    private String s1 = "Happy", s2 = "Happy", s3, s4; // Initializing at point of definition: (1)
     private Soap castille;
     private int i;
     private float toy;
@@ -37,6 +37,7 @@ public class Bath {
         i = 47;
     }
 
+    @Override
     public String toString() {
         if (s4 == null) { // Delayed initialization: (3)
             s4 = "Joy";

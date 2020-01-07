@@ -1,10 +1,8 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
+package exercise;
+
 class A2 {
     public A2(String s) {
-        System.out.println("A2(): " + s);
+        System.out.println("exercise.A2(): " + s);
     }
 }
 
@@ -26,7 +24,11 @@ class C2 extends A2 {
 }
 
 
-public class ExerciseSeven {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
+public class E07_SimpleInheritance2 {
     public static void main(String args[]) {
         new C2("Init string");
     }

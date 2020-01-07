@@ -1,9 +1,5 @@
 package section_04;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/08
- */
 class Homer {
     char doh(char c) {
         System.out.println("doh(char)");
@@ -14,6 +10,9 @@ class Homer {
         System.out.println("doh(float)");
         return 1.0f;
     }
+    void doh(Milhouse m){
+        System.out.println("234");
+    }
 }
 
 
@@ -22,12 +21,17 @@ class Milhouse {
 
 
 class Bart extends Homer {
+    @Override
     void doh(Milhouse m) {
         System.out.println("doh(Milhouse)");
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/08
+ */
 public class Hide {
     public static void main(String[] args) {
         Bart b = new Bart();

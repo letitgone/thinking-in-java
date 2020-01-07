@@ -1,12 +1,11 @@
+package exercise;
+
 import section_02.Detergent;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/07
- */
 class NewDetergent extends Detergent {
+    @Override
     public void scrub() {
-        append(" NewDetergent.scrub()");
+        append(" exercise.NewDetergent.scrub()");
         super.scrub(); // Doesn't have to be first
     }
 
@@ -16,7 +15,11 @@ class NewDetergent extends Detergent {
 }
 
 
-public class ExerciseTwo {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/07
+ */
+public class E02_NewDetergent {
     public static void main(String args[]) {
         NewDetergent nd = new NewDetergent();
         nd.dilute();
