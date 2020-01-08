@@ -1,13 +1,11 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/09
- */
+package exercise;
+
 class SelfCounter {
     private static int count;
     private int id = count++;
 
     public String toString() {
-        return "SelfCounter " + id;
+        return "exercise.SelfCounter " + id;
     }
 }
 
@@ -22,7 +20,11 @@ class WithFinalFields {
 }
 
 
-public class ExerciseEighteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/09
+ */
+public class E18_FinalFields {
     public static void main(String args[]) {
         System.out.println("First object:");
         System.out.println(new WithFinalFields());

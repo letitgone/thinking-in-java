@@ -1,9 +1,5 @@
 package section_06;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/08
- */
 class Villain {
     private String name;
 
@@ -15,12 +11,17 @@ class Villain {
         this.name = name;
     }
 
+    @Override
     public String toString() {
         return "I’m a Villain and my name is " + name;
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/08
+ */
 public class Orc extends Villain {
     private int orcNumber;
 
@@ -34,6 +35,7 @@ public class Orc extends Villain {
         this.orcNumber = orcNumber;
     }
 
+    @Override
     public String toString() {
         return "Orc " + orcNumber + ": " + super.toString();
     }

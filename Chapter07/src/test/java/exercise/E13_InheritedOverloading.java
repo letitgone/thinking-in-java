@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/08
- */
+package exercise;
+
 class ThreeOverloads {
     public void f(int i) {
         System.out.println("f(int i)");
@@ -24,7 +22,11 @@ class MoreOverloads extends ThreeOverloads {
 }
 
 
-public class ExerciseThirteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/08
+ */
+public class E13_InheritedOverloading {
     public static void main(String args[]) {
         MoreOverloads mo = new MoreOverloads();
         mo.f(1);

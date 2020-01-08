@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/08
- */
+package exercise;
+
 class Amphibian {
     public void moveInWater() {
         System.out.println("Moving in Water");
@@ -15,16 +13,20 @@ class Amphibian {
 
 class Frog extends Amphibian {
     public void moveInWater() {
-        System.out.println("Frog swimming");
+        System.out.println("exercise.Frog swimming");
     }
 
     public void moveOnLand() {
-        System.out.println("Frog jumping");
+        System.out.println("exercise.Frog jumping");
     }
 }
 
 
-public class ExerciseSixteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/08
+ */
+public class E16_Frog {
     public static void main(String args[]) {
         Amphibian a = new Frog();
         a.moveInWater();

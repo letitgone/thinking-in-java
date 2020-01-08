@@ -1,7 +1,4 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/08
- */
+package exercise;
 
 class Engine {
     public void start() {
@@ -77,7 +74,11 @@ class ServicableCar {
 }
 
 
-public class ExerciseFourteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/08
+ */
+public class E14_ServicableEngine {
     public static void main(String[] args) {
         ServicableCar car = new ServicableCar();
         car.left.window.rollup();

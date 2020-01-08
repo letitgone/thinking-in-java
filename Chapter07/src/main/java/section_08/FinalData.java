@@ -2,12 +2,11 @@ package section_08;
 
 import java.util.Random;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/09
- */
 class Value {
-    int i; // Package access
+    /**
+     * Package access
+     */
+    int i;
 
     public Value(int i) {
         this.i = i;
@@ -15,6 +14,10 @@ class Value {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/09
+ */
 public class FinalData {
     private static Random rand = new Random(47);
     private String id;
@@ -23,7 +26,9 @@ public class FinalData {
         this.id = id;
     }
 
-    // Can be compile-time constants:
+    /**
+     * Can be compile-time constants:
+     */
     private final int valueOne = 9;
     private static final int VALUE_TWO = 99;
     // Typical public constant:
@@ -37,6 +42,7 @@ public class FinalData {
     // Arrays:
     private final int[] a = {1, 2, 3, 4, 5, 6};
 
+    @Override
     public String toString() {
         return id + ": " + "i4 = " + i4 + ", INT_5 = " + INT_5;
     }
@@ -45,9 +51,12 @@ public class FinalData {
         FinalData fd1 = new FinalData("fd1");
         //! fd1.valueOne++; // Error: can’t change value
         fd1.v2.i++; // Object isn’t constant!
-        fd1.v1 = new Value(9); // OK -- not final
-        for (int i = 0; i < fd1.a.length; i++)
-            fd1.a[i]++; // Object isn’t constant!
+        // OK -- not final
+        fd1.v1 = new Value(9);
+        for (int i = 0; i < fd1.a.length; i++) {
+            // Object isn’t constant!
+            fd1.a[i]++;
+        }
         //! fd1.v2 = new Value(0); // Error: Can’t
         //! fd1.VAL_3 = new Value(1); // change reference
         //! fd1.a = new int[3];
