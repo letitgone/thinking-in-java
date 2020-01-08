@@ -1,9 +1,5 @@
 package section_08;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/09
- */
 class Poppet {
     private int i;
 
@@ -13,6 +9,10 @@ class Poppet {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/09
+ */
 public class BlankFinal {
     private final int i = 0; // Initialized final
     private final int j; // Blank final

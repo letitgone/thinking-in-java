@@ -1,22 +1,5 @@
 package section_08;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/09
- */
-class WithFinals {
-    // Identical to "private" alone:
-    private final void f() {
-        System.out.println("WithFinals.f()");
-    }
-
-    // Also automatically "final":
-    private void g() {
-        System.out.println("WithFinals.g()");
-    }
-}
-
-
 class OverridingPrivate extends WithFinals {
     private final void f() {
         System.out.println("OverridingPrivate.f()");
@@ -39,6 +22,10 @@ class OverridingPrivate2 extends OverridingPrivate {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/09
+ */
 public class FinalOverridingIllusion {
     public static void main(String[] args) {
         OverridingPrivate2 op2 = new OverridingPrivate2();

@@ -1,10 +1,8 @@
 package section_01;
 
-import section_09.Spiciness;
+import ninth.Spiciness;
 
-import static section_09.Spiciness.HOT;
-import static section_09.Spiciness.MEDIUM;
-import static section_09.Spiciness.NOT;
+import static ninth.Spiciness.*;
 
 /**
  * @Author ZhangGJ
@@ -17,6 +15,7 @@ public class Burrito {
         this.degree = degree;
     }
 
+    @Override
     public String toString() {
         return "Burrito is " + degree;
     }

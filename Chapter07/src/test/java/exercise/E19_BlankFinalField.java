@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/09
- */
+package exercise;
+
 class WithBlankFinalField {
     private final Integer i;
 
@@ -21,7 +19,11 @@ class WithBlankFinalField {
 }
 
 
-public class ExerciseNineteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/09
+ */
+public class E19_BlankFinalField {
     public static void main(String args[]) {
         WithBlankFinalField wbff = new WithBlankFinalField(10);
         System.out.println(wbff.geti());

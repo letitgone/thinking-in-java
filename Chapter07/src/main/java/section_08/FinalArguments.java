@@ -1,15 +1,15 @@
 package section_08;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/09
- */
 class Gizmo {
     public void spin() {
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/09
+ */
 public class FinalArguments {
     void with(final Gizmo g) {
         //! g = new Gizmo(); // Illegal -- g is final

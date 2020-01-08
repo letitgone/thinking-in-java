@@ -1,9 +1,7 @@
+package exercise;
+
 import section_09.Beetle;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/10
- */
 class Insect {
     private int i = 9;
     protected int j;
@@ -13,7 +11,7 @@ class Insect {
         j = 39;
     }
 
-    private static int x1 = printInit("static Insect.x1 initialized");
+    private static int x1 = printInit("static exercise.Insect.x1 initialized");
 
     static int printInit(String s) {
         System.out.println(s);
@@ -40,18 +38,22 @@ class Beetle1 extends Insect {
 
 
 class JapaneseBeetle extends Beetle1 {
-    int m = printInit("JapaneseBeetle.m initialized");
+    int m = printInit("exercise.JapaneseBeetle.m initialized");
 
     JapaneseBeetle() {
         System.out.println("m = " + m);
         System.out.println("j = " + j);
     }
 
-    static int x3 = printInit("static JapaneseBeetle.x3 initialized");
+    static int x3 = printInit("static exercise.JapaneseBeetle.x3 initialized");
 }
 
 
-public class ExerciseTwentyFour {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/10
+ */
+public class E24_JapaneseBeetle {
     public static void main(String args[]) {
         new JapaneseBeetle();
     }

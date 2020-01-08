@@ -1,6 +1,7 @@
 package section_02;
 
-import section_01.Note;
+
+import first.Note;
 
 /**
  * @Author ZhangGJ
@@ -18,14 +19,17 @@ interface Instrument {
 
 
 class Wind implements Instrument {
+    @Override
     public void play(Note n) {
         System.out.println(this + ".play() " + n);
     }
 
+    @Override
     public String toString() {
         return "Wind";
     }
 
+    @Override
     public void adjust() {
         System.out.println(this + ".adjust()");
     }
@@ -33,14 +37,17 @@ class Wind implements Instrument {
 
 
 class Percussion implements Instrument {
+    @Override
     public void play(Note n) {
         System.out.println(this + ".play() " + n);
     }
 
+    @Override
     public String toString() {
         return "Percussion";
     }
 
+    @Override
     public void adjust() {
         System.out.println(this + ".adjust()");
     }
@@ -48,14 +55,17 @@ class Percussion implements Instrument {
 
 
 class Stringed implements Instrument {
+    @Override
     public void play(Note n) {
         System.out.println(this + ".play() " + n);
     }
 
+    @Override
     public String toString() {
         return "Stringed";
     }
 
+    @Override
     public void adjust() {
         System.out.println(this + ".adjust()");
     }
@@ -63,6 +73,7 @@ class Stringed implements Instrument {
 
 
 class Brass extends Wind {
+    @Override
     public String toString() {
         return "Brass";
     }
@@ -70,6 +81,7 @@ class Brass extends Wind {
 
 
 class Woodwind extends Wind {
+    @Override
     public String toString() {
         return "Woodwind";
     }

@@ -1,9 +1,5 @@
 package section_09;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/09
- */
 class Insect {
     private int i = 9;
     protected int j;
@@ -22,6 +18,10 @@ class Insect {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/09
+ */
 public class Beetle extends Insect {
     private int k = printInit("Beetle.k initialized");
 
