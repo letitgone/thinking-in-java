@@ -1,10 +1,7 @@
 package section_01;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/10
- */
 class Stringed extends Instrument {
+    @Override
     public void play(Note n) {
         System.out.println("Stringed.play() " + n);
     }
@@ -12,12 +9,17 @@ class Stringed extends Instrument {
 
 
 class Brass extends Instrument {
+    @Override
     public void play(Note n) {
         System.out.println("Brass.play() " + n);
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/10
+ */
 public class Music2 {
     public static void tune(Wind i) {
         i.play(Note.MIDDLE_C);
@@ -35,7 +37,8 @@ public class Music2 {
         Wind flute = new Wind();
         Stringed violin = new Stringed();
         Brass frenchHorn = new Brass();
-        tune(flute); // No upcasting
+        // No upcasting
+        tune(flute);
         tune(violin);
         tune(frenchHorn);
     }

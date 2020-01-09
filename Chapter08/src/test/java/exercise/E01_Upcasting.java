@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/10
- */
+package exercise;
+
 class Cycle {
 }
 
@@ -18,7 +16,11 @@ class Tricycle extends Cycle {
 }
 
 
-public class ExerciseOne {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/10
+ */
+public class E01_Upcasting {
     public static void ride(Cycle c) {
     }
 
