@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/12
- */
+package exercise;
+
 class NonSharedMember {
     public NonSharedMember(String id) {
         System.out.println("Non shared member constructor " + id);
@@ -22,11 +20,11 @@ class SharedMember {
     }
 
     public SharedMember() {
-        System.out.println("Shared member constructor");
+        System.out.println("exercise.Shared member constructor");
     }
 
     public String toString() {
-        return "Shared member";
+        return "exercise.Shared member";
     }
 }
 
@@ -36,17 +34,17 @@ class Rodent3 {
     NonSharedMember m1 = new NonSharedMember("r1"), m2 = new NonSharedMember("r2");
 
     public Rodent3(SharedMember sm) {
-        System.out.println("Rodent constructor");
+        System.out.println("exercise.Rodent constructor");
         m = sm;
         m.addRef();
     }
 
     public void hop() {
-        System.out.println("Rodent hopping");
+        System.out.println("exercise.Rodent hopping");
     }
 
     public void scurry() {
-        System.out.println("Rodent scurrying");
+        System.out.println("exercise.Rodent scurrying");
     }
 
     public void reproduce() {
@@ -59,7 +57,7 @@ class Rodent3 {
     }
 
     public String toString() {
-        return "Rodent";
+        return "exercise.Rodent";
     }
 }
 
@@ -69,15 +67,15 @@ class Mouse3 extends Rodent3 {
 
     public Mouse3(SharedMember sm) {
         super(sm);
-        System.out.println("Mouse constructor");
+        System.out.println("exercise.Mouse constructor");
     }
 
     public void hop() {
-        System.out.println("Mouse hopping");
+        System.out.println("exercise.Mouse hopping");
     }
 
     public void scurry() {
-        System.out.println("Mouse scurrying");
+        System.out.println("exercise.Mouse scurrying");
     }
 
     public void reproduce() {
@@ -85,7 +83,7 @@ class Mouse3 extends Rodent3 {
     }
 
     public String toString() {
-        return "Mouse";
+        return "exercise.Mouse";
     }
 }
 
@@ -96,15 +94,15 @@ class Gerbil3 extends Rodent3 {
 
     public Gerbil3(SharedMember sm) {
         super(sm);
-        System.out.println("Gerbil constructor");
+        System.out.println("exercise.Gerbil constructor");
     }
 
     public void hop() {
-        System.out.println("Gerbil hopping");
+        System.out.println("exercise.Gerbil hopping");
     }
 
     public void scurry() {
-        System.out.println("Gerbil scurrying");
+        System.out.println("exercise.Gerbil scurrying");
     }
 
     public void reproduce() {
@@ -112,7 +110,7 @@ class Gerbil3 extends Rodent3 {
     }
 
     public String toString() {
-        return "Gerbil";
+        return "exercise.Gerbil";
     }
 }
 
@@ -123,15 +121,15 @@ class Hamster3 extends Rodent3 {
 
     public Hamster3(SharedMember sm) {
         super(sm);
-        System.out.println("Hamster constructor");
+        System.out.println("exercise.Hamster constructor");
     }
 
     public void hop() {
-        System.out.println("Hamster hopping");
+        System.out.println("exercise.Hamster hopping");
     }
 
     public void scurry() {
-        System.out.println("Hamster scurrying");
+        System.out.println("exercise.Hamster scurrying");
     }
 
     public void reproduce() {
@@ -139,12 +137,16 @@ class Hamster3 extends Rodent3 {
     }
 
     public String toString() {
-        return "Hamster";
+        return "exercise.Hamster";
     }
 }
 
 
-public class ExerciseFourteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/12
+ */
+public class E14_SharedRodentInitialization {
     public static void main(String args[]) {
         SharedMember sm = new SharedMember();
         Rodent3[] rodents = {new Hamster3(sm), new Gerbil3(sm), new Mouse3(sm),};

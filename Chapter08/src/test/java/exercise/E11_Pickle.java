@@ -1,52 +1,54 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/11
  */
 class Meal {
     Meal() {
-        System.out.println("Meal()");
+        System.out.println("exercise.Meal()");
     }
 }
 
 
 class Bread {
     Bread() {
-        System.out.println("Bread()");
+        System.out.println("exercise.Bread()");
     }
 }
 
 
 class Cheese {
     Cheese() {
-        System.out.println("Cheese()");
+        System.out.println("exercise.Cheese()");
     }
 }
 
 
 class Lettuce {
     Lettuce() {
-        System.out.println("Lettuce()");
+        System.out.println("exercise.Lettuce()");
     }
 }
 
 
 class Lunch extends Meal {
     Lunch() {
-        System.out.println("Lunch()");
+        System.out.println("exercise.Lunch()");
     }
 }
 
 
 class PortableLunch extends Lunch {
     PortableLunch() {
-        System.out.println("PortableLunch()");
+        System.out.println("exercise.PortableLunch()");
     }
 }
 
 
 class Pickle {
     Pickle() {
-        System.out.println("Pickle()");
+        System.out.println("exercise.Pickle()");
     }
 }
 
@@ -63,7 +65,7 @@ class Sandwich2 extends PortableLunch {
 }
 
 
-public class ExerciseEleven {
+public class E11_Pickle {
     public static void main(String args[]) {
         new Sandwich2();
     }

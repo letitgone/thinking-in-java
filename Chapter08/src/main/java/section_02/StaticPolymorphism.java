@@ -1,9 +1,6 @@
 package section_02;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/11
- */
+
 class StaticSuper {
     public static String staticGet() {
         return "Base staticGet()";
@@ -20,15 +17,20 @@ class StaticSub extends StaticSuper {
         return "Derived staticGet()";
     }
 
+    @Override
     public String dynamicGet() {
         return "Derived dynamicGet()";
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/11
+ */
 public class StaticPolymorphism {
     public static void main(String[] args) {
-        StaticSuper sup = new StaticSub(); // Upcast
+        StaticSuper sup = new StaticSub();
         System.out.println(sup.staticGet());
         System.out.println(sup.dynamicGet());
     }

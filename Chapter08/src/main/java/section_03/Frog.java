@@ -1,9 +1,6 @@
 package section_03;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/11
- */
+
 class Characteristic {
     private String s;
 
@@ -56,6 +53,7 @@ class Animal extends LivingCreature {
         System.out.println("Animal()");
     }
 
+    @Override
     protected void dispose() {
         System.out.println("Animal dispose");
         t.dispose();
@@ -73,6 +71,7 @@ class Amphibian extends Animal {
         System.out.println("Amphibian()");
     }
 
+    @Override
     protected void dispose() {
         System.out.println("Amphibian dispose");
         t.dispose();
@@ -82,6 +81,10 @@ class Amphibian extends Animal {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/11
+ */
 public class Frog extends Amphibian {
     private Characteristic p = new Characteristic("Croaks");
     private Description t = new Description("Eats Bugs");
@@ -90,6 +93,7 @@ public class Frog extends Amphibian {
         System.out.println("Frog()");
     }
 
+    @Override
     protected void dispose() {
         System.out.println("Frog dispose");
         t.dispose();

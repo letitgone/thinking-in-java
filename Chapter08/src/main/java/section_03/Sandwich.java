@@ -1,9 +1,6 @@
 package section_03;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/11
- */
+
 class Meal {
     Meal() {
         System.out.println("Meal()");
@@ -46,6 +43,10 @@ class PortableLunch extends Lunch {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/11
+ */
 public class Sandwich extends PortableLunch {
     private Bread b = new Bread();
     private Cheese c = new Cheese();

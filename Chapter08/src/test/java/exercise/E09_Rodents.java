@@ -1,14 +1,12 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/11
- */
+package exercise;
+
 class Rodent {
     public void hop() {
-        System.out.println("Rodent hopping");
+        System.out.println("exercise.Rodent hopping");
     }
 
     public void scurry() {
-        System.out.println("Rodent scurrying");
+        System.out.println("exercise.Rodent scurrying");
     }
 
     public void reproduce() {
@@ -16,18 +14,18 @@ class Rodent {
     }
 
     public String toString() {
-        return "Rodent";
+        return "exercise.Rodent";
     }
 }
 
 
 class Mouse extends Rodent {
     public void hop() {
-        System.out.println("Mouse hopping");
+        System.out.println("exercise.Mouse hopping");
     }
 
     public void scurry() {
-        System.out.println("Mouse scurrying");
+        System.out.println("exercise.Mouse scurrying");
     }
 
     public void reproduce() {
@@ -35,18 +33,18 @@ class Mouse extends Rodent {
     }
 
     public String toString() {
-        return "Mouse";
+        return "exercise.Mouse";
     }
 }
 
 
 class Gerbil extends Rodent {
     public void hop() {
-        System.out.println("Gerbil hopping");
+        System.out.println("exercise.Gerbil hopping");
     }
 
     public void scurry() {
-        System.out.println("Gerbil scurrying");
+        System.out.println("exercise.Gerbil scurrying");
     }
 
     public void reproduce() {
@@ -54,18 +52,18 @@ class Gerbil extends Rodent {
     }
 
     public String toString() {
-        return "Gerbil";
+        return "exercise.Gerbil";
     }
 }
 
 
 class Hamster extends Rodent {
     public void hop() {
-        System.out.println("Hamster hopping");
+        System.out.println("exercise.Hamster hopping");
     }
 
     public void scurry() {
-        System.out.println("Hamster scurrying");
+        System.out.println("exercise.Hamster scurrying");
     }
 
     public void reproduce() {
@@ -73,12 +71,16 @@ class Hamster extends Rodent {
     }
 
     public String toString() {
-        return "Hamster";
+        return "exercise.Hamster";
     }
 }
 
 
-public class ExerciseNine {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/11
+ */
+public class E09_Rodents {
     public static void main(String args[]) {
         Rodent[] rodents = {new Mouse(), new Gerbil(), new Hamster(),};
         for (Rodent r : rodents) {

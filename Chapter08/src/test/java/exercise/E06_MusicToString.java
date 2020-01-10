@@ -1,16 +1,15 @@
+package exercise;
+
 import section_01.Note;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/11
- */
+
 class Instrument {
     void play(Note n) {
-        System.out.println("Instrument.play() " + n);
+        System.out.println("exercise.Instrument.play() " + n);
     }
 
     public String toString() {
-        return "Instrument";
+        return "exercise.Instrument";
     }
 
     void adjust() {
@@ -20,60 +19,64 @@ class Instrument {
 
 class Wind extends Instrument {
     void play(Note n) {
-        System.out.println("Wind.play() " + n);
+        System.out.println("exercise.Wind.play() " + n);
     }
 
     public String toString() {
-        return "Wind";
+        return "exercise.Wind";
     }
 }
 
 
 class Percussion extends Instrument {
     void play(Note n) {
-        System.out.println("Percussion.play() " + n);
+        System.out.println("exercise.Percussion.play() " + n);
     }
 
     public String toString() {
-        return "Percussion";
+        return "exercise.Percussion";
     }
 }
 
 
 class Stringed extends Instrument {
     void play(Note n) {
-        System.out.println("Stringed.play() " + n);
+        System.out.println("exercise.Stringed.play() " + n);
     }
 
     public String toString() {
-        return "Stringed";
+        return "exercise.Stringed";
     }
 }
 
 
 class Brass extends Wind {
     void play(Note n) {
-        System.out.println("Brass.play() " + n);
+        System.out.println("exercise.Brass.play() " + n);
     }
 
     void adjust() {
-        System.out.println("Brass.adjust()");
+        System.out.println("exercise.Brass.adjust()");
     }
 }
 
 
 class Woodwind extends Wind {
     void play(Note n) {
-        System.out.println("Woodwind.play() " + n);
+        System.out.println("exercise.Woodwind.play() " + n);
     }
 
     public String toString() {
-        return "Woodwind";
+        return "exercise.Woodwind";
     }
 }
 
 
-public class ExerciseSix {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/11
+ */
+public class E06_MusicToString {
     static Instrument[] orchestra =
         {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind()};
 

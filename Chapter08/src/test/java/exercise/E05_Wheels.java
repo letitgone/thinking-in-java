@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/10
- */
+package exercise;
+
 class Cycle1 {
     int wheels() {
         return 0;
@@ -29,8 +27,11 @@ class Tricycle1 extends Cycle1 {
     }
 }
 
-
-public class ExerciseFive {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/10
+ */
+public class E05_Wheels {
     public static void ride(Cycle1 c) {
         System.out.println("Num. of wheels: " + c.wheels());
     }

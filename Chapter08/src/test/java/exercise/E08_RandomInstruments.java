@@ -1,3 +1,5 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/11
@@ -25,7 +27,7 @@ class InstrumentGenerator {
 }
 
 
-public class ExerciseEight {
+public class E08_RandomInstruments {
     public static void main(String args[]) {
         InstrumentGenerator gen = new InstrumentGenerator();
         for (int i = 0; i < 20; i++)

@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/12
- */
+package exercise;
+
 class Shared {
     private int refcount = 0;
     private static int counter = 0;
@@ -26,7 +24,7 @@ class Shared {
     }
 
     public String toString() {
-        return "Shared " + id;
+        return "exercise.Shared " + id;
     }
 }
 
@@ -48,12 +46,16 @@ class Composing {
     }
 
     public String toString() {
-        return "Composing " + id;
+        return "exercise.Composing " + id;
     }
 }
 
 
-public class ExerciseThirteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/12
+ */
+public class E13_VerifiedRefCounting {
     public static void main(String[] args) {
         Shared shared = new Shared();
         Composing[] composing =
