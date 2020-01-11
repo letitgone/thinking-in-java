@@ -1,9 +1,5 @@
 package section_03;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/17
- */
 class FilterAdapter implements Processor {
     Filter filter;
 
@@ -11,16 +7,23 @@ class FilterAdapter implements Processor {
         this.filter = filter;
     }
 
+    @Override
     public String name() {
         return filter.name();
     }
 
+    @Override
     public Waveform process(Object input) {
         return filter.process((Waveform) input);
     }
 }
 
 
+/**
+ * important
+ * @Author ZhangGJ
+ * @Date 2019/04/17
+ */
 public class FilterProcessor {
     public static void main(String[] args) {
         Waveform w = new Waveform();

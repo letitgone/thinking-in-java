@@ -1,9 +1,7 @@
+package exercise;
+
 import third.Sandwich;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
 interface FastFood {
     void rushOrder();
 
@@ -22,7 +20,11 @@ class FastSandwich extends Sandwich implements FastFood {
 }
 
 
-public class ExerciseEight {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
+public class E08_FastFood {
     public static void main(String args[]) {
         FastSandwich burger = new FastSandwich();
         System.out.println("Fries with that?");

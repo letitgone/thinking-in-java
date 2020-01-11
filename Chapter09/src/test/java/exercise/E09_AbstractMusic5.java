@@ -1,9 +1,7 @@
+package exercise;
+
 import first.Note;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
 abstract class Instrument {
     public void play(Note n) {
         System.out.println(this + ".play() " + n);
@@ -20,40 +18,44 @@ abstract class Instrument {
 
 class Wind extends Instrument {
     public String toString() {
-        return "Wind";
+        return "exercise.Wind";
     }
 }
 
 
 class Percussion extends Instrument {
     public String toString() {
-        return "Percussion";
+        return "exercise.Percussion";
     }
 }
 
 
 class Stringed extends Instrument {
     public String toString() {
-        return "Stringed";
+        return "exercise.Stringed";
     }
 }
 
 
 class Brass extends Wind {
     public String toString() {
-        return "Brass";
+        return "exercise.Brass";
     }
 }
 
 
 class Woodwind extends Wind {
     public String toString() {
-        return "Woodwind";
+        return "exercise.Woodwind";
     }
 }
 
 
-public class ExerciseNine {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
+public class E09_AbstractMusic5 {
     static void tune(Instrument i) {
         i.adjust();
         i.play(Note.MIDDLE_C);

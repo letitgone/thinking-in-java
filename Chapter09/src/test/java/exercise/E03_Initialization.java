@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
+package exercise;
+
 abstract class BaseWithPrint {
     public BaseWithPrint() {
         print();
@@ -20,7 +18,11 @@ class DerivedWithPrint extends BaseWithPrint {
 }
 
 
-public class ExerciseThree {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
+public class E03_Initialization {
     public static void main(String args[]) {
         DerivedWithPrint dp = new DerivedWithPrint();
         dp.print();

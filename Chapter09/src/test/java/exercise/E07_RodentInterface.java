@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
+package exercise;
+
 interface Rodent2 {
     void hop();
 
@@ -13,11 +11,11 @@ interface Rodent2 {
 
 class Mouse2 implements Rodent2 {
     public void hop() {
-        System.out.println("Mouse hopping");
+        System.out.println("exercise.Mouse hopping");
     }
 
     public void scurry() {
-        System.out.println("Mouse scurrying");
+        System.out.println("exercise.Mouse scurrying");
     }
 
     public void reproduce() {
@@ -25,18 +23,18 @@ class Mouse2 implements Rodent2 {
     }
 
     public String toString() {
-        return "Mouse";
+        return "exercise.Mouse";
     }
 }
 
 
 class Gerbil2 implements Rodent2 {
     public void hop() {
-        System.out.println("Gerbil hopping");
+        System.out.println("exercise.Gerbil hopping");
     }
 
     public void scurry() {
-        System.out.println("Gerbil scurrying");
+        System.out.println("exercise.Gerbil scurrying");
     }
 
     public void reproduce() {
@@ -44,18 +42,18 @@ class Gerbil2 implements Rodent2 {
     }
 
     public String toString() {
-        return "Gerbil";
+        return "exercise.Gerbil";
     }
 }
 
 
 class Hamster2 implements Rodent2 {
     public void hop() {
-        System.out.println("Hamster hopping");
+        System.out.println("exercise.Hamster hopping");
     }
 
     public void scurry() {
-        System.out.println("Hamster scurrying");
+        System.out.println("exercise.Hamster scurrying");
     }
 
     public void reproduce() {
@@ -63,12 +61,16 @@ class Hamster2 implements Rodent2 {
     }
 
     public String toString() {
-        return "Hamster";
+        return "exercise.Hamster";
     }
 }
 
 
-public class ExerciseSeven {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
+public class E07_RodentInterface {
     public static void main(String args[]) {
         Rodent2[] rodents = {new Mouse2(), new Gerbil2(), new Hamster2(),};
         for (Rodent2 r : rodents) {

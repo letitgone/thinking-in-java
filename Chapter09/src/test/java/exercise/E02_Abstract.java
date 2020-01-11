@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
+package exercise;
+
 abstract class NoAbstractMethods {
     void f() {
         System.out.println("f()");
@@ -9,8 +7,12 @@ abstract class NoAbstractMethods {
 }
 
 
-public class ExerciseTwo {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
+public class E02_Abstract {
     public static void main(String args[]) {
-        //				new NoAbstractMethods();
+        //				new exercise.NoAbstractMethods();
     }
 }

@@ -2,12 +2,10 @@ package section_01;
 
 import first.Note;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
 abstract class Instrument {
-    private int i; // Storage allocated for each
+
+    // Storage allocated for each
+    private int i;
 
     public abstract void play(Note n);
 
@@ -96,6 +94,10 @@ class Woodwind extends Wind {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
 public class Music4 {
     // Doesn’t care about type, so new types
     // added to the system still work right:

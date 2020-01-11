@@ -3,16 +3,14 @@ package section_02;
 
 import first.Note;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
 interface Instrument {
     // Compile-time constant:
-    int VALUE = 5; // static & final
+    // static & final
+    int VALUE = 5;
 
     // Cannot have method definitions:
-    void play(Note n); // Automatically public
+    // Automatically public
+    void play(Note n);
 
     void adjust();
 }
@@ -87,7 +85,10 @@ class Woodwind extends Wind {
     }
 }
 
-
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
 public class Music5 {
     // Doesn’t care about type, so new types
     // added to the system still work right:
@@ -97,8 +98,9 @@ public class Music5 {
     }
 
     static void tuneAll(Instrument[] e) {
-        for (Instrument i : e)
+        for (Instrument i : e) {
             tune(i);
+        }
     }
 
     public static void main(String[] args) {

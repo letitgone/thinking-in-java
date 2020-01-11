@@ -1,10 +1,8 @@
+package exercise;
+
 import section_03.Apply;
 import section_03.Processor;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/17
- */
 class CharacterPairSwapper {
     static String swap(String s) {
         StringBuilder sb = new StringBuilder(s);
@@ -30,7 +28,12 @@ class SwapperAdapter implements Processor {
 }
 
 
-public class ExerciseEleven {
+/**
+ * important
+ * @Author ZhangGJ
+ * @Date 2019/04/17
+ */
+public class E11_Swapper {
     public static void main(String[] args) {
         Apply.process(new SwapperAdapter(), "1234");
         Apply.process(new SwapperAdapter(), "abcde");

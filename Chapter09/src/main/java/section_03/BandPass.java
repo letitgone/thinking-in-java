@@ -8,13 +8,13 @@ class Waveform {
     private static long counter;
     private final long id = counter++;
 
+    @Override
     public String toString() {
         return "Waveform " + id;
     }
-} ///:~
+}
 
 
-//: interfaces/filters/Filter.java
 class Filter {
     public String name() {
         return getClass().getSimpleName();
@@ -23,10 +23,9 @@ class Filter {
     public Waveform process(Waveform input) {
         return input;
     }
-} ///:~
+}
 
 
-//: interfaces/filters/LowPass.java
 class LowPass extends Filter {
     double cutoff;
 
@@ -34,13 +33,14 @@ class LowPass extends Filter {
         this.cutoff = cutoff;
     }
 
+    @Override
     public Waveform process(Waveform input) {
-        return input; // Dummy processing
+        // Dummy processing
+        return input;
     }
-} ///:~
+}
 
 
-//: interfaces/filters/HighPass.java
 class HighPass extends Filter {
     double cutoff;
 
@@ -48,13 +48,18 @@ class HighPass extends Filter {
         this.cutoff = cutoff;
     }
 
+    @Override
     public Waveform process(Waveform input) {
         return input;
     }
-} ///:~
+}
 
 
-//: interfaces/filters/BandPass.java
+/**
+ * important
+ * @Author ZhangGJ
+ * @Date 2019/04/17
+ */
 public class BandPass extends Filter {
     double lowCutoff, highCutoff;
 
@@ -63,6 +68,7 @@ public class BandPass extends Filter {
         highCutoff = highCut;
     }
 
+    @Override
     public Waveform process(Waveform input) {
         return input;
     }

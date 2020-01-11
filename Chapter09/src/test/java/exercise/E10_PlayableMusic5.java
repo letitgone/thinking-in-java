@@ -1,9 +1,7 @@
+package exercise;
+
 import first.Note;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
 interface Instrument2 {
     void adjust();
 }
@@ -20,7 +18,7 @@ class Wind2 implements Instrument2, Playable {
     }
 
     public String toString() {
-        return "Wind";
+        return "exercise.Wind";
     }
 
     public void adjust() {
@@ -35,7 +33,7 @@ class Percussion2 implements Instrument2, Playable {
     }
 
     public String toString() {
-        return "Percussion";
+        return "exercise.Percussion";
     }
 
     public void adjust() {
@@ -50,7 +48,7 @@ class Stringed2 implements Instrument2, Playable {
     }
 
     public String toString() {
-        return "Stringed";
+        return "exercise.Stringed";
     }
 
     public void adjust() {
@@ -61,19 +59,23 @@ class Stringed2 implements Instrument2, Playable {
 
 class Brass2 extends Wind2 {
     public String toString() {
-        return "Brass";
+        return "exercise.Brass";
     }
 }
 
 
 class Woodwind2 extends Wind2 {
     public String toString() {
-        return "Woodwind";
+        return "exercise.Woodwind";
     }
 }
 
 
-public class ExerciseTen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
+public class E10_PlayableMusic5 {
     static void tune(Playable p) {
         p.play(Note.MIDDLE_C);
     }

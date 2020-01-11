@@ -1,14 +1,12 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
+package exercise;
+
 abstract class NoMethods {
 }
 
 
 class Extended1 extends NoMethods {
     public void f() {
-        System.out.println("Extended1.f");
+        System.out.println("exercise.Extended1.f");
     }
 }
 
@@ -20,12 +18,16 @@ abstract class WithMethods {
 
 class Extended2 extends WithMethods {
     public void f() {
-        System.out.println("Extended2.f");
+        System.out.println("exercise.Extended2.f");
     }
 }
 
 
-public class ExerciseFour {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
+public class E04_AbstractBase {
     public static void test1(NoMethods nm) {
         // Must downcast to access f():
         ((Extended1) nm).f();

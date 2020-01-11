@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/16
- */
+package exercise;
+
 interface AnInterface {
     void f();
 
@@ -13,20 +11,24 @@ interface AnInterface {
 
 class ImplementInterface implements AnInterface {
     public void f() {
-        System.out.println("ImplementInterface.f");
+        System.out.println("exercise.ImplementInterface.f");
     }
 
     public void g() {
-        System.out.println("ImplementInterface.g");
+        System.out.println("exercise.ImplementInterface.g");
     }
 
     public void h() {
-        System.out.println("ImplementInterface.h");
+        System.out.println("exercise.ImplementInterface.h");
     }
 }
 
 
-public class ExerciseFive {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/16
+ */
+public class E05_ImplementInterface {
     public static void main(String args[]) {
         ImplementInterface imp = new ImplementInterface();
         imp.f();

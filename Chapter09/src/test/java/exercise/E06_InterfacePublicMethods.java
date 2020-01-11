@@ -1,8 +1,10 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/04/16
  */
-public class ExerciseSix implements AnInterface {
+public class E06_InterfacePublicMethods implements AnInterface {
     // Each of these produces a compile-time error message,
     // stating that you cannot reduce the access of the
     // base class public method in a derived class.
