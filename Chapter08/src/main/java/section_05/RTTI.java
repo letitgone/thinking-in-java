@@ -1,9 +1,5 @@
 package section_05;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/15
- */
 class Useful {
     public void f() {
     }
@@ -14,6 +10,7 @@ class Useful {
 
 
 class MoreUseful extends Useful {
+    @Override
     public void f() {
     }
 
@@ -31,6 +28,10 @@ class MoreUseful extends Useful {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/15
+ */
 public class RTTI {
     public static void main(String[] args) {
         Useful[] x = {new Useful(), new MoreUseful()};

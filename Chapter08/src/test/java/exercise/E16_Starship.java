@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/15
- */
+package exercise;
+
 class AlertStatus {
     public String getStatus() {
         return "None";
@@ -13,8 +11,6 @@ class RedAlertStatus extends AlertStatus {
     public String getStatus() {
         return "Red";
     }
-
-    ;
 }
 
 
@@ -22,8 +18,6 @@ class YellowAlertStatus extends AlertStatus {
     public String getStatus() {
         return "Yellow";
     }
-
-    ;
 }
 
 
@@ -31,8 +25,6 @@ class GreenAlertStatus extends AlertStatus {
     public String getStatus() {
         return "Green";
     }
-
-    ;
 }
 
 
@@ -49,7 +41,11 @@ class Starship {
 }
 
 
-public class ExerciseSixteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/15
+ */
+public class E16_Starship {
     public static void main(String args[]) {
         Starship eprise = new Starship();
         System.out.println(eprise);

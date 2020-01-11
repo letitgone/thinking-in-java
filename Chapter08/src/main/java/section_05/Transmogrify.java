@@ -1,9 +1,5 @@
 package section_05;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/15
- */
 class Actor {
     public void act() {
     }
@@ -11,6 +7,7 @@ class Actor {
 
 
 class HappyActor extends Actor {
+    @Override
     public void act() {
         System.out.println("HappyActor");
     }
@@ -18,6 +15,7 @@ class HappyActor extends Actor {
 
 
 class SadActor extends Actor {
+    @Override
     public void act() {
         System.out.println("SadActor");
     }
@@ -37,6 +35,10 @@ class Stage {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/15
+ */
 public class Transmogrify {
     public static void main(String[] args) {
         Stage stage = new Stage();

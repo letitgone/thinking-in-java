@@ -1,9 +1,5 @@
 package section_03;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/12
- */
 class Glyph {
     void draw() {
         System.out.println("Glyph.draw()");
@@ -25,12 +21,17 @@ class RoundGlyph extends Glyph {
         System.out.println("RoundGlyph.RoundGlyph(), radius = " + radius);
     }
 
+    @Override
     void draw() {
         System.out.println("RoundGlyph.draw(), radius = " + radius);
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/12
+ */
 public class PolyConstructors {
     public static void main(String[] args) {
         new RoundGlyph(5);

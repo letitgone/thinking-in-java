@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/15
- */
+package exercise;
+
 class Cycle2 {
 }
 
@@ -22,7 +20,11 @@ class Tricycle2 extends Cycle2 {
 }
 
 
-public class ExerciseSeventeen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/15
+ */
+public class E17_RTTI {
     public static void main(String[] args) {
         Cycle2[] cycles = new Cycle2[] {new Unicycle2(), new Bicycle2(), new Tricycle2()};
         // Compile time: method not found in Cycle:

@@ -1,10 +1,7 @@
 package section_04;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/15
- */
 class Grain {
+    @Override
     public String toString() {
         return "Grain";
     }
@@ -12,6 +9,7 @@ class Grain {
 
 
 class Wheat extends Grain {
+    @Override
     public String toString() {
         return "Wheat";
     }
@@ -26,12 +24,17 @@ class Mill {
 
 
 class WheatMill extends Mill {
+    @Override
     Wheat process() {
         return new Wheat();
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/15
+ */
 public class CovariantReturn {
     public static void main(String[] args) {
         Mill m = new Mill();
