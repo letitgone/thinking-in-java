@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/22
- */
+package exercise;
+
 interface Interface1 {
     void f1();
 
@@ -39,40 +37,44 @@ class Concrete {
 
 class All extends Concrete implements Multiple {
     All() {
-        super("All");
+        super("exercise.All");
     }
 
     public void h() {
-        System.out.println("All.h");
+        System.out.println("exercise.All.h");
     }
 
     public void f1() {
-        System.out.println("All.f1");
+        System.out.println("exercise.All.f1");
     }
 
     public void g1() {
-        System.out.println("All.g1");
+        System.out.println("exercise.All.g1");
     }
 
     public void f2() {
-        System.out.println("All.f2");
+        System.out.println("exercise.All.f2");
     }
 
     public void g2() {
-        System.out.println("All.g2");
+        System.out.println("exercise.All.g2");
     }
 
     public void f3() {
-        System.out.println("All.f3");
+        System.out.println("exercise.All.f3");
     }
 
     public void g3() {
-        System.out.println("All.g3");
+        System.out.println("exercise.All.g3");
     }
 }
 
 
-public class ExerciseFourteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/22
+ */
+public class E14_InterfaceInheritance {
     static void takes1(Interface1 i) {
         i.f1();
         i.g1();

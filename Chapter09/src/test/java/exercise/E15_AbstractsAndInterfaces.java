@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/22
- */
+package exercise;
+
 abstract class Abstract {
     String s;
 
@@ -15,44 +13,48 @@ abstract class Abstract {
 
 class All2 extends Abstract implements Multiple {
     All2() {
-        super("All2");
+        super("exercise.All2");
     }
 
     void af() {
-        System.out.println("All.af");
+        System.out.println("exercise.All.af");
     }
 
     public void f1() {
-        System.out.println("All.f1");
+        System.out.println("exercise.All.f1");
     }
 
     public void g1() {
-        System.out.println("All.g1");
+        System.out.println("exercise.All.g1");
     }
 
     public void f2() {
-        System.out.println("All.f2");
+        System.out.println("exercise.All.f2");
     }
 
     public void g2() {
-        System.out.println("All.g2");
+        System.out.println("exercise.All.g2");
     }
 
     public void f3() {
-        System.out.println("All.f3");
+        System.out.println("exercise.All.f3");
     }
 
     public void g3() {
-        System.out.println("All.g3");
+        System.out.println("exercise.All.g3");
     }
 
     public void h() {
-        System.out.println("All2.h");
+        System.out.println("exercise.All2.h");
     }
 }
 
 
-public class ExerciseFifteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/22
+ */
+public class E15_AbstractsAndInterfaces {
     static void takes1(Interface1 i) {
         i.f1();
         i.g1();

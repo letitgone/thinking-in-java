@@ -1,9 +1,5 @@
 package section_05;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/22
- */
 interface Monster {
     void menace();
 }
@@ -20,9 +16,11 @@ interface Lethal {
 
 
 class DragonZilla implements DangerousMonster {
+    @Override
     public void menace() {
     }
 
+    @Override
     public void destroy() {
     }
 }
@@ -34,20 +32,28 @@ interface Vampire extends DangerousMonster, Lethal {
 
 
 class VeryBadVampire implements Vampire {
+    @Override
     public void menace() {
     }
 
+    @Override
     public void destroy() {
     }
 
+    @Override
     public void kill() {
     }
 
+    @Override
     public void drinkBlood() {
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/22
+ */
 public class HorrorShow {
     static void u(Monster b) {
         b.menace();

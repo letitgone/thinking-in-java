@@ -1,9 +1,5 @@
 package section_09;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/05
- */
 interface Game {
     boolean move();
 }
@@ -18,6 +14,7 @@ class Checkers implements Game {
     private int moves = 0;
     private static final int MOVES = 3;
 
+    @Override
     public boolean move() {
         System.out.println("Checkers move " + moves);
         return ++moves != MOVES;
@@ -26,6 +23,7 @@ class Checkers implements Game {
 
 
 class CheckersFactory implements GameFactory {
+    @Override
     public Game getGame() {
         return new Checkers();
     }
@@ -36,6 +34,7 @@ class Chess implements Game {
     private int moves = 0;
     private static final int MOVES = 4;
 
+    @Override
     public boolean move() {
         System.out.println("Chess move " + moves);
         return ++moves != MOVES;
@@ -44,17 +43,26 @@ class Chess implements Game {
 
 
 class ChessFactory implements GameFactory {
+    @Override
     public Game getGame() {
         return new Chess();
     }
 }
 
 
+/**
+ * important
+ * Factory工厂模式
+ *
+ * @Author ZhangGJ
+ * @Date 2019/05/05
+ */
 public class Games {
     public static void playGame(GameFactory factory) {
         Game s = factory.getGame();
-        while (s.move())
+        while (s.move()) {
             ;
+        }
     }
 
     public static void main(String[] args) {

@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/05
- */
+package exercise;
+
 interface StaticFinalTest {
     String RED = "Red";
 }
@@ -16,9 +14,13 @@ class Test implements StaticFinalTest {
 }
 
 
-public class ExerciseSeventeen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/05
+ */
+public class E17_ImplicitStaticFinal {
     public static void main(String args[]) {
         // Accessing as a static field:
-        System.out.println("StaticFinalTest.RED = " + StaticFinalTest.RED);
+        System.out.println("exercise.StaticFinalTest.RED = " + StaticFinalTest.RED);
     }
 }

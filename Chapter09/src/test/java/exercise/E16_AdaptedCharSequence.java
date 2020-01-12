@@ -1,11 +1,9 @@
+package exercise;
+
 import java.nio.CharBuffer;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/05
- */
 class CharSequence {
     private static Random rand = new Random(47);
     private static final char[] capitals = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
@@ -26,10 +24,14 @@ class CharSequence {
 }
 
 
-public class ExerciseSixteen extends CharSequence implements Readable {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/05
+ */
+public class E16_AdaptedCharSequence extends CharSequence implements Readable {
     private int count;
 
-    public ExerciseSixteen(int count) {
+    public E16_AdaptedCharSequence(int count) {
         this.count = count;
     }
 
@@ -42,7 +44,7 @@ public class ExerciseSixteen extends CharSequence implements Readable {
     }
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(new ExerciseSixteen(10));
+        Scanner s = new Scanner(new E16_AdaptedCharSequence(10));
         while (s.hasNext()) {
             System.out.println(s.next());
         }

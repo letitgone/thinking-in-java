@@ -1,9 +1,5 @@
 package section_08;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/05
- */
 class A {
     interface B {
         void f();
@@ -11,12 +7,14 @@ class A {
 
 
     public class BImp implements B {
+        @Override
         public void f() {
         }
     }
 
 
     private class BImp2 implements B {
+        @Override
         public void f() {
         }
     }
@@ -28,12 +26,14 @@ class A {
 
 
     class CImp implements C {
+        @Override
         public void f() {
         }
     }
 
 
     private class CImp2 implements C {
+        @Override
         public void f() {
         }
     }
@@ -45,12 +45,14 @@ class A {
 
 
     private class DImp implements D {
+        @Override
         public void f() {
         }
     }
 
 
     public class DImp2 implements D {
+        @Override
         public void f() {
         }
     }
@@ -85,14 +87,20 @@ interface E {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/05
+ */
 public class NestingInterfaces {
     public class BImp implements A.B {
+        @Override
         public void f() {
         }
     }
 
 
     class CImp implements A.C {
+        @Override
         public void f() {
         }
     }
@@ -104,22 +112,26 @@ public class NestingInterfaces {
     //!  public void f() {}
     //! }
     class EImp implements E {
+        @Override
         public void g() {
         }
     }
 
 
     class EGImp implements E.G {
+        @Override
         public void f() {
         }
     }
 
 
     class EImp2 implements E {
+        @Override
         public void g() {
         }
 
         class EG implements E.G {
+            @Override
             public void f() {
             }
         }

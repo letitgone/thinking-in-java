@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/05
- */
+package exercise;
+
 interface Tossing {
     boolean event();
 }
@@ -48,11 +46,19 @@ class DiceTossingFactory implements TossingFactory {
 }
 
 
-public class ExerciseNineteen {
+/**
+ * important
+ * Factory工厂模式
+ *
+ * @Author ZhangGJ
+ * @Date 2019/05/05
+ */
+public class E19_TossingFramework {
     public static void simulate(TossingFactory fact) {
         Tossing t = fact.getTossing();
-        while (t.event())
+        while (t.event()) {
             ;
+        }
     }
 
     public static void main(String[] args) {

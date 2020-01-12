@@ -14,6 +14,7 @@ public class AdaptedRandomDoubles extends RandomDoubles implements Readable {
         this.count = count;
     }
 
+    @Override
     public int read(CharBuffer cb) {
         if (count-- == 0) {
             return -1;

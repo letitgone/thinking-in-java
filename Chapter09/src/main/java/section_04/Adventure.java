@@ -1,9 +1,5 @@
 package section_04;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/04/17
- */
 interface CanFight {
     void fight();
 }
@@ -26,14 +22,20 @@ class ActionCharacter {
 
 
 class Hero extends ActionCharacter implements CanFight, CanSwim, CanFly {
+    @Override
     public void swim() {
     }
 
+    @Override
     public void fly() {
     }
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/17
+ */
 public class Adventure {
     public static void t(CanFight x) {
         x.fight();
@@ -53,9 +55,13 @@ public class Adventure {
 
     public static void main(String[] args) {
         Hero h = new Hero();
-        t(h); // Treat it as a CanFight
-        u(h); // Treat it as a CanSwim
-        v(h); // Treat it as a CanFly
-        w(h); // Treat it as an ActionCharacter
+        // Treat it as a CanFight
+        t(h);
+        // Treat it as a CanSwim
+        u(h);
+        // Treat it as a CanFly
+        v(h);
+        // Treat it as an ActionCharacter
+        w(h);
     }
 }

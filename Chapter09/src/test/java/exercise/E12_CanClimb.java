@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/04/22
- */
+package exercise;
+
 interface CanFight {
     void fight();
 }
@@ -40,7 +38,11 @@ class Hero2 extends ActionCharacter implements CanFight, CanSwim, CanFly, CanCli
 }
 
 
-public class ExerciseTwelve {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/04/22
+ */
+public class E12_CanClimb {
     static void t(CanFight x) {
         x.fight();
     }
@@ -63,10 +65,10 @@ public class ExerciseTwelve {
 
     public static void main(String[] args) {
         Hero2 h = new Hero2();
-        t(h); // Treat it as a CanFight
-        u(h); // Treat it as a CanSwim
-        v(h); // Treat it as a CanFly
-        z(h); // Treat it as a CanClimb
-        w(h); // Treat it as an ActionCharacter
+        t(h); // Treat it as a exercise.CanFight
+        u(h); // Treat it as a exercise.CanSwim
+        v(h); // Treat it as a exercise.CanFly
+        z(h); // Treat it as a exercise.CanClimb
+        w(h); // Treat it as an exercise.ActionCharacter
     }
 }

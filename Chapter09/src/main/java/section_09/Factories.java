@@ -1,9 +1,5 @@
 package section_09;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/05
- */
 interface Service {
     void method1();
 
@@ -20,10 +16,12 @@ class Implementation1 implements Service {
     Implementation1() {
     } // Package access
 
+    @Override
     public void method1() {
         System.out.println("Implementation1 method1");
     }
 
+    @Override
     public void method2() {
         System.out.println("Implementation1 method2");
     }
@@ -31,6 +29,7 @@ class Implementation1 implements Service {
 
 
 class Implementation1Factory implements ServiceFactory {
+    @Override
     public Service getService() {
         return new Implementation1();
     }
@@ -41,10 +40,12 @@ class Implementation2 implements Service {
     Implementation2() {
     } // Package access
 
+    @Override
     public void method1() {
         System.out.println("Implementation2 method1");
     }
 
+    @Override
     public void method2() {
         System.out.println("Implementation2 method2");
     }
@@ -52,12 +53,20 @@ class Implementation2 implements Service {
 
 
 class Implementation2Factory implements ServiceFactory {
+    @Override
     public Service getService() {
         return new Implementation2();
     }
 }
 
 
+/**
+ * important
+ * Factory工厂模式
+ *
+ * @Author ZhangGJ
+ * @Date 2019/05/05
+ */
 public class Factories {
     public static void serviceConsumer(ServiceFactory fact) {
         Service s = fact.getService();

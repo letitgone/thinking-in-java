@@ -1,7 +1,5 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/05
- */
+package exercise;
+
 interface Cycle {
     int wheels();
 }
@@ -54,7 +52,14 @@ class TricycleFactory implements CycleFactory {
 }
 
 
-public class ExerciseEighteen {
+/**
+ * important
+ * Factory工厂模式
+ *
+ * @Author ZhangGJ
+ * @Date 2019/05/05
+ */
+public class E18_CycleFactories {
     public static void ride(CycleFactory fact) {
         Cycle c = fact.getCycle();
         System.out.println("Num. of wheels: " + c.wheels());

@@ -19,9 +19,11 @@ public class RandomWords implements Readable {
         this.count = count;
     }
 
+    @Override
     public int read(CharBuffer cb) {
+        // Indicates end of input
         if (count-- == 0) {
-            return -1; // Indicates end of input
+            return -1;
         }
         cb.append(capitals[rand.nextInt(capitals.length)]);
         for (int i = 0; i < 4; i++) {
@@ -29,7 +31,8 @@ public class RandomWords implements Readable {
             cb.append(lowers[rand.nextInt(lowers.length)]);
         }
         cb.append(" ");
-        return 10; // Number of characters appended
+        // Number of characters appended
+        return 10;
     }
 
     public static void main(String[] args) {
