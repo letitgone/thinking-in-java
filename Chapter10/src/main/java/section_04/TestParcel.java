@@ -1,9 +1,5 @@
 package section_04;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/06
- */
 interface Destination {
     String readLabel();
 }
@@ -18,6 +14,7 @@ class Parcel4 {
     private class PContents implements Contents {
         private int i = 11;
 
+        @Override
         public int value() {
             return i;
         }
@@ -31,6 +28,7 @@ class Parcel4 {
             label = whereTo;
         }
 
+        @Override
         public String readLabel() {
             return label;
         }
@@ -46,6 +44,10 @@ class Parcel4 {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/06
+ */
 public class TestParcel {
     public static void main(String[] args) {
         Parcel4 p = new Parcel4();

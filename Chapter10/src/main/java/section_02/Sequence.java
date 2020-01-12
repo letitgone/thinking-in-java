@@ -1,11 +1,5 @@
 package section_02;
 
-/**
- * 迭代器设计模式
- *
- * @Author ZhangGJ
- * @Date 2019/05/06
- */
 interface Selector {
     boolean end();
 
@@ -15,6 +9,12 @@ interface Selector {
 }
 
 
+/**
+ * 迭代器设计模式
+ *
+ * @Author ZhangGJ
+ * @Date 2019/05/06
+ */
 public class Sequence {
     private Object[] items;
     private int next = 0;
@@ -24,24 +24,29 @@ public class Sequence {
     }
 
     public void add(Object x) {
-        if (next < items.length)
+        if (next < items.length) {
             items[next++] = x;
+        }
     }
 
     private class SequenceSelector implements Selector {
         private int i = 0;
 
+        @Override
         public boolean end() {
             return i == items.length;
         }
 
+        @Override
         public Object current() {
             return items[i];
         }
 
+        @Override
         public void next() {
-            if (i < items.length)
+            if (i < items.length) {
                 i++;
+            }
         }
     }
 

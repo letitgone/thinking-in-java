@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/06
- */
 class Sequence2 {
     private Object[] items;
     private int next;
@@ -46,7 +42,11 @@ class Sequence2 {
 }
 
 
-public class ExerciseFour {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/06
+ */
+public class E04_SequenceSelectorToSequence {
     public static void main(String[] args) {
         Sequence2 s = new Sequence2(10);
         System.out.println(s.check());

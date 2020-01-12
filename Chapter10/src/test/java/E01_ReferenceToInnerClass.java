@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/05
- */
 class Outer {
     class Inner {
         {
@@ -15,7 +11,11 @@ class Outer {
 }
 
 
-public class ExerciseOne {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/05
+ */
+public class E01_ReferenceToInnerClass {
     public static void main(String[] args) {
         Outer o = new Outer();
         Outer.Inner i = o.getInner();

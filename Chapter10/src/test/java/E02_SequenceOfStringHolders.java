@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/06
- */
 interface Selector {
     boolean end();
 
@@ -72,7 +68,11 @@ class StringHolder {
 }
 
 
-public class ExerciseTwo {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/06
+ */
+public class E02_SequenceOfStringHolders {
     public static void main(String[] args) {
         Sequence sequence = new Sequence(10);
         for (int i = 0; i < 10; i++)
