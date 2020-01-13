@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/07
- */
 class Outer5 {
     private class Inner implements SimpleInterface {
         public void f() {
@@ -19,7 +15,11 @@ class Outer5 {
 }
 
 
-public class ExerciseEleven {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/07
+ */
+public class E11_HiddenInnerClass {
     public static void main(String args[]) {
         Outer5 out = new Outer5();
         SimpleInterface si = out.get();

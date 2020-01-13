@@ -1,9 +1,5 @@
 package section_06;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/07
- */
 class Wrapping {
     private int i;
 
@@ -16,11 +12,16 @@ class Wrapping {
     }
 }
 
-
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/07
+ */
 public class Parcel8 {
     public Wrapping wrapping(int x) {
         // Base constructor call:
-        return new Wrapping(x) { // Pass constructor argument.
+        // Pass constructor argument.
+        return new Wrapping(x) {
+            @Override
             public int value() {
                 return super.value() * 47;
             }

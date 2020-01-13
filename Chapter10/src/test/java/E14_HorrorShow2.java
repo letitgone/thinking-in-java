@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/09
- */
 interface Monster {
     void menace();
 }
@@ -72,7 +68,11 @@ class HorrorShow {
 }
 
 
-public class ExerciseFourteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/09
+ */
+public class E14_HorrorShow2 {
     public static void main(String[] args) {
         DangerousMonster barney = new DangerousMonster() {
             public void menace() {

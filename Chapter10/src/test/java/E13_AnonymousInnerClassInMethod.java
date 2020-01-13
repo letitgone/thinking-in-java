@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/05/09
  */
-public class ExerciseThirteen {
+public class E13_AnonymousInnerClassInMethod {
     public SimpleInterface get() {
         return new SimpleInterface() {
             public void f() {
@@ -12,7 +12,7 @@ public class ExerciseThirteen {
     }
 
     public static void main(String args[]) {
-        SimpleInterface si = new ExerciseThirteen().get();
+        SimpleInterface si = new E13_AnonymousInnerClassInMethod().get();
         si.f();
     }
 }

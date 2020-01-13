@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/05/07
  */
-public class ExerciseNine {
+public class E09_InnerClassInMethod {
     public SimpleInterface get() {
         class SI implements SimpleInterface {
             public void f() {
@@ -13,7 +13,7 @@ public class ExerciseNine {
     }
 
     public static void main(String args[]) {
-        SimpleInterface si = new ExerciseNine().get();
+        SimpleInterface si = new E09_InnerClassInMethod().get();
         si.f();
     }
 }

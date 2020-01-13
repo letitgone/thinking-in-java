@@ -1,14 +1,14 @@
 package section_06;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/07
- */
 interface Destination {
     String readLabel();
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/07
+ */
 public class Parcel9 {
     // Argument must be final to use inside
     // anonymous inner class:
@@ -16,6 +16,7 @@ public class Parcel9 {
         return new Destination() {
             private String label = dest;
 
+            @Override
             public String readLabel() {
                 return label;
             }

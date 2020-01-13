@@ -1,19 +1,20 @@
 package section_06;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/07
- */
 interface Contents {
     int value();
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/07
+ */
 public class Parcel7 {
     public Contents contents() {
         return new Contents() { // Insert a class definition
             private int i = 11;
 
+            @Override
             public int value() {
                 return i;
             }

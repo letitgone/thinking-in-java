@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/09
- */
 class NoDefault {
     private int i;
 
@@ -33,7 +29,11 @@ class Second {
 }
 
 
-public class ExerciseFifteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/09
+ */
+public class E15_ReturningAnonymousIC {
     public static void main(String args[]) {
         Second sec = new Second();
         NoDefault nd = sec.get1(47);

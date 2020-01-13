@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/05/06
  */
-public class ExerciseSeven {
+public class E07_InnerClassAccess {
     private int i = 10;
 
     private void f() {
@@ -23,7 +23,7 @@ public class ExerciseSeven {
     }
 
     public static void main(String args[]) {
-        ExerciseSeven ica = new ExerciseSeven();
+        E07_InnerClassAccess ica = new E07_InnerClassAccess();
         //				ExerciseSeven.Inner x = ica.new Inner();
         ica.h();
     }

@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/06
- */
 class Outer4 {
     class Inner {
         private int j;
@@ -20,7 +16,11 @@ class Outer4 {
 }
 
 
-public class ExerciseEight {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/06
+ */
+public class E08_OuterAccessingInner {
     public static void main(String args[]) {
         Outer4 o = new Outer4();
         o.testInnerAccess();

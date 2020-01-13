@@ -1,14 +1,14 @@
 package section_05;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/07
- */
 interface Destination {
     String readLabel();
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/07
+ */
 public class Parcel5 {
     public Destination destination(String s) {
         class PDestination implements Destination {
@@ -18,6 +18,7 @@ public class Parcel5 {
                 label = whereTo;
             }
 
+            @Override
             public String readLabel() {
                 return label;
             }

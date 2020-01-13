@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/06
- */
 interface SimpleInterface {
     void f();
 }
@@ -20,12 +16,16 @@ class SimpleClass {
 }
 
 
-public class ExerciseSix extends SimpleClass {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/06
+ */
+public class E06_ProtectedInnerClass extends SimpleClass {
     public SimpleInterface get() {
         return new Inner();
     }
 
     public static void main(String args[]) {
-        new ExerciseSix().get().f();
+        new E06_ProtectedInnerClass().get().f();
     }
 }

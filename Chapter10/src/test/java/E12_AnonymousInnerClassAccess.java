@@ -2,7 +2,7 @@
  * @Author ZhangGJ
  * @Date 2019/05/08
  */
-public class ExerciseTwelve {
+public class E12_AnonymousInnerClassAccess {
     private int i = 10;
 
     private void f() {
@@ -20,7 +20,7 @@ public class ExerciseTwelve {
     }
 
     public static void main(String args[]) {
-        ExerciseTwelve ica = new ExerciseTwelve();
+        E12_AnonymousInnerClassAccess ica = new E12_AnonymousInnerClassAccess();
         ica.h();
     }
 }
