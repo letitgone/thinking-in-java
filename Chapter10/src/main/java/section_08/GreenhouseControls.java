@@ -13,12 +13,14 @@ public class GreenhouseControls extends Controller {
             super(delayTime);
         }
 
+        @Override
         public void action() {
             // Put hardware control code here to
             // physically turn on the light.
             light = true;
         }
 
+        @Override
         public String toString() {
             return "Light is on";
         }
@@ -30,12 +32,14 @@ public class GreenhouseControls extends Controller {
             super(delayTime);
         }
 
+        @Override
         public void action() {
             // Put hardware control code here to
             // physically turn off the light.
             light = false;
         }
 
+        @Override
         public String toString() {
             return "Light is off";
         }
@@ -50,11 +54,13 @@ public class GreenhouseControls extends Controller {
             super(delayTime);
         }
 
+        @Override
         public void action() {
             // Put hardware control code here.
             water = true;
         }
 
+        @Override
         public String toString() {
             return "Greenhouse water is on";
         }
@@ -66,11 +72,13 @@ public class GreenhouseControls extends Controller {
             super(delayTime);
         }
 
+        @Override
         public void action() {
             // Put hardware control code here.
             water = false;
         }
 
+        @Override
         public String toString() {
             return "Greenhouse water is off";
         }
@@ -85,11 +93,13 @@ public class GreenhouseControls extends Controller {
             super(delayTime);
         }
 
+        @Override
         public void action() {
             // Put hardware control code here.
             thermostat = "Night";
         }
 
+        @Override
         public String toString() {
             return "Thermostat on night setting";
         }
@@ -101,11 +111,13 @@ public class GreenhouseControls extends Controller {
             super(delayTime);
         }
 
+        @Override
         public void action() {
             // Put hardware control code here.
             thermostat = "Day";
         }
 
+        @Override
         public String toString() {
             return "Thermostat on day setting";
         }
@@ -119,10 +131,12 @@ public class GreenhouseControls extends Controller {
             super(delayTime);
         }
 
+        @Override
         public void action() {
             addEvent(new Bell(delayTime));
         }
 
+        @Override
         public String toString() {
             return "Bing!";
         }
@@ -135,10 +149,12 @@ public class GreenhouseControls extends Controller {
         public Restart(long delayTime, Event[] eventList) {
             super(delayTime);
             this.eventList = eventList;
-            for (Event e : eventList)
+            for (Event e : eventList) {
                 addEvent(e);
+            }
         }
 
+        @Override
         public void action() {
             for (Event e : eventList) {
                 e.start(); // Rerun each event
@@ -148,6 +164,7 @@ public class GreenhouseControls extends Controller {
             addEvent(this);
         }
 
+        @Override
         public String toString() {
             return "Restarting system";
         }
@@ -159,10 +176,12 @@ public class GreenhouseControls extends Controller {
             super(delayTime);
         }
 
+        @Override
         public void action() {
             System.exit(0);
         }
 
+        @Override
         public String toString() {
             return "Terminating";
         }

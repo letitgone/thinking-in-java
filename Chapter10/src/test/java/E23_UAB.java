@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/14
- */
 interface U {
     void f();
 
@@ -66,7 +62,11 @@ class B {
 }
 
 
-public class ExerciseTwentyThree {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/14
+ */
+public class E23_UAB {
     public static void main(String args[]) {
         A[] aa = {new A(), new A(), new A()};
         B b = new B(3);

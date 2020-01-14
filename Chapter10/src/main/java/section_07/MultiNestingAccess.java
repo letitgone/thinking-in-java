@@ -1,9 +1,5 @@
 package section_07;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/14
- */
 class MNA {
     private void f() {
     }
@@ -22,6 +18,10 @@ class MNA {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/14
+ */
 public class MultiNestingAccess {
     public static void main(String[] args) {
         MNA mna = new MNA();

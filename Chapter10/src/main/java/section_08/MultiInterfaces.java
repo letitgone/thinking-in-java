@@ -1,9 +1,5 @@
 package section_08;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/14
- */
 interface A {
 }
 
@@ -25,6 +21,10 @@ class Y implements A {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/14
+ */
 public class MultiInterfaces {
     static void takesA(A a) {
     }

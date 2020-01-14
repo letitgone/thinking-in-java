@@ -1,9 +1,5 @@
 package section_08;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/14
- */
 interface Incrementable {
     void increment();
 }
@@ -13,6 +9,7 @@ interface Incrementable {
 class Callee1 implements Incrementable {
     private int i = 0;
 
+    @Override
     public void increment() {
         i++;
         System.out.println(i);
@@ -36,6 +33,7 @@ class MyIncrement {
 class Callee2 extends MyIncrement {
     private int i = 0;
 
+    @Override
     public void increment() {
         super.increment();
         i++;
@@ -43,6 +41,7 @@ class Callee2 extends MyIncrement {
     }
 
     private class Closure implements Incrementable {
+        @Override
         public void increment() {
             // Specify outer-class method, otherwise
             // you’d get an infinite recursion:
@@ -69,6 +68,10 @@ class Caller {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/14
+ */
 public class Callbacks {
     public static void main(String[] args) {
         Callee1 c1 = new Callee1();

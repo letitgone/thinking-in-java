@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/14
- */
 interface I {
     void f();
 
@@ -18,7 +14,11 @@ interface I {
 }
 
 
-public class ExerciseTwentyOne {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/14
+ */
+public class E21_InterfaceWithNested2 {
     public static void main(String[] args) {
         I impl = new I() {
             public void f() {

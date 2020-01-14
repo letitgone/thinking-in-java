@@ -1,9 +1,5 @@
 package section_07;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/09
- */
 interface Destination {
     String readLabel();
 }
@@ -14,10 +10,15 @@ interface Contents {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/09
+ */
 public class Parcel11 {
     private static class ParcelContents implements Contents {
         private int i = 11;
 
+        @Override
         public int value() {
             return i;
         }
@@ -31,6 +32,7 @@ public class Parcel11 {
             label = whereTo;
         }
 
+        @Override
         public String readLabel() {
             return label;
         }

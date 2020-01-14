@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/14
- */
 class Sequence3 {
     private Object[] objects;
     private int next;
@@ -59,8 +55,11 @@ class Sequence3 {
     }
 }
 
-
-public class ExerciseTwentyTwo {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/14
+ */
+public class E22_GetRSelector {
     public static void main(String[] args) {
         Sequence3 sequence = new Sequence3(10);
         for (int i = 0; i < 10; i++)

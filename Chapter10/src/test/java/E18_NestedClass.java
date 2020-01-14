@@ -6,12 +6,12 @@ class Other {
     // Specifying the nested type outside
     // the scope of the class:
     void f() {
-        ExerciseEighteen.Nested ne = new ExerciseEighteen.Nested();
+        E18_NestedClass.Nested ne = new E18_NestedClass.Nested();
     }
 }
 
 
-public class ExerciseEighteen {
+public class E18_NestedClass {
     static class Nested {
         void f() {
             System.out.println("Nested.f");

@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/09
- */
 interface Cycle {
     int wheels();
 }
@@ -51,7 +47,11 @@ class Tricycle implements Cycle {
 }
 
 
-public class ExerciseSixteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/09
+ */
+public class E16_AnonymousCycleFactories {
     public static void ride(CycleFactory fact) {
         Cycle c = fact.getCycle();
         System.out.println("Num. of wheels: " + c.wheels());

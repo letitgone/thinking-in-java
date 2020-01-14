@@ -1,7 +1,3 @@
-/**
- * @Author ZhangGJ
- * @Date 2019/05/09
- */
 interface Tossing {
     boolean event();
 }
@@ -46,7 +42,11 @@ class DiceTossing implements Tossing {
 }
 
 
-public class ExerciseSeventeen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/09
+ */
+public class E17_AnonymousTossingFramework {
     public static void simulate(TossingFactory fact) {
         Tossing t = fact.getTossing();
         while (t.event())

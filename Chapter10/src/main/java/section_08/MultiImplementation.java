@@ -1,9 +1,5 @@
 package section_08;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/14
- */
 class D {
 }
 
@@ -20,6 +16,10 @@ class Z extends D {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/14
+ */
 public class MultiImplementation {
     static void takesD(D d) {
     }
