@@ -1,3 +1,5 @@
+package exercise;
+
 class NoDefault {
     private int i;
 
@@ -22,7 +24,7 @@ class Second {
         // Overrides f():
         return new NoDefault(i) {
             public void f() {
-                System.out.println("Second.get2.f");
+                System.out.println("exercise.Second.get2.f");
             }
         };
     }

@@ -1,3 +1,5 @@
+package exercise;
+
 interface I {
     void f();
 
@@ -5,9 +7,9 @@ interface I {
 
     class Nested {
         static void call(I impl) {
-            System.out.println("Calling I.f()");
+            System.out.println("Calling exercise.I.f()");
             impl.f();
-            System.out.println("Calling I.g()");
+            System.out.println("Calling exercise.I.g()");
             impl.g();
         }
     }

@@ -1,3 +1,5 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/05/14
@@ -39,9 +41,9 @@ public class E19_InnerInsideInner {
 }
 /**
  * The class names produced are:
- * E19_InnerInsideInner.class
- * E19_InnerInsideInner$Inner1.class
- * E19_InnerInsideInner$Inner1$Inner2.class
- * E19_InnerInsideInner$Nested1.class
- * E19_InnerInsideInner$Nested1$Nested2.class
+ * exercise.E19_InnerInsideInner.class
+ * exercise.E19_InnerInsideInner$Inner1.class
+ * exercise.E19_InnerInsideInner$Inner1$Inner2.class
+ * exercise.E19_InnerInsideInner$Nested1.class
+ * exercise.E19_InnerInsideInner$Nested1$Nested2.class
  */

@@ -1,7 +1,9 @@
+package exercise;
+
 class Outer5 {
     private class Inner implements SimpleInterface {
         public void f() {
-            System.out.println("Outer5.Inner.f");
+            System.out.println("exercise.Outer5.Inner.f");
         }
     }
 

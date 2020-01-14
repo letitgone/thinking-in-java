@@ -1,3 +1,5 @@
+package exercise;
+
 class Sequence2 {
     private Object[] items;
     private int next;

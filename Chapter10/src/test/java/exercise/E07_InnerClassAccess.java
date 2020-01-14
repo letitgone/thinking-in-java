@@ -1,3 +1,5 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/05/06
@@ -6,7 +8,7 @@ public class E07_InnerClassAccess {
     private int i = 10;
 
     private void f() {
-        System.out.println("E07_InnerClassAccess.f");
+        System.out.println("exercise.E07_InnerClassAccess.f");
     }
 
     class Inner {

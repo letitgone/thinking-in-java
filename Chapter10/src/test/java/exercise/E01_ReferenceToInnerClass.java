@@ -1,3 +1,5 @@
+package exercise;
+
 class Outer {
     class Inner {
         {

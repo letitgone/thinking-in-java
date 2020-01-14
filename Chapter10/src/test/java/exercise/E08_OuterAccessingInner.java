@@ -1,3 +1,5 @@
+package exercise;
+
 class Outer4 {
     class Inner {
         private int j;

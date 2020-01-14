@@ -1,3 +1,5 @@
+package exercise;
+
 interface Tossing {
     boolean event();
 }

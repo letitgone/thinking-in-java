@@ -1,3 +1,5 @@
+package exercise;
+
 interface Selector {
     boolean end();
 

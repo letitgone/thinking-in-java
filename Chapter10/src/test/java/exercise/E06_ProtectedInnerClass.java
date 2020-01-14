@@ -1,3 +1,5 @@
+package exercise;
+
 interface SimpleInterface {
     void f();
 }

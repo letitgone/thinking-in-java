@@ -1,3 +1,5 @@
+package exercise;
+
 interface U {
     void f();
 
@@ -11,15 +13,15 @@ class A {
     public U getU() {
         return new U() {
             public void f() {
-                System.out.println("A.f");
+                System.out.println("exercise.A.f");
             }
 
             public void g() {
-                System.out.println("A.g");
+                System.out.println("exercise.A.g");
             }
 
             public void h() {
-                System.out.println("A.h");
+                System.out.println("exercise.A.h");
             }
         };
     }

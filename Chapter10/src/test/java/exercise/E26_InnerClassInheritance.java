@@ -1,3 +1,5 @@
+package exercise;
+
 class WithNonDefault {
     class Inner {
         int i;
@@ -23,7 +25,7 @@ class WithNonDefault {
  */
 public class E26_InnerClassInheritance {
     class Inner2 extends WithNonDefault.Inner {
-        // Won't compile -- WithNonDefault not available:
+        // Won't compile -- exercise.WithNonDefault not available:
         //! public Inner2(int i) {
         //!   super(i);
         //! }

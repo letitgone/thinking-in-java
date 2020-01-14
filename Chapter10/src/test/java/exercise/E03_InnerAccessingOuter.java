@@ -1,3 +1,5 @@
+package exercise;
+
 class Outer2 {
     private final String data;
 

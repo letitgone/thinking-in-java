@@ -1,3 +1,5 @@
+package exercise;
+
 /**
  * @Author ZhangGJ
  * @Date 2019/05/08
@@ -6,7 +8,7 @@ public class E12_AnonymousInnerClassAccess {
     private int i = 10;
 
     private void f() {
-        System.out.println("E12_AnonymousInnerClassAccess.f");
+        System.out.println("exercise.E12_AnonymousInnerClassAccess.f");
     }
 
     public void h() {
