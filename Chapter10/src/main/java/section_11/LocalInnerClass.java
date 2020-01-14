@@ -1,14 +1,14 @@
 package section_11;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/23
- */
 interface Counter {
     int next();
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/23
+ */
 public class LocalInnerClass {
     private int count = 0;
 
@@ -20,6 +20,7 @@ public class LocalInnerClass {
                 System.out.println("LocalCounter()");
             }
 
+            @Override
             public int next() {
                 System.out.println(name); // Access local final
                 return count++;
@@ -37,6 +38,7 @@ public class LocalInnerClass {
                 System.out.println("Counter()");
             }
 
+            @Override
             public int next() {
                 System.out.println(name); // Access local final
                 return count++;
@@ -47,9 +49,11 @@ public class LocalInnerClass {
     public static void main(String[] args) {
         LocalInnerClass lic = new LocalInnerClass();
         Counter c1 = lic.getCounter("Local inner "), c2 = lic.getCounter2("Anonymous inner ");
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++) {
             System.out.println(c1.next());
-        for (int i = 0; i < 5; i++)
+        }
+        for (int i = 0; i < 5; i++) {
             System.out.println(c2.next());
+        }
     }
 }

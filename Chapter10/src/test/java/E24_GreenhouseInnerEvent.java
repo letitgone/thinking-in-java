@@ -1,10 +1,6 @@
 import section_08.Controller;
 import section_08.Event;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/23
- */
 class GreenhouseControlsWithFan extends Controller {
     private boolean light = false;
 
@@ -208,7 +204,11 @@ class GreenhouseControlsWithFan extends Controller {
 }
 
 
-public class ExerciseTwentyFour {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/23
+ */
+public class E24_GreenhouseInnerEvent {
     public static void main(String[] args) {
         GreenhouseControlsWithFan gc = new GreenhouseControlsWithFan();
         // Instead of hard-wiring, you could parse

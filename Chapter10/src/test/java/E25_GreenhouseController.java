@@ -1,10 +1,6 @@
 import section_08.Event;
 import section_08.GreenhouseControls;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/23
- */
 class GreenhouseControlsWithWMG extends GreenhouseControls {
     private boolean generator = false;
 
@@ -40,7 +36,11 @@ class GreenhouseControlsWithWMG extends GreenhouseControls {
 }
 
 
-public class ExerciseTwentyFive {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/23
+ */
+public class E25_GreenhouseController {
     public static void main(String[] args) {
         GreenhouseControlsWithWMG gc = new GreenhouseControlsWithWMG();
         // Instead of hard-wiring, you could parse

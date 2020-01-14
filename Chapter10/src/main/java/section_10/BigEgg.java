@@ -1,9 +1,5 @@
 package section_10;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/23
- */
 class Egg {
     private Yolk y;
 
@@ -21,6 +17,10 @@ class Egg {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/23
+ */
 public class BigEgg extends Egg {
     public class Yolk {
         public Yolk() {

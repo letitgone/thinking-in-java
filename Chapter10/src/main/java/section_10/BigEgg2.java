@@ -1,9 +1,5 @@
 package section_10;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/23
- */
 class Egg2 {
     protected class Yolk {
         public Yolk() {
@@ -32,12 +28,17 @@ class Egg2 {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/23
+ */
 public class BigEgg2 extends Egg2 {
     public class Yolk extends Egg2.Yolk {
         public Yolk() {
             System.out.println("BigEgg2.Yolk()");
         }
 
+        @Override
         public void f() {
             System.out.println("BigEgg2.Yolk.f()");
         }
