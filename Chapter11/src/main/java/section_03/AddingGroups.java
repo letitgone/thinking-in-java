@@ -18,7 +18,6 @@ public class AddingGroups {
         // Produces a list "backed by" an array:
         List<Integer> list = Arrays.asList(16, 17, 18, 19, 20);
         list.set(1, 99); // OK -- modify an element
-        // list.add(21); // Runtime error because the
-        // underlying array cannot be resized.
+        // list.add(21); // Runtime error because the underlying array cannot be resized.
     }
 }

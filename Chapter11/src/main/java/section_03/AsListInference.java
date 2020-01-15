@@ -5,10 +5,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/25
- */
 class Snow {
 }
 
@@ -33,6 +29,10 @@ class Slush extends Snow {
 }
 
 
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/25
+ */
 public class AsListInference {
     public static void main(String[] args) {
         List<Snow> snow1 = Arrays.asList(new Crusty(), new Slush(), new Powder());
