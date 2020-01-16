@@ -18,7 +18,7 @@ public class ExerciseEleven {
             Arrays.<Collection<String>>asList(new ArrayList<String>(), new LinkedList<String>(),
                 new HashSet<String>(), new TreeSet<String>());
         for (Collection<String> c : ca)
-            ExerciseFour.fill(c);
+            E04_MovieNameGenerator.fill(c);
         for (Collection<String> c : ca)
             printToStrings(c.iterator());
     }

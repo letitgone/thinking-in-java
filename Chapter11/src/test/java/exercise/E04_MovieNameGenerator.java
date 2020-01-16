@@ -2,10 +2,6 @@ package exercise;
 
 import java.util.*;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/25
- */
 class MovieNameGenerator /*implements Generator<String>*/ {
     String[] characters =
         {"Grumpy", "Happy", "Sleepy", "Dopey", "Doc", "Sneezy", "Bashful", "Snow White",
@@ -20,7 +16,11 @@ class MovieNameGenerator /*implements Generator<String>*/ {
 }
 
 
-public class ExerciseFour {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/25
+ */
+public class E04_MovieNameGenerator {
     private static final MovieNameGenerator mng = new MovieNameGenerator();
 
     static String[] fill(String[] array) {
