@@ -14,10 +14,12 @@ public class ListFeatures {
         List<Pet> pets = Pets.arrayList(7);
         System.out.println("1: " + pets);
         Hamster h = new Hamster();
-        pets.add(h); // Automatically resizes
+        // Automatically resizes
+        pets.add(h);
         System.out.println("2: " + pets);
         System.out.println("3: " + pets.contains(h));
-        pets.remove(h); // Remove by object
+        // Remove by object
+        pets.remove(h);
         Pet p = pets.get(2);
         System.out.println("4: " + p + " " + pets.indexOf(p));
         Pet cymric = new Cymric();
@@ -26,16 +28,19 @@ public class ListFeatures {
         // Must be the exact object:
         System.out.println("7: " + pets.remove(p));
         System.out.println("8: " + pets);
-        pets.add(3, new Mouse()); // Insert at an index
+        // Insert at an index
+        pets.add(3, new Mouse());
         System.out.println("9: " + pets);
         List<Pet> sub = pets.subList(1, 4);
         System.out.println("subList: " + sub);
         System.out.println("10: " + pets.containsAll(sub));
-        Collections.sort(sub); // In-place sort
+        // In-place sort
+        Collections.sort(sub);
         System.out.println("sorted subList: " + sub);
         // Order is not important in containsAll():
         System.out.println("11: " + pets.containsAll(sub));
-        Collections.shuffle(sub, rand); // Mix it up
+        // Mix it up
+        Collections.shuffle(sub, rand);
         System.out.println("shuffled subList: " + sub);
         System.out.println("12: " + pets.containsAll(sub));
         List<Pet> copy = new ArrayList<Pet>(pets);
@@ -43,14 +48,19 @@ public class ListFeatures {
         System.out.println("sub: " + sub);
         copy.retainAll(sub);
         System.out.println("13: " + copy);
-        copy = new ArrayList<Pet>(pets); // Get a fresh copy
-        copy.remove(2); // Remove by index
+        // Get a fresh copy
+        copy = new ArrayList<Pet>(pets);
+        // Remove by index
+        copy.remove(2);
         System.out.println("14: " + copy);
-        copy.removeAll(sub); // Only removes exact objects
+        // Only removes exact objects
+        copy.removeAll(sub);
         System.out.println("15: " + copy);
-        copy.set(1, new Mouse()); // Replace an element
+        // Replace an element
+        copy.set(1, new Mouse());
         System.out.println("16: " + copy);
-        copy.addAll(2, sub); // Insert a list in the middle
+        // Insert a list in the middle
+        copy.addAll(2, sub);
         System.out.println("17: " + copy);
         System.out.println("18: " + pets.isEmpty());
         pets.clear(); // Remove all elements

@@ -1,8 +1,10 @@
 package exercise;
 
+import net.mindview.util.Generator;
+
 import java.util.*;
 
-class MovieNameGenerator /*implements Generator<String>*/ {
+class MovieNameGenerator implements Generator<String> {
     String[] characters =
         {"Grumpy", "Happy", "Sleepy", "Dopey", "Doc", "Sneezy", "Bashful", "Snow White",
             "Witch Queen", "Prince"};
