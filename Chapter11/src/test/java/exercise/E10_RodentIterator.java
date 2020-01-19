@@ -2,10 +2,6 @@ package exercise;
 
 import java.util.*;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/25
- */
 class Rodent {
     public void hop() {
         System.out.println("Rodent hopping");
@@ -62,8 +58,11 @@ class Hamster extends Rodent {
     }
 }
 
-
-public class ExerciseTen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/25
+ */
+public class E10_RodentIterator {
     public static void main(String args[]) {
         ArrayList<Rodent> rodents =
             new ArrayList<Rodent>(Arrays.asList(new Rodent(), new Mouse(), new Hamster()));

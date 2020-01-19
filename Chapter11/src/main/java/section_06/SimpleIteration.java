@@ -21,8 +21,9 @@ public class SimpleIteration {
         }
         System.out.println();
         // A simpler approach, when possible:
-        for (Pet p : pets)
+        for (Pet p : pets) {
             System.out.print(p.id() + ":" + p + " ");
+        }
         System.out.println();
         // An Iterator can also remove elements:
         it = pets.iterator();

@@ -3,12 +3,12 @@ package exercise;
 import java.util.*;
 
 /**
- * ???
+ * important
  *
  * @Author ZhangGJ
  * @Date 2019/05/25
  */
-public class ExerciseTwelve {
+public class E12_ListIterators {
     static void reverse(List<Integer> list) {
         ListIterator<Integer> fwd = list.listIterator();
         ListIterator<Integer> rev = list.listIterator(list.size());

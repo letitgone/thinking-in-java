@@ -16,7 +16,7 @@ class IDClass {
 }
 
 
-public class ExerciseSeven {
+public class E07_TestList {
     public static void main(String args[]) {
         IDClass[] idc = new IDClass[10];
         for (int i = 0; i < idc.length; i++)

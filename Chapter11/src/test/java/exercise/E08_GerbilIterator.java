@@ -6,7 +6,7 @@ import java.util.*;
  * @Author ZhangGJ
  * @Date 2019/05/25
  */
-public class ExerciseEight {
+public class E08_GerbilIterator {
     public static void main(String args[]) {
         ArrayList<Gerbil> gerbils = new ArrayList<Gerbil>();
         for (int i = 0; i < 10; i++) {

@@ -6,7 +6,7 @@ import java.util.*;
  * @Author ZhangGJ
  * @Date 2019/05/25
  */
-public class ExerciseSix {
+public class E06_StringListFeatures {
     static Random rand = new Random(47);
 
     public static void main(String[] args) {

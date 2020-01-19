@@ -2,10 +2,6 @@ package exercise;
 
 import java.util.*;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/25
- */
 class Sequence2 {
     private Object[] items;
     private int next;
@@ -43,7 +39,11 @@ class Sequence2 {
 }
 
 
-public class ExerciseNine {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/25
+ */
+public class E09_SequenceIterator {
     public static void main(String[] args) {
         Sequence2 sequence = new Sequence2(10);
         for (int i = 0; i < 10; i++)

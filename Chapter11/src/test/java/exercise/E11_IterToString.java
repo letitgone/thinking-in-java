@@ -6,7 +6,7 @@ import java.util.*;
  * @Author ZhangGJ
  * @Date 2019/05/25
  */
-public class ExerciseEleven {
+public class E11_IterToString {
     public static void printToStrings(Iterator<?> it) {
         while (it.hasNext())
             System.out.println(it.next().toString());
