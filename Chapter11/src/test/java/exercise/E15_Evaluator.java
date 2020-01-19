@@ -3,10 +3,12 @@ package exercise;
 import section_08.Stack;
 
 /**
+ * Stack(important)
+ *
  * @Author ZhangGJ
  * @Date 2019/05/27
  */
-public class ExerciseFifteen {
+public class E15_Evaluator {
     private final static Stack<Character> stack = new Stack<Character>();
 
     private static void evaluate(String expr) {

@@ -25,6 +25,7 @@ public class Stack<T> {
         return storage.isEmpty();
     }
 
+    @Override
     public String toString() {
         return storage.toString();
     }

@@ -6,10 +6,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/27
- */
 class Controller {
     // List changed to a LinkedList:
     private List<Event> eventList = new LinkedList<Event>();
@@ -191,7 +187,11 @@ class GreenhouseControls extends Controller {
 }
 
 
-public class ExerciseThirteen {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/27
+ */
+public class E13_GreenhouseLinkedList {
     public static void main(String[] args) {
         GreenhouseControls gc = new GreenhouseControls();
         gc.addEvent(gc.new Bell(900));

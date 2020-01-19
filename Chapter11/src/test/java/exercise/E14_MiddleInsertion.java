@@ -4,10 +4,12 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 /**
+ * important
+ *
  * @Author ZhangGJ
  * @Date 2019/05/27
  */
-public class ExerciseFourteen {
+public class E14_MiddleInsertion {
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<Integer>();
         ListIterator<Integer> it = list.listIterator();
