@@ -10,7 +10,7 @@ import java.util.*;
  */
 public class UniqueWords {
     public static void main(String[] args) {
-        Set<String> words = new TreeSet<String>(new TextFile("SetOperations.java", "\\W+"));
+        Set<String> words = new TreeSet<>(new TextFile("/Users/zhanggj/Downloads/idea_projects/Thinking_in_java/Chapter11/src/main/java/section_09/SetOperations.java", "\\W+"));
         System.out.println(words);
     }
 }
