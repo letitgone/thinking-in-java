@@ -1,6 +1,6 @@
 package exercise;
 
-import third.Sandwich;
+import section_03.Sandwich;
 
 interface FastFood {
     void rushOrder();

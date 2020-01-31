@@ -1,6 +1,6 @@
 package exercise;
 
-import first.Note;
+import section_01.Note;
 
 abstract class Instrument {
     public void play(Note n) {

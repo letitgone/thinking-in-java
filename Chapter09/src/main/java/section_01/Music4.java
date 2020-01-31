@@ -1,7 +1,5 @@
 package section_01;
 
-import first.Note;
-
 abstract class Instrument {
 
     // Storage allocated for each

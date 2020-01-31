@@ -1,8 +1,8 @@
 package section_01;
 
-import ninth.Spiciness;
+import section_09.Spiciness;
 
-import static ninth.Spiciness.*;
+import static section_09.Spiciness.*;
 
 /**
  * @Author ZhangGJ

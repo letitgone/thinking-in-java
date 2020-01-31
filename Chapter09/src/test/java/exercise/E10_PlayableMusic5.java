@@ -1,6 +1,6 @@
 package exercise;
 
-import first.Note;
+import section_01.Note;
 
 interface Instrument2 {
     void adjust();

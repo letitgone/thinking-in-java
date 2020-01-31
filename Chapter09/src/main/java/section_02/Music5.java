@@ -1,7 +1,7 @@
 package section_02;
 
 
-import first.Note;
+import section_01.Note;
 
 interface Instrument {
     // Compile-time constant:
