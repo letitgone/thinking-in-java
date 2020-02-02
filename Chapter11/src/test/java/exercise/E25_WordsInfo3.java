@@ -8,14 +8,14 @@ import java.util.*;
  * @Author ZhangGJ
  * @Date 2019/05/28
  */
-public class ExerciseTwentyFive {
+public class E25_WordsInfo3 {
     public static void main(String[] args) {
-        Map<String, ArrayList<Integer>> stat = new HashMap<String, ArrayList<Integer>>();
+        Map<String, ArrayList<Integer>> stat = new HashMap<>();
         int wordCount = 0;
-        for (String word : new TextFile("ExerciseTwentyFive.java", "\\W+")) {
+        for (String word : new TextFile("E25_WordsInfo3.java", "\\W+")) {
             ArrayList<Integer> loc = stat.get(word);
             if (loc == null) {
-                loc = new ArrayList<Integer>();
+                loc = new ArrayList<>();
                 stat.put(word, loc);
             }
             loc.add(++wordCount);

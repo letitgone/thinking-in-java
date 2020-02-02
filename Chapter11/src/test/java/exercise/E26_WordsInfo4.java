@@ -8,11 +8,11 @@ import java.util.*;
  * @Author ZhangGJ
  * @Date 2019/05/28
  */
-public class ExerciseTwentySix {
+public class E26_WordsInfo4 {
     public static void main(String[] args) {
         Map<String, ArrayList<Integer>> stat = new HashMap<String, ArrayList<Integer>>();
         int wordCount = 0;
-        List<String> origWords = new TextFile("ExerciseTwentySix.java", "\\W+");
+        List<String> origWords = new TextFile("E26_WordsInfo4.java", "\\W+");
         for (String word : origWords) {
             ArrayList<Integer> loc = stat.get(word);
             if (loc == null) {
@@ -25,10 +25,12 @@ public class ExerciseTwentySix {
         //				 We will use an inverted structure, where the key
         //				 is the position of the word in the file. Also,
         //				 we will sort words based on their positions.
-        TreeMap<Integer, String> words = new TreeMap<Integer, String>();
-        for (Map.Entry<String, ArrayList<Integer>> entry : stat.entrySet())
-            for (Integer pos : entry.getValue())
+        TreeMap<Integer, String> words = new TreeMap<>();
+        for (Map.Entry<String, ArrayList<Integer>> entry : stat.entrySet()) {
+            for (Integer pos : entry.getValue()) {
                 words.put(pos, entry.getKey());
+            }
+        }
         // Test the correctness.
         System.out.println(origWords);
         System.out.println(words.values());

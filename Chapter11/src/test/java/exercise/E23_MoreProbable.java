@@ -3,10 +3,6 @@ package exercise;
 import java.util.*;
 import java.util.Map.Entry;
 
-/**
- * @Author ZhangGJ
- * @Date 2019/05/28
- */
 class Counter {
     int i = 1;
 
@@ -37,21 +33,26 @@ class HistoUnit implements Comparable<HistoUnit> {
 }
 
 
-public class ExerciseTwentyThree {
+/**
+ * @Author ZhangGJ
+ * @Date 2019/05/28
+ */
+public class E23_MoreProbable {
     private static Random rand = new Random(47);
 
     public static void main(String[] args) {
-        Map<Integer, Counter> m = new HashMap<Integer, Counter>();
+        Map<Integer, Counter> m = new HashMap<>();
         for (int i = 0; i < 10000000; i++) {
             // Produce a number between 0 and 100:
             int r = rand.nextInt(100);
-            if (m.containsKey(r))
+            if (m.containsKey(r)) {
                 m.get(r).i++;
-            else
+            } else {
                 m.put(r, new Counter());
+            }
         }
         // Make a histogram:
-        List<HistoUnit> lst = new ArrayList<HistoUnit>();
+        List<HistoUnit> lst = new ArrayList<>();
         Iterator<Entry<Integer, Counter>> it = m.entrySet().iterator();
         while (it.hasNext()) {
             Entry<Integer, Counter> entry = it.next();
