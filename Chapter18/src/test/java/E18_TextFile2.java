@@ -66,13 +66,13 @@ class TextFile2 extends ArrayList<String> {
 public class E18_TextFile2 {
     public static void main(String[] args) throws IOException {
         String file = TextFile2.read(
-            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E18_TextFile2.java");
+            "/Users/zhanggengjia/Downloads/IntellijProject/thinking-in-java/Chapter18/src/test/java/E18_TextFile2.java");
         TextFile2.write("test.txt", file);
         TextFile2 text = new TextFile2("test.txt");
         text.write("test2.txt");
         // Break into unique sorted list of words:
         TreeSet<String> words = new TreeSet<String>(new TextFile2(
-            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E18_TextFile2.java",
+            "/Users/zhanggengjia/Downloads/IntellijProject/thinking-in-java/Chapter18/src/test/java/E18_TextFile2.java",
             "\\W+"));
         // Display the capitalized words:
         System.out.println(words.headSet("a"));

@@ -98,7 +98,7 @@ public class E31_PeopleWithAddresses {
         Person.format(System.out, doc);
         Person.format(new BufferedOutputStream(new FileOutputStream("People.xml")), doc);
         People p =
-            new People("/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/People.xml");
+            new People("/Users/zhanggengjia/Downloads/IntellijProject/thinking-in-java/People.xml");
         System.out.println(p);
     }
 }

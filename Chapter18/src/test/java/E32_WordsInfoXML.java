@@ -27,7 +27,7 @@ public class E32_WordsInfoXML {
     public static void main(String[] args) throws Exception {
         Map<String, Integer> wordsStat = new HashMap<String, Integer>();
         for (String word : new TextFile(
-            "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E32_WordsInfoXML.java",
+            "/Users/zhanggengjia/Downloads/IntellijProject/thinking-in-java/Chapter18/src/test/java/E32_WordsInfoXML.java",
             "\\W+")) {
             Integer freq = wordsStat.get(word);
             wordsStat.put(word, freq == null ? 1 : freq + 1);

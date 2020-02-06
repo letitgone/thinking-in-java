@@ -68,7 +68,7 @@ public class E25_AllocateDirect {
         CompareAllocations[] comparisons = {new CompareAllocations("GetChannel", 8192) {
             public void execute() throws IOException {
                 FileChannel fc = new FileInputStream(
-                    "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E25_AllocateDirect.java")
+                    "/Users/zhanggengjia/Downloads/IntellijProject/thinking-in-java/Chapter18/src/test/java/E25_AllocateDirect.java")
                     .getChannel();
                 fc.read(buffer);
                 buffer.flip();
@@ -78,7 +78,7 @@ public class E25_AllocateDirect {
         }, new CompareAllocations("ChannelCopy", 16384) {
             public void execute() throws IOException {
                 FileChannel in = new FileInputStream(
-                    "/Users/zhanggengjia/Downloads/IntellijProject/thinking_in_java/Chapter18/src/test/java/E25_AllocateDirect.java")
+                    "/Users/zhanggengjia/Downloads/IntellijProject/thinking-in-java/Chapter18/src/test/java/E25_AllocateDirect.java")
                     .getChannel(), out = new FileOutputStream("temp.txt").getChannel();
                 while (in.read(buffer) != -1) {
                     buffer.flip(); // Prepare for writing

@@ -19,7 +19,7 @@ public class E16_Vowels {
         int fileVowels = 0;
         int wordVowels;
         for (String word : new TextFile(
-                "/Users/zhanggengjia/Downloads/IntellijProject/Thinking_in_java/Chapter11/src/test/java/exercise/E16_Vowels.java",
+                "/Users/zhanggengjia/Downloads/IntellijProject/thinking-in-java/Chapter11/src/test/java/exercise/E16_Vowels.java",
                 "\\W+")) {
             wordVowels = 0;
             for (char letter : word.toCharArray())
