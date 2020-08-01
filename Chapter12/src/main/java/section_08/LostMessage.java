@@ -5,6 +5,7 @@ package section_08;
  * @Date 2019/06/04
  */
 class VeryImportantException extends Exception {
+    @Override
     public String toString() {
         return "A very important exception!";
     }
@@ -12,6 +13,7 @@ class VeryImportantException extends Exception {
 
 
 class HoHumException extends Exception {
+    @Override
     public String toString() {
         return "A trivial exception";
     }
