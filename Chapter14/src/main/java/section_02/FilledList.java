@@ -11,6 +11,7 @@ class CountedInteger {
     private static long counter;
     private final long id = counter++;
 
+    @Override
     public String toString() {
         return Long.toString(id);
     }
@@ -27,8 +28,9 @@ public class FilledList<T> {
     public List<T> create(int nElements) {
         List<T> result = new ArrayList<T>();
         try {
-            for (int i = 0; i < nElements; i++)
+            for (int i = 0; i < nElements; i++) {
                 result.add(type.newInstance());
+            }
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -36,7 +38,7 @@ public class FilledList<T> {
     }
 
     public static void main(String[] args) {
-        FilledList<CountedInteger> fl = new FilledList<CountedInteger>(CountedInteger.class);
+        FilledList<CountedInteger> fl = new FilledList<>(CountedInteger.class);
         System.out.println(fl.create(15));
     }
 }
