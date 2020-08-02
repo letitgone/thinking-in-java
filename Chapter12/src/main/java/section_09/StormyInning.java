@@ -66,15 +66,18 @@ public class StormyInning extends Inning implements Storm {
     //! public void event() throws RainedOut {}
     // If the method doesn’t already exist in the
     // base class, the exception is OK:
+    @Override
     public void rainHard() throws RainedOut {
     }
 
     // You can choose to not throw any exceptions,
     // even if the base version does:
+    @Override
     public void event() {
     }
 
     // Overridden methods can throw inherited exceptions:
+    @Override
     public void atBat() throws PopFoul {
     }
 
